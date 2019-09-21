@@ -3,7 +3,7 @@
         .headerLogo .sprite_logo.zh-cn,
         .headerContent .sprite_logo,
         .headerContent .sprite_logo.zh-cn {
-            background: url('_static/_event/2019/W88-Logo-AVFCW88-black-EN.png') 0 0 no-repeat;
+            background: url('images/logo/<?php echo $SiteName; ?>/logo.png') 0 0 no-repeat;
             width: 500px;
             height: 80px;
             position: absolute;
@@ -20,7 +20,7 @@
         <div class="clear"></div>
         <div class="headerContent">
             <div class="headerLogo float">
-                <a href="index.html" title="หน้าหลัก">
+                <a href="./" title="หน้าหลัก">
                     <i class="sprite_logo th-th"></i></a>
             </div>
             <div class="headerMember">
@@ -70,12 +70,12 @@
                         <a href="javascript:showLogin2()" id="" class="button_login center "
                                             title="เข้าสู่ระบบ">เข้าสู่ระบบ</a>
 
-                        <a href="Register.php" class="button_login center red_button"
+                        <a href="register" class="button_login center red_button"
                                             title="สมัครสมาชิก">สมัครสมาชิก</a>
                     <?php }else{ ?> 
-                        <a href="TransactionDeposit.php" id="" class="button_login center "
+                        <a href="transaction" id="" class="button_login center "
                                             title="เข้าสู่ระบบ">ฝาก</a>
-                        <a href="index.php?route=logout" class="button_login center red_button"
+                        <a href="module/logout.php" class="button_login center red_button"
                                             title="ออกจากระบบ">ออกจากระบบ</a>
                     <?php } ?>
                 </div>
@@ -88,19 +88,19 @@
 					<i class="sprite_content_divider"></i>
 					<a href="#" data-class="balance" data-toggle="popover" data-html="true" data-placement="bottom" data-content="&lt;iframe src=&quot;/common/balance&quot; id=&quot;balanceFrame&quot; style=&quot;border: 0; overflow: hidden; width: 300px; height: 230px;&quot; frameborder=&#39;0&#39; border=&#39;0&#39; allowtransparency=&quot;true&quot;&gt;&lt;/iframe&gt;">ยอดคงเหลือ</a>
 					<i class="sprite_content_divider"></i>
-					<a href="#" data-class="balance" data-toggle="popover" data-html="true" data-placement="bottom" data-content="&lt;div class=&quot;center&quot;&gt;&lt;a class=&quot;white_size_14px&quot; href=&quot;//<?php echo $headers['Host']; ?>/deposit.php&quot;&gt;ฝาก&lt;/a&gt;&lt;hr /&gt;&lt;a class=&quot;white_size_14px&quot; href=&quot;//<?php echo $headers['Host']; ?>/view/withdrawal_BankTransfer.php&quot;&gt;ถอน&lt;/a&gt;&lt;hr /&gt;&lt;a class=&quot;white_size_14px&quot; href=&quot;//<?php echo $headers['Host']; ?>&quot;&gt;ย้ายเงิน&lt;/a&gt;&lt;hr /&gt;&lt;a class=&quot;white_size_14px&quot; href=&quot;//<?php echo $headers['Host']; ?>/history_depositwithdrawal.php&quot;&gt;ประวัติ&lt;/a&gt;&lt;/div&gt;">การเงิน $</a>										
+					<a href="#" data-class="balance" data-toggle="popover" data-html="true" data-placement="bottom" data-content="&lt;div class=&quot;center&quot;&gt;&lt;a class=&quot;white_size_14px&quot; href=&quot;//<?php echo $headers['Host']; ?>/transaction?r=deposit&quot;&gt;ฝาก&lt;/a&gt;&lt;hr /&gt;&lt;a class=&quot;white_size_14px&quot; href=&quot;//<?php echo $headers['Host']; ?>/transaction?r=withdraw&quot;&gt;ถอน&lt;/a&gt;&lt;hr /&gt;&lt;a class=&quot;white_size_14px&quot; href=&quot;//<?php echo $headers['Host']; ?>/transaction?r=transfer&quot;&gt;ย้ายเงิน&lt;/a&gt;&lt;hr /&gt;&lt;a class=&quot;white_size_14px&quot; href=&quot;//<?php echo $headers['Host']; ?>/transaction?r=history&quot;&gt;ประวัติ&lt;/a&gt;&lt;/div&gt;">การเงิน $</a>										
 					<i class="sprite_content_divider"></i>
 					<a class="blue bold" href="#" data-toggle="popover" data-html="true" data-placement="bottom" data-content="
 &lt;div class=&quot;center&quot;&gt;
-&lt;a href=&quot;//<?php echo $headers['Host']; ?>/profile_edit.php&quot; class=&quot;white_size_14px&quot;&gt;
+&lt;a href=&quot;//<?php echo $headers['Host']; ?>/profile_edit&quot; class=&quot;white_size_14px&quot;&gt;
 						
 						ข้อมูลส่วนตัว 
 &lt;/a&gt;
 &lt;hr /&gt;
-&lt;a href=&quot;//<?php echo $headers['Host']; ?>/profile_changepassword.php&quot; class=&quot;white_size_14px&quot;&gt;เปลี่ยนรหัสผ่าน&lt;/a&gt;
+&lt;a href=&quot;//<?php echo $headers['Host']; ?>/profile_changepassword&quot; class=&quot;white_size_14px&quot;&gt;เปลี่ยนรหัสผ่าน&lt;/a&gt;
 &lt;hr /&gt;
 &lt;/div&gt;">
-						Sunner88
+						<?php echo $me->username; ?>
 						</a>					
 					
 				

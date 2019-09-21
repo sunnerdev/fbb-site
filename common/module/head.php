@@ -1,3 +1,15 @@
+<?php
+include('resource/me.class.php');
+if($_SESSION['access_token']){
+    
+    $me = new Me();
+    $me = $me->get($api,$_SESSION['access_token']);
+    $me = $me->data;
+    //echo '<pre>';print_r($me);echo '</pre>';
+    if($_SESSION['UserName'] != $me->username){ echo "Redirect"; }
+}
+?>
+
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="content-language" content="kh,th,zh">
     <meta charset="UTF-8">
@@ -11,7 +23,7 @@
     <!--[if IE 6]>
 <link href="/_static/_css/bootstrap/bootstrap-ie6.css" rel="stylesheet" />
 <![endif]-->
-    <link href="_static/_css/Main.css" rel="stylesheet">
+    <link href="_static/_css/Main.css?v=<?php echo time(); ?>" rel="stylesheet">
     <link href="_static/_css/spritee28b.css?0.0.565" rel="stylesheet">
     <link href="_static/_css/Main.th-thf6ac.css?20190116" rel="stylesheet">
     <link href="_static/_css/jquery.linkselect/jquery.linkselect.style.select.css" rel="stylesheet">
@@ -29,9 +41,17 @@
     <!-- JS for New Custom Select Box -->
     <script type="text/javascript" src="_static/js/custom.selectbox.js"></script>
     <script src="_static/_script/jquery.idle.js"></script>
-    <script src="_static/_script/main.js?"></script>
-
+    <script src="_static/_script/main.js?v=2"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
     <script>
+    $( function() {
+        $( ".datepicker" ).datepicker();
+    });
+            
+
+
+    
 
     var access_token = sessionStorage.getItem('access_token'); 
     var expires_in = sessionStorage.getItem('expires_in'); 
@@ -98,6 +118,12 @@
 
 
     <style>
+        .mainContent div.bottom_column {
+	margin: 0 auto;
+	width: 960px;
+	padding-top: 12px;
+}
+
         a.button.disable {
             cursor: default;
         }
@@ -117,7 +143,7 @@
         .carousel_main_wrapper {
             width: 100%;
             min-width: 960px;
-            height: 500px;
+            height: 450px;
             position: relative;
             left: 0;
             background-position: top center;
@@ -126,7 +152,7 @@
         }
 
         .carousel_main_wrapper .carousel_main div.slide {
-            height: 500px;
+            height: 450px;
             float: left;
             position: relative;
             background-position: top center;
@@ -137,7 +163,7 @@
         .carousel_main div.slide div.slide_content {
             position: relative;
             width: 100%;
-            height: 500px;
+            height: 450px;
             bottom: 0;
             margin: 0 auto;
             
@@ -422,10 +448,76 @@
             padding: 0;
             margin: 0;
         }
+
+
+        .loading {
+        /*display: inline-block;*/
+        width: 64px;
+        height: 64px;
+        margin:20px auto;
+        }
+        .loading:after {
+        content: " ";
+        display: block;
+        width: 46px;
+        height: 46px;
+        margin: 1px;
+        border-radius: 50%;
+        border: 5px solid #fff;
+        border-color: #fff transparent #fff transparent;
+        animation: loading 1.2s linear infinite;
+        }
+        @keyframes loading {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+        }
+
+
+        .loading_mini {
+        /*display: inline-block;*/
+        width: 12px;
+        height: 12px;
+        margin:6px auto;
+        }
+        .loading_mini:after {
+        content: " ";
+        display: block;
+        width: 12px;
+        height: 12px;
+        margin: 1px;
+        border-radius: 50%;
+        border: 3px solid #fff;
+        border-color: #fff transparent #fff transparent;
+        animation: loading_mini 1.2s linear infinite;
+        }
+        @keyframes loading_mini {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+        }
+
     </style>
     <script>
     
-   
+    function addCommas(nStr)
+{
+    nStr += '';
+    x = nStr.split('.');
+    x1 = x[0];
+    x2 = x.length > 1 ? '.' + x[1] : '';
+    var rgx = /(\d+)(\d{3})/;
+    while (rgx.test(x1)) {
+        x1 = x1.replace(rgx, '$1' + ',' + '$2');
+    }
+    return x1 + x2;
+}
 
         function numberWithCommas(x) {
             var parts = x.toString().split(".");

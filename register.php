@@ -1,4 +1,7 @@
-<?php require('common/config.php'); ?>
+<?php
+require('common/config.php');
+if($_SESSION['access_token']!=''){ header('Location: index.php'); exit; }
+?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 
@@ -278,6 +281,8 @@
             score += (variationCount - 1) * 10;
             return parseInt(score);
         }
+
+
         function checkPassStrength(pass) {
             var score = scorePassword(pass);
             var display_text = "";
@@ -314,69 +319,6 @@
         $("#password_score").text(display_text);
     }
 
-    $(function(){
-        var placeholdersupported = ('placeholder' in document.createElement("input"));
-        $("input[type='text'],input[type='password']").each(function () {
-            if ($(this).attr("data-watermark") && ($(this).attr("id") != "")) {
-                var watermark = $(this).attr("data-watermark");
-                if (placeholdersupported) {
-                    $(this).attr("placeholder", watermark);
-                }
-                else {
-                    $(this).blur(function () {
-                        if ($(this).val().length == 0) {
-                            $(this).val(watermark).addClass('watermark');
-                        }
-                        if ($(this).attr("id") != "captcha") {
-                            $(this).valid();
-                        }
-                    }).focus(function () {
-                        if ($(this).val() == watermark) {
-                            $(this).val('').removeClass('watermark');
-                        }
-                    }).val(watermark).addClass('watermark');
-                }
-            }
-        });
-    });
-
-    $(document).ready(function () {
-        $("#password").on("keypress keyup keydown", function () {
-            //$(this).valid();
-            var pass = $(this).val();
-            $("[class^=rule_] i").removeClass("sprite_error").removeClass("sprite_correct").addClass("sprite_error");
-            if (/^.{6,20}$/.test(pass)) {
-                $(".rule_length i.sprite_error").removeClass("sprite_error").removeClass("sprite_correct").addClass("sprite_correct");
-            }
-            if (!/^\d+$/.test(pass)) {
-                $(".rule_alphanumeric i.sprite_error").removeClass("sprite_error").removeClass("sprite_correct").addClass("sprite_correct");
-            }
-            if (/^\S*$/.test(pass)) {
-                $(".rule_space i.sprite_error").removeClass("sprite_error").removeClass("sprite_correct").addClass("sprite_correct");
-            }
-            $(this).closest("td.validate_input").next("td").next("td").html("");
-            $("<div>").html($(".rule_checker").html())
-                        .attr("for", $(this).attr("id"))
-                        .addClass('success grey').appendTo($(this).closest("td.validate_input").next("td").next("td"));
-            if (pass.length > 0) {
-                $(".password_checker").show();
-                checkPassStrength(pass);
-            }
-            else {
-                $(".password_checker").hide();
-            }
-        });
-    });
-    var submitCount = 0;
-
-    function redirectMyAccount(link) {
-        try {
-            window.opener.location.href = link;
-        } catch (e) {
-            window.parent.location.href = link;
-        }
-        window.close();
-    }
 
     function redirectMyAccountCard() {
         if (window.opener != null) {
@@ -436,25 +378,8 @@
 	    }, 'ตัวอักษรผสมตังเลข');
 
 	    $(document).ready(function () {
-	        getCaptcha();
 
-	        $("#form1 input[type='text']").unbind('keydown').bind('keydown', function(event) {
-	            if(event.keyCode == 13) {
-	                verifyCaptcha();                
-	                return false;
-	            }
-	        });
-	        
-	        $("#form1 #captcha").bind('focusout', function(e) {
-                if ($(this).val().length > 0) {
-                    verifyCaptcha(true);  
-                }	                          
-	            return false;
-	        });
-
-	        $('#form1').submit(function () {
-	            submitCount++;
-	        });
+	       
 	        $('.contact_option a').hover(function (e) {
 	            e.preventDefault();
 	            $(this).tab('show');
@@ -479,74 +404,12 @@
 	                try { $(this).valid(); } catch (e) { }
 	            }
 	            try { $($(this).attr("href")).valid(); } catch (e) { }
-	        });
+            });
+        });
 
-	        var isCaptcha = ("True" || "false").toLowerCase(),
-                rules = {
-                    year: { required: true, DateofBirth: true },
-                    month: { required: true, DateofBirth: true },
-                    day: { required: true, DateofBirth: true },
-                    username: {
-                        required: true,
-                        alpha_numeric: true,
-                        minlength: 5,
-                        maxlength: 16
-                    },
-                    email: {
-                        required: true,
-                        email: true
-                    },
-                    contact_no: {
-                        required: true,
-                        digits: true,
-                        minlength: 6,
-                        maxlength: 12
-                    },
-                    contact_no_country: { required: true },
-                    currency: { required: true },
-                    country_ddl: { required: true },
-                    password: {
-                        required: true,
-                        minlength: 6,
-                        maxlength: 20,
-                        nospace: true,
-                        noNumberOnly: true
-                        //, PasswordScore: true
-                    },
-                    //confirm_password: { equalTo: "#password" },
-                    affiliate_id: { digits: true }
-                };
+	        
 
-	        //if (isCaptcha === "false") {
-	            //delete rules.captcha;
-	            $('.tr-captcha').remove();
-	        //}
-
-	        $("#form1").validate({
-	            onkeyup: false,
-	            onclick: false,
-	            onfocusin: function(element) { $(element).valid(); },
-	            onfocusout: function(element) { $(element).valid(); },
-	            ignore: "",
-	            rules: rules,
-	            groups: {
-	                contactGroup: "contact_no_country contact_no"
-	            },
-	            messages: {
-	                username: {
-	                    remote: "ชื่อผู้ใช้งานนี้ถูกใช้งานแล้ว"
-				    },
-			        email: {
-			            remote: "อีเมล์นี้ถูกใช้งานแล้ว"
-				    },
-			        contact_no: {
-			            remote: "เบอร์โทรนี้ถูกใช้งานไปแล้ว. กรุณาใส่หมายเลขโทรศัพท์อีกครั้ง"
-				    },
-			        contact_no_country: {
-			            remote: "เบอร์โทรนี้ถูกใช้งานไปแล้ว. กรุณาใส่หมายเลขโทรศัพท์อีกครั้ง"
-				    }
-			    },
-		        errorElement: "div",
+	        /*
 		        errorPlacement: function (error, element) {
 		            $(element).closest("td.validate_input").next("td").html("");
 		            $(element).closest("td.validate_input").next("td").next("td").html("");
@@ -573,27 +436,57 @@
 		        invalidHandler: function (f, v) {
 		            $('button[type=submit], input[type=submit]').prop('disabled', false);
 
-		        }
-		    });
-	    });
+                }
+                */
 		
-        function register_get_before_submit(form) {
-            final_submit(form);
-        }
 		
-        function final_submit(form) {
+       
+		
+        function final_submit() {
             $("#contact_no").val($("#contact_no").val().replace(/^0+/, ''));
 			$("input[type='submit']").attr("disabled", "disabled");
-			
-			alert('let go...');
+            //error_msg
+            $('.error_msg').html('');
+			//alert('let go...');
+            
 
-
-			console.log($( "#form1" ).serializeArray());
-			var url="common/register.app.php";
-			var dataSet = $( "#form1" ).serializeArray();
+			console.log($( "#form2" ).serializeArray());
+			var url="resource/register.app.php";
+			var dataSet = $( "#form2" ).serializeArray();
 			$.post(url,dataSet,function(data){
-				console.log(data);
+                console.log(data);
+                
+                if(data.status == '0'){
+                    $.each(data.data, function(k, v) {
+                        console.log(k,v[0]);
+                        $('#error_'+k).html(v[0]);
+                    });
+                }
+                
 				if(data.status == '1'){
+                    var url="resource/login.app.php";
+                        var dataSet = $( "#form2" ).serializeArray();
+                        $.post(url,dataSet,function(data){
+                            console.log(data);
+                            
+                            if(data!=null){
+                            if(data.status == '1'){
+                                sessionStorage.setItem('token_type', data.session.token_type); 
+                                sessionStorage.setItem('access_token', data.session.access_token);
+                                sessionStorage.setItem('expires_in', data.session.expires_in);
+                                sessionStorage.setItem('refresh_token', data.session.refresh_token); 
+                                location.href='transaction.php';
+                            }
+
+                            if(data.status == '0'){
+                                toggleLoginProgressBar();
+                                showMessage(data.msg);
+                                
+                            }}else{
+                                toggleLoginProgressBar();
+                                showMessage('เกิดข้อผิดพลาด ลองใหม่อีกครั้งในภายหลัง');
+                            }
+                        }, "json");	
 					
 				}
 			}, "json");	
@@ -602,7 +495,10 @@
        /* function disableF5(e) { if ((e.keyCode) == 116) e.preventDefault(); };
         $(document).on("keydown", disableF5);*/
 
-        
+        /*$('#form2').submit(function (event) {
+        alert("Submitted");
+        event.preventDefault();
+        });*/
     </script>
 </head>
 
@@ -611,7 +507,7 @@
 <?php include('common/module/menu.php'); ?>
 <?php include('common/module/loginframe.php'); ?>
 <?php include('common/module/modalFrame.php'); ?>
-
+<?php include('common/module/marquee.php'); ?>
 <?php
 /*if($_SESSION['refresh_token']!='')
 { 
@@ -623,7 +519,7 @@
 
 	
 
-<form name="form1" method="post" id="form1">
+<form name="form2" method="post" id="form2">
 
 <input type="hidden" id="route" name="route" value="Register">
 
@@ -718,8 +614,8 @@
                                 <td class="validate_input">
                                     <input name="email" type="text" id="email" class="required" data-msg-default="กรุณากรอกอีเมล์ของท่าน">
                                 </td>
-                                <td class="validate_icon"></td>
-                                <td class="validate_msg"></td>
+                                <td class="error_msg" id="error_email_icon"></td>
+                                <td class="error_msg" id="error_email"></td>
                             </tr>
                             <tr>
                                 <td class="right">เบอร์โทรศัพท์ </td>
@@ -739,8 +635,8 @@
 
 </select>&nbsp;-&nbsp;<input name="contact_no" type="text" id="contact_no" class="required contact_no" data-msg-default="กรุณากรอกหมายเลขโทรศัพท์ของท่าน">
                                 </td>
-                                <td class="validate_icon"></td>
-                                <td class="validate_msg"></td>
+                                <td class="error_msg" id="error_contact_no_icon"></td>
+                                <td class="error_msg" id="error_contact_no"></td>
                             </tr>
                             
                             <tr>
@@ -787,12 +683,9 @@
                                 <td class="red">*</td>
                                 <td class="validate_input">
                                     <input name="first_name" type="text" id="first_name" data-msg-default="คุณจะต้องทำการกรอก ชื่อและนามสกุลจริงที่ตรงกับบัญชีธนาคารของคุณเท่านั้นค่ะ">
-                                    <div id="panel">
-	<input name="71910" type="text" id="71910" data-msg-default="คุณจะต้องทำการกรอก ชื่อและนามสกุลจริงที่ตรงกับบัญชีธนาคารของคุณเท่านั้นค่ะ" data-watermark="" placeholder="">
-</div>
                                 </td>
-                                <td class="validate_icon"></td>
-                                <td class="validate_msg"></td>
+                                <td class="error_msg" id="error_first_name_icon"></td>
+                                <td class="error_msg" id="error_first_name"></td>
                             </tr>
                             <tr >
                                 <td class="right">สกุล </td>
@@ -800,8 +693,8 @@
                                 <td class="validate_input">
                                     <input name="last_name" type="text" id="last_name" data-msg-default="กรุณากรอกนามสกุลของท่านเท่านั้น &lt;br /> รายการของบัตร, เช็ค และการโอนเงิน สามารถดำเนินการได้หากชื่อสกุลตรงกับบัญชีผู้ใช้งาน">
                                 </td>
-                                <td class="validate_icon"></td>
-                                <td class="validate_msg"></td>
+                                <td class="error_msg" id="error_last_name_icon"></td>
+                                <td class="error_msg" id="error_last_name"></td>
                             </tr>
                             <tr>
                                 <td class="right">วัน เดือน ปี เกิด </td>
@@ -855,107 +748,14 @@
 	<option value="12">December</option>
 
 </select><span style="display: inline-block; width: 7px;"></span><select name="year" id="year" cssclas="required" onchange="populateDays()" data-msg-default="กรุณากรอก วัน/เดือน/ปี เกิดของท่าน">
-	<option value="2001">2001</option>
-	<option value="2000">2000</option>
-	<option value="1999">1999</option>
-	<option value="1998">1998</option>
-	<option value="1997">1997</option>
-	<option value="1996">1996</option>
-	<option value="1995">1995</option>
-	<option value="1994">1994</option>
-	<option value="1993">1993</option>
-	<option value="1992">1992</option>
-	<option value="1991">1991</option>
-	<option value="1990">1990</option>
-	<option value="1989">1989</option>
-	<option value="1988">1988</option>
-	<option value="1987">1987</option>
-	<option value="1986">1986</option>
-	<option value="1985">1985</option>
-	<option value="1984">1984</option>
-	<option value="1983">1983</option>
-	<option value="1982">1982</option>
-	<option value="1981">1981</option>
-	<option value="1980">1980</option>
-	<option value="1979">1979</option>
-	<option value="1978">1978</option>
-	<option value="1977">1977</option>
-	<option value="1976">1976</option>
-	<option value="1975">1975</option>
-	<option value="1974">1974</option>
-	<option value="1973">1973</option>
-	<option value="1972">1972</option>
-	<option value="1971">1971</option>
-	<option value="1970">1970</option>
-	<option value="1969">1969</option>
-	<option value="1968">1968</option>
-	<option value="1967">1967</option>
-	<option value="1966">1966</option>
-	<option value="1965">1965</option>
-	<option value="1964">1964</option>
-	<option value="1963">1963</option>
-	<option value="1962">1962</option>
-	<option value="1961">1961</option>
-	<option value="1960">1960</option>
-	<option value="1959">1959</option>
-	<option value="1958">1958</option>
-	<option value="1957">1957</option>
-	<option value="1956">1956</option>
-	<option value="1955">1955</option>
-	<option value="1954">1954</option>
-	<option value="1953">1953</option>
-	<option value="1952">1952</option>
-	<option value="1951">1951</option>
-	<option value="1950">1950</option>
-	<option value="1949">1949</option>
-	<option value="1948">1948</option>
-	<option value="1947">1947</option>
-	<option value="1946">1946</option>
-	<option value="1945">1945</option>
-	<option value="1944">1944</option>
-	<option value="1943">1943</option>
-	<option value="1942">1942</option>
-	<option value="1941">1941</option>
-	<option value="1940">1940</option>
-	<option value="1939">1939</option>
-	<option value="1938">1938</option>
-	<option value="1937">1937</option>
-	<option value="1936">1936</option>
-	<option value="1935">1935</option>
-	<option value="1934">1934</option>
-	<option value="1933">1933</option>
-	<option value="1932">1932</option>
-	<option value="1931">1931</option>
-	<option value="1930">1930</option>
-	<option value="1929">1929</option>
-	<option value="1928">1928</option>
-	<option value="1927">1927</option>
-	<option value="1926">1926</option>
-	<option value="1925">1925</option>
-	<option value="1924">1924</option>
-	<option value="1923">1923</option>
-	<option value="1922">1922</option>
-	<option value="1921">1921</option>
-	<option value="1920">1920</option>
-	<option value="1919">1919</option>
-	<option value="1918">1918</option>
-	<option value="1917">1917</option>
-	<option value="1916">1916</option>
-	<option value="1915">1915</option>
-	<option value="1914">1914</option>
-	<option value="1913">1913</option>
-	<option value="1912">1912</option>
-	<option value="1911">1911</option>
-	<option value="1910">1910</option>
-	<option value="1909">1909</option>
-	<option value="1908">1908</option>
-	<option value="1907">1907</option>
-	<option value="1906">1906</option>
-	<option value="1905">1905</option>
-	<option value="1904">1904</option>
-	<option value="1903">1903</option>
-	<option value="1902">1902</option>
+    <?php
+    $already_selected_value = 1984;
+    $earliest_year = 1950;
 
+    foreach (range(date('Y'), $earliest_year) as $x) {
+        print '<option value="'.$x.'"'.($x === $already_selected_value ? ' selected="selected"' : '').'>'.$x.'</option>';
+    }
+    ?>
 </select>
                                 </td>
                                 <td class="validate_icon">&nbsp;</td>
@@ -976,8 +776,8 @@
                                 <td class="validate_input">
                                     <input name="username" type="text" id="username" class="required" data-msg-default="กรุณากรอกชื่อผู้ใช้งานที่ท่านต้องการ">
                                 </td>
-                                <td class="validate_icon"></td>
-                                <td class="validate_msg"></td>
+                                <td class="error_msg" id="error_username_icon"></td>
+                                <td class="error_msg" id="error_username"></td>
                             </tr>
                             <tr>
                                 <td class="right" style="vertical-align: top;">รหัสผ่าน </td>
@@ -1068,8 +868,8 @@
                                 <td class="validate_input">
                                     <input name="c_password" type="password" id="c_password" class="required" data-msg-default="กรุณากรอกรหัสผ่านของท่านอีกครั้ง">
                                 </td>
-                                <td class="validate_icon"></td>
-                                <td class="validate_msg"></td>
+                                <td class="error_msg" id="error_c_password_icon"></td>
+                                <td class="error_msg" id="error_c_password"></td>
                             </tr>
                             <tr>
                                 <td class="right"></td>
@@ -1111,36 +911,12 @@
 	<td class="validate_icon"></td>
 	<td class="validate_msg"></td>
 </tr>
-
-                            <tr class="tr-captcha">
-                                <td class="right" style="vertical-align: top;">กรอกรหัสให้ถูกต้อง </td>
-                                <td class="red" style="vertical-align: top; padding-top: 5px;">*</td>
-                                <td class="validate_input">
-
-                                    <table cellpadding="0" cellspacing="0" style="width: 100%;">
-                                        <tr>
-                                            <td>
-                                                <input name="captcha" type="text" id="captcha" class="required" autocomplete="off" data-msg-default="กรุณากรอกรหัสที่ถูกต้อง">
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="padding-top: 8px;">
-                                                <a href="#">
-                                                    <img for="captcha" id="imgCaptcha" src="" style="width: 212px; height: 62px;" width="212" height="62">
-                                                </a>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                                <td class="validate_icon"></td>
-                                <td class="validate_msg" style="vertical-align: top;"></td>
-                            </tr>
                             <tr>
                                 <td class="right"></td>
                                 <td class="red"></td>
                                 <td class="validate_input">
                                     <input type="submit" style="position: absolute; left: -9999px; width: 1px; height: 1px;">
-                                    <a href="#" class="button_submit center" style="width: 172px;" onclick="$('#form1').submit(); return false;">สมัครสมาชิก </a>
+                                    <button type="button" class="button_submit center" style="width: 172px;" onclick="final_submit();">สมัครสมาชิก</button>
                                 </td>
                                 <td class="validate_icon"></td>
                                 <td class="validate_msg"></td>

@@ -148,12 +148,12 @@ if (getParameterByName("nomobile").length > 0) {
     $.removeCookie("directMobile", { path: '/' });
 }
 else if (directMobile && (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))) {
-    location.href = window.location.protocol + "//m" + ((window.location.hostname.split(".").length > 2) ? window.location.hostname.substring(window.location.hostname.indexOf('.'), window.location.hostname.length) : "." + window.location.hostname) + location.search;
+    //location.href = window.location.protocol + "//m" + ((window.location.hostname.split(".").length > 2) ? window.location.hostname.substring(window.location.hostname.indexOf('.'), window.location.hostname.length) : "." + window.location.hostname) + location.search;
 }
 else if ((/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && !mobile)) {
     //$.cookie("mobile", 1, { dolmain: ("." + location.hostname.split('.').slice(-2).join('.')), path: '/' });
     //location.href = domain_www + "/Mobile/Detect/" + location.search;
-    location.href = window.location.protocol + "//m" + ((window.location.hostname.split(".").length > 2) ? window.location.hostname.substring(window.location.hostname.indexOf('.'), window.location.hostname.length) : "." + window.location.hostname) + location.search;
+    //location.href = window.location.protocol + "//m" + ((window.location.hostname.split(".").length > 2) ? window.location.hostname.substring(window.location.hostname.indexOf('.'), window.location.hostname.length) : "." + window.location.hostname) + location.search;
 }
 
 /*if (getParameterByName("nomobile").length > 0) {
@@ -184,17 +184,6 @@ function check_https() {
     }
 }
 
-function updateTimer() {
-    $.ajax({
-        type: "GET",
-        url: "/common/handler.aspx/timer",
-        contentType: "application/json",
-        dataType: "json",
-        success: function (msg) {
-            date = new Date(parseInt(msg.d.substr(6)));
-        }
-    });
-}
 
 function checkLoginStatus() {
 	if (isIdle)
@@ -1524,7 +1513,7 @@ $(function () {
 
 		        $("div.subcontent_holder div." + $(this).data('subcontent')).show();
 		        $("div.subcontent_holder div." + $(this).data('subcontent')).stop(true, true).slideDown(function () {
-		            img_unveil();
+		            
 		        });
 		    }
 
@@ -1572,7 +1561,7 @@ $(function () {
 		        //$(".subMenu").css("top", function (index) {
 		        //	return $("div.subcontent_holder").height() + $(".mainMenu").height();
 		        //});
-		        img_unveil();
+		        
 		    });
 		    clearTimeout(subcontent);
 		    //event.preventDefault();
@@ -1766,7 +1755,6 @@ $(function () {
         getRealIp();
         checkLoginStatus();
         updatePMessage();
-        updateTimer();
         setTimeout(updateAnnouncement, 500);
 
         //run interval functions for update
@@ -2175,134 +2163,7 @@ function load_worldcupinfo() {
     }
 }
 
-var jackpop_xml;
-var jackpop_position = 0;
-/*jackpot popup*/
-$(function () {
-    if (window.location.pathname.toLowerCase().match(/\/$/) || window.location.pathname.toLowerCase().match(/default.aspx$/)) {
-        setTimeout(function () {
-            get_jackpop();
-        }, 5000);
-    }
-});
 
-function get_jackpop() {
-    var udata = utility.getFromStorage(true, "udata");
-    var headers = { Authorization: 'Bearer ' + window.ftkn };
-    var url = String.format("/_secure/ajax/api/product/jackpot/winners/top/{0}", udata.lang);
-    var data = udata.memId === 0 ? null : { memberId: udata.memId };
-    utility.DoAjaxGet(url,
-        data,
-        headers,
-        function(msg) {
-            jackpop_xml = typeof msg !== "object" ? {} : msg;
-            loop_jackpop();
-        },
-        function(err) {
-            console.log(err);
-        },
-        "application/xml",
-        "xml");
-
-    //$.ajax({
-    //    type: "GET",
-    //    url: url,
-    //    data: udata.memId === 0 ? null : { memberId: udata.memId },
-    //    contentType: "application/xml",
-    //    success: function (msg) {
-    //        jackpop_xml = typeof msg !== "object" ? {} : msg;
-    //        loop_jackpop();
-    //    }
-    //});
-}
-
-function loop_jackpop() {
-    if ($(jackpop_xml).find("resp").find("items").find("item").length) {
-        if (jackpop_position >= $(jackpop_xml).find("resp").find("items").find("item").length) {
-            jackpop_position = 0;
-        }
-
-        var jackpop = $("<div />").addClass("jackpot_popup");
-        jackpop.append($("<div />").addClass("jackpot_image"));
-
-        if ($("body").width() - (960 + 230 * 2) > 0) {
-            jackpop.css('right', $("body").width() / 2 - 960 / 2 - 230);
-        }
-
-
-        var game_name = $("<div />").html($(jackpop_xml).find("resp").find("items").find("item:eq(" + jackpop_position + ")").attr("game_name"));
-        game_name.find("br").remove();
-
-        var sentence = "[username] won [cur] [amt] in [game]";
-
-        switch (lang) {
-            case "id-id": sentence = "[username] menang [cur] [amt] di [game]"; break;
-            case "km-kh": sentence = "[username] បានឈ្នះ [cur] [amt] នៅក្នុង [game]"; break;
-            case "ko-kr": sentence = "[game]에서 [username] 이 [cur] [amt] 당첨되셨습니다"; break;
-            case "th-th": sentence = "[username] ชนะ [cur] [amt] ใน [game]"; break;
-            case "vi-vn": sentence = "[username] đã thắng [cur] [amt] trong [game]"; break;
-            case "zh-cn": sentence = "[username] 赢得 [cur] [amt] 在 [game]"; break;
-            default: break;
-        }
-
-        jackpop.append($("<div />").addClass("jackpot_content")
-			.append($("<table />")
-			.append($("<tr />")
-			.append($("<td />").addClass("dinpro").html(sentence
-			.replace("[username]", $(jackpop_xml).find("resp").find("items").find("item:eq(" + jackpop_position + ")").attr("user_name"))
-			.replace("[cur]", $(jackpop_xml).find("resp").find("items").find("item:eq(" + jackpop_position + ")").attr("currency"))
-			.replace("[amt]", $(jackpop_xml).find("resp").find("items").find("item:eq(" + jackpop_position + ")").attr("amount"))
-			.replace("[game]", game_name.html()))))));
-
-        var link = $("<a />").attr("href", $(jackpop_xml).find("resp").find("items").find("item:eq(" + jackpop_position + ")").attr("link"))
-			.append(jackpop).hide().appendTo("body").fadeIn();
-
-        jackpop_position++;
-
-        setTimeout(function () {
-            $("div.jackpot_popup").fadeOut(function () {
-                $(this).parent().remove();
-            });
-            setTimeout(function () { loop_jackpop(); }, 10000);
-        }, 5000);
-    }
-}
-
-; (function ($) {
-    $.fn.unveil = function (threshold, callback) {
-        var $w = $(window),
-			th = threshold || 0,
-			retina = window.devicePixelRatio > 1,
-			attrib = retina ? "data-src-retina" : "data-src",
-			images = this,
-			loaded;
-        this.one("unveil", function () {
-            var source = this.getAttribute(attrib);
-            source = source || this.getAttribute("data-src");
-            if (source) {
-                this.setAttribute("src", source);
-                if (typeof callback === "function") callback.call(this);
-            }
-        });
-        function unveil() {
-            var inview = images.filter(function () {
-                var $e = $(this);
-                if ($e.is(":hidden")) return;
-                var wt = $w.scrollTop(),
-					wb = wt + $w.height(),
-					et = $e.offset().top,
-					eb = et + $e.height();
-
-                return eb >= wt - th && et <= wb + th;
-            });
-            loaded = inview.trigger("unveil");
-            images = images.not(loaded);
-        }
-        $w.on("scroll.unveil resize.unveil lookup.unveil", unveil);
-        unveil();
-        return this;
-    };
-})(window.jQuery || window.Zepto);
 
 var load_Mahjong = function (game) {
     if (loginStatus || game == "fun" || game == "howtoplaydomain" || game == "downloaddomain") {
@@ -2372,16 +2233,7 @@ moveMarqueeLeft = function () {
     }
 }
 
-img_unveil = function () {
-    $(window).off("scroll.unveil resize.unveil lookup.unveil");
-    $("img[src*='/_static/img/blank.png']:not([data-src=''])").unveil();
-    $("img[src*='/_static/_css/img/loading.gif']:not([data-src=''])").unveil();
-}
 
-$(function () {
-    img_unveil();
-    $(window).trigger("scroll");
-});
 
 
 create_bravado_game = function (detailed, club) {

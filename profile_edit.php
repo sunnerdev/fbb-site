@@ -7,7 +7,7 @@ if($_SESSION['refresh_token']=='')
 }
 ?>
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://w3.org/1999/xhtml">
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 
 <head>
@@ -26,7 +26,6 @@ if($_SESSION['refresh_token']=='')
 <body class="account grey">
 <?php include('common/module/header.php'); ?>
 <?php include('common/module/menu.php'); ?>
-<?php include('common/module/loginframe.php'); ?>
 <?php include('common/module/modalFrame.php'); ?>
 
 
@@ -43,17 +42,14 @@ if($_SESSION['refresh_token']=='')
                         <div class="account_safety_info">
                             <div class="info_1"><span class="title">ระดับความปลอดภัยของบัญชี:</span> <span class="safe_level">การตรวจสอบบางส่วน</span></div>
                             <div class="info_2">
-                                <a id="account_safety_registered" class="as_logo_registered" data-container="body" data-class="account_safe" data-html="true" data-toggle="popover" data-placement="top" data-trigger="hover" title="" data-content="อัพเดท  &quot;ข้อมูลส่วนตัว &quot;เพื่อเพิ่มระดับความปลอดภัยให้บัญชีของคุณ และรับเลยทันทีเงินเดิมพันฟรี <span class='blue'>[cur] [amt]</span>" data-content-normal="อัพเดทโปรไฟล์" href="https://<?php echo $headers['Host']; ?>/Profile/Edit.aspx" data-original-title=""></a>
-                                <a id="account_safety_bank_details" class="as_logo_bank_details_on" data-container="body" data-class="account_safe" data-html="true" data-toggle="popover" data-placement="top" data-trigger="hover" title="" data-content="อัพเดท &quot;รายละเอียดธนาคาร&quot; เพื่อการ ฝาก-ถอนที่รวดเร็วยิ่งขึ้น" href="https://<?php echo $headers['Host']; ?>/View/BankingDetails.aspx" target="_self" data-original-title=""></a>
-                                <a id="account_safety_phone" class="as_logo_phone_on" data-container="body" data-class="account_safe" data-html="true" data-toggle="popover" data-placement="top" data-trigger="hover" title="" data-content="ตรวจสอบ  &quot;หมายเลขโทรศัพท์ &quot; เพื่อเพิ่มระดับความปลอดภัยให้บัญชีของคุณ และรับเลยทันทีเงินเดิมพันฟรี <span class='blue'>[cur] [amt]</span>" data-content-done="เบอร์ติดต่อถูกต้อง" data-content-claim="ตรวจสอบ &quot;เบอร์ติดต่อของคุณ&quot; ที่มีระดับความปลอดภัยสูง" href="javascript:void(0);" data-original-title=""></a>
-                                <a id="account_safety_email" class="as_logo_email" data-container="body" data-class="account_safe" data-html="true" data-toggle="popover" data-placement="top" data-trigger="hover" title="" data-content="ตรวจสอบ  &quot;อีเมล์ &quot; เพื่อเพิ่มระดับความปลอดภัยให้บัญชีของคุณ และรับเลยทันทีเงินเดิมพันฟรี<span class='blue'> [cur] [amt]</span>" data-content-done="อีเมลถูกต้อง" data-content-claim="ตรวจสอบ &quot;ที่อยู่อิเมลล์ของคุณ&quot; ที่มีระดับความปลอดภัยสูง" href="javascript:popupVerify('https://<?php echo $headers['Host']; ?>/Safety/EmailVerification.aspx', 'กด&quot;ส่งรหัสยืนยัน&quot;เพื่อนยืนยันอีเมลล์แอดเดรสของคุณ.&quot;[contact_or_email]&quot;', 'su*********2@gmail.com');" data-original-title=""></a>
+                               
                             </div>
                         </div>
                     </div>
                     <div class="vip_logo_divider float hide"></div>
                     <div class="account_safety float">
                         <div class="account_safety_percentage">
-                            <a href="https://www.<?php echo $headers['Host']; ?>/VIP/Levels.aspx" target="_blank"></a>
+                            <a href="https://<?php echo $headers['Host']; ?>/VIP/Levels.aspx" target="_blank"></a>
                         </div>
                         <div class="account_safety_info">
                             <div class="">คุณมี<a href="https://<?php echo $headers['Host']; ?>/message/inbox.aspx" id="private_message1" style="font-size:14px;color:red;"><span style="font-size:14px">0</span> ข้อความใหม่</a>จากเรา</div>
@@ -84,13 +80,13 @@ if($_SESSION['refresh_token']=='')
 					<div class="float">
 						<ul class="account_menu">
 							
-							<li><a class="" href="#" onclick="doPopUpDetail('https://fundtransfer.<?php echo $headers['Host']; ?>');">ย้ายเงิน</a></li>
+							<li><a class="" href="#" onclick="doPopUpDetail('https://<?php echo $headers['Host']; ?>');">ย้ายเงิน</a></li>
                             <li><a class=" " href="#" onclick="doPopUpDetail('https://<?php echo $headers['Host']; ?>/view/DepositDefault.aspx');">ฝาก</a></li>
 							
 								<li><a class=" " href="#" onclick="doPopUpDetail('https://<?php echo $headers['Host']; ?>/view/withdrawal/BankTransfer.aspx');">ถอน</a></li>                            
 							
                             
-                            <li><a class=" " href="#" onclick="doPopUpDetail('https://fundtransfer.<?php echo $headers['Host']; ?>/ClaimPromo.aspx');">รับฟรีเดิมพัน</a></li>
+                            <li><a class=" " href="#" onclick="doPopUpDetail('https://<?php echo $headers['Host']; ?>/ClaimPromo.aspx');">รับฟรีเดิมพัน</a></li>
 		 
 								<li><a class=" " href="#" onclick="doPopUpDetail('https://<?php echo $headers['Host']; ?>/history/depositwithdrawal.aspx');">ประวัติ</a></li>
 							
@@ -110,260 +106,29 @@ if($_SESSION['refresh_token']=='')
 	<div class="history_sub_menu_container">
 		<ul class="history_sub_menu">
 			<li class="hide">ข้อมูลส่วนตัว: </li>		
-			<li style="margin-left: 20px;"><a href="https://<?php echo $headers['Host']; ?>/Profile/edit.aspx" class="hover">แก้ไข</a></li>
-			<li><a href="https://<?php echo $headers['Host']; ?>/Profile/Address.aspx">ที่อยู่ในการจัดส่ง</a></li>
-            <li><a href="https://<?php echo $headers['Host']; ?>/Profile/ChangePassword.aspx">เปลี่ยนรหัสผ่าน</a></li>
-			<li><a href="https://<?php echo $headers['Host']; ?>/View/BankingDetails.aspx">ข้อมูลธนาคาร</a></li>
-			<li><a href="https://<?php echo $headers['Host']; ?>/Message/Inbox.aspx">ข้อความ</a></li>
-			<li class="hide"><a href="https://<?php echo $headers['Host']; ?>/VIP/">โปรแกรม VIP</a></li>
-			<li><a href="https://<?php echo $headers['Host']; ?>/History/Rebate.aspx">เงินคืน / เงินคืนแคชแบ็ค
-</a></li>
-			
+			<li style="margin-left: 20px;">
+				<a href="https://<?php echo $headers['Host']; ?>/profile_edit.php" <?php echo ($_GET['route']==''?'class="hover"':''); ?>>แก้ไข</a></li>
+            <li>
+				<a href="https://<?php echo $headers['Host']; ?>/profile_edit.php?route=changepassword" <?php echo ($_GET['route']=='changepassword'?'class="hover"':''); ?>>เปลี่ยนรหัสผ่าน</a>
+			</li>
+			<li>
+				<a href="https://<?php echo $headers['Host']; ?>/profile_edit.php?route=bankingdetails" <?php echo ($_GET['route']=='bankingdetails'?'class="hover"':''); ?>>ข้อมูลธนาคาร</a>
+			</li>
 		</ul>
 		<div class="clear"></div>
 	</div>
 	<div class="history_sub_menu_container_divider">&nbsp;</div>
 	
-	<div class="history">
-		<div class="wrap">
-			<div class="clear">จำเป็นต้องกรอกข้อมูลส่วนนี้</div>
-			<table class="form float" cellpadding="0" cellspacing="0">
-				<colgroup>
-					<col style="width: 125px;">
-					<col style="width: 5px;">
-					<col style="width: 145px;">
-					<col style="width: 20px;">
-					<col style="width: 100px;">
-				</colgroup>
-				<tbody><tr class="text">
-					<td class="right"> อีเมล์ </td>
-					<td class="red">&nbsp;</td>
-					<td class="validate_input">
-						<span id="ctl00_ctl00_master_ContentPlaceHolder2_ContentPlaceHolder2_email_display" disabled="disabled">su*********2@gmail.com</span>
-						<input name="ctl00$ctl00$master_ContentPlaceHolder2$ContentPlaceHolder2$email" type="hidden" id="ctl00_ctl00_master_ContentPlaceHolder2_ContentPlaceHolder2_email" data-msg-default="กรุณากรอกอีเมล์ของท่าน" value="dsd/k5ySz/GdpKqKGSohCk/3lYUhcxs4XM24QNYsOaxl0rRonW28QYFqrwj2wQMx">
-					</td>
-					<td class="validate_icon">&nbsp;</td>
-					<td></td>
-				</tr>
-				<tr class="text">
-					<td class="right">หมายเลขโทรศัพท์ที่ติดต่อได้สะดวก </td>
-					<td class="red">&nbsp;</td>
-					<td class="validate_input">+<span id="ctl00_ctl00_master_ContentPlaceHolder2_ContentPlaceHolder2_contact_no_display" class="required contact_no">66-****12226</span>
-						<input name="ctl00$ctl00$master_ContentPlaceHolder2$ContentPlaceHolder2$contact_no" type="hidden" id="ctl00_ctl00_master_ContentPlaceHolder2_ContentPlaceHolder2_contact_no" data-msg-default="กรุณากรอกหมายเลขโทรศัพท์ของท่าน" value="4aG9PZzypJcEF9GBlZrZwkOvRLXXrPVEvW0iT/9n0T0=">
-					</td>
-					<td class="validate_icon">&nbsp;</td>
-					<td></td>
-				</tr>
-				<tr class="text">
-					<td class="right">ชื่อผู้ใช้งาน </td>
-					<td class="red">&nbsp;</td>
-					<td class="validate_input">
-						<span id="ctl00_ctl00_master_ContentPlaceHolder2_ContentPlaceHolder2_username" disabled="disabled" class="required">Sunner88</span>
-					</td>
-					<td class="validate_icon">&nbsp;</td>
-					<td></td>
-				</tr>
-				
-			</tbody></table>
-			<table class="form float" cellpadding="0" cellspacing="0">
-				<colgroup>
-					<col style="width: 100px;">
-					<col style="width: 5px;">
-					<col style="width: 145px;">
-					<col style="width: 20px;">
-					<col style="width: 100px;">
-				</colgroup>
-				
-				<tbody><tr>
-					<td class="right">ชื่อเต็ม </td>
-					<td class="red">&nbsp;</td>
-					<td class="validate_input">
-						<span id="ctl00_ctl00_master_ContentPlaceHolder2_ContentPlaceHolder2_first_name" class="required" data-msg-default="กรุณากรอกชื่อของท่านเท่านั้น <br /> รายการของบัตร, เช็ค และการโอนเงิน สามารถดำเนินการได้หากชื่อตรงกับบัญชีผู้ใช้งาน">สุริยา ส่องแสง </span>
-					</td>
-					<td class="validate_icon">&nbsp;</td>
-					<td></td>
-				</tr>
-				<tr class="hide">
-					<td class="right">สกุล </td>
-					<td class="red">&nbsp;</td>
-					<td class="validate_input">
-						<span id="ctl00_ctl00_master_ContentPlaceHolder2_ContentPlaceHolder2_last_name" class="required" data-msg-default="กรุณากรอกนามสกุลของท่านเท่านั้น <br /> รายการของบัตร, เช็ค และการโอนเงิน สามารถดำเนินการได้หากชื่อสกุลตรงกับบัญชีผู้ใช้งาน"></span>
+	<?php
+	if($_GET['route']==''){
+		include('common/module/profile_edit.php');
+	}else if($_GET['route']=='changepassword'){
+		include('common/module/profile_changepassword.php');
+	}else if($_GET['route']=='bankingdetails'){
+		include('common/module/profile_bankingdetails.php');
+	}
 
-					</td>
-					<td class="validate_icon">&nbsp;</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td class="right">วัน เดือน ปี เกิด </td>
-					<td class="red">&nbsp;</td>
-					<td class="validate_input">
-						<span id="ctl00_ctl00_master_ContentPlaceHolder2_ContentPlaceHolder2_dob">20/09/1991</span>
-						
-					</td>
-					<td class="validate_icon">&nbsp;</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td class="right"> เพศ </td>
-					<td class="red">*</td>
-					<td class="validate_input">
-                        
-						ชาย
-					</td>
-					<td class="validate_icon">&nbsp;</td>
-					<td></td>
-				</tr>
-			</tbody></table>
-			<div class="clear"></div>
-			<hr class="clear">
-			<table class="form float" cellpadding="0" cellspacing="0">
-				<colgroup>
-					<col style="width: 100px;">
-					<col style="width: 5px;">
-					<col style="width: 145px;">
-					<col style="width: 20px;">
-					<col style="width: 100px;">
-				</colgroup>
-				<tbody><tr class="hide">
-					<td class="right">ที่อยู่ </td>
-					<td class="red"></td>
-					<td class="validate_input">
-						<textarea name="ctl00$ctl00$master_ContentPlaceHolder2$ContentPlaceHolder2$address" rows="2" cols="20" id="ctl00_ctl00_master_ContentPlaceHolder2_ContentPlaceHolder2_address" data-msg-default="กรุณากรอกที่อยู่ของท่าน">TH</textarea></td>
-					<td class="validate_icon">&nbsp;</td>
-					<td></td>
-				</tr>
-				<tr class="hide">
-					<td class="right">เมือง </td>
-					<td class="red"></td>
-					<td class="validate_input">
-						<input name="ctl00$ctl00$master_ContentPlaceHolder2$ContentPlaceHolder2$city" type="text" value="TH" id="ctl00_ctl00_master_ContentPlaceHolder2_ContentPlaceHolder2_city" data-msg-default="กรุณากรอกชื่อเมือง"></td>
-					<td class="validate_icon">&nbsp;</td>
-					<td></td>
-				</tr>
-				<tr class="hide">
-					<td class="right">รหัสไปรษณีย์ </td>
-					<td class="red">*</td>
-					<td class="validate_input">
-						<input name="ctl00$ctl00$master_ContentPlaceHolder2$ContentPlaceHolder2$postal" type="text" value="000000" id="ctl00_ctl00_master_ContentPlaceHolder2_ContentPlaceHolder2_postal" class="required" data-msg-default="กรุณากรอกรหัสเมือง"></td>
-					<td class="validate_icon">&nbsp;</td>
-					<td></td>
-				</tr>
-				<tr class="text hide">
-					<td class="right">ประเทศ </td>
-					<td class="red"></td>
-					<td class="validate_input">
-						<span id="ctl00_ctl00_master_ContentPlaceHolder2_ContentPlaceHolder2_lbl_country">TH</span>
-					</td>
-					<td class="validate_icon">&nbsp;</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td class="right">ภาษา </td>
-					<td class="red">*</td>
-					<td class="validate_input">
-                        <div class="select" style="width: 140px;"><select name="ctl00$ctl00$master_ContentPlaceHolder2$ContentPlaceHolder2$language" id="language" cssclas="required" data-msg-default="กรุณาเลือกภาษาที่ท่านต้องการ" class="select-hidden">
-	<option value="en-us">English</option>
-	<option value="zh-cn">简体中文</option>
-	<option value="id-id">Bhs Indonesia</option>
-	<option value="km-kh">Khmer</option>
-	<option value="ko-kr">한국어</option>
-	<option selected="selected" value="th-th">ไทย</option>
-	<option value="vi-vn">Tiếng Việt</option>
-
-</select><div class="select-styled" cssclas="required" data-msg-default="กรุณาเลือกภาษาที่ท่านต้องการ">ไทย</div><ul class="select-options"><li rel="en-us">English</li><li rel="zh-cn">简体中文</li><li rel="id-id">Bhs Indonesia</li><li rel="km-kh">Khmer</li><li rel="ko-kr">한국어</li><li rel="th-th">ไทย</li><li rel="vi-vn">Tiếng Việt</li></ul><i class="arrow"></i></div>
-					</td>
-					<td class="validate_icon">&nbsp;</td>
-					<td></td>
-				</tr>
-				<tr class="text">
-					<td class="right">ประเภทอัตราต่อรอง </td>
-					<td class="red">*</td>
-					<td class="validate_input">
-                        <div class="select" style="width: 140px;"><select name="ctl00$ctl00$master_ContentPlaceHolder2$ContentPlaceHolder2$odds" id="odds" cssclas="required" data-msg-default="Please enter odds" class="select-hidden">
-	<option selected="selected" value="1">มาเลย์</option>
-	<option value="2">ฮ่องกง</option>
-	<option value="3">เดซิมอล</option>
-	<option value="4">อินโด</option>
-	<option value="5">อเมริกา</option>
-
-</select><div class="select-styled" cssclas="required" data-msg-default="Please enter odds">มาเลย์</div><ul class="select-options"><li rel="1">มาเลย์</li><li rel="2">ฮ่องกง</li><li rel="3">เดซิมอล</li><li rel="4">อินโด</li><li rel="5">อเมริกา</li></ul><i class="arrow"></i></div>
-					</td>
-					<td class="validate_icon">&nbsp;</td>
-					<td></td>
-				</tr>
-				<tr class="text">
-					<td class="right">สกุลเงิน </td>
-					<td class="red">&nbsp;</td>
-					<td class="validate_input">
-						<span id="ctl00_ctl00_master_ContentPlaceHolder2_ContentPlaceHolder2_currency">บาท</span>
-					</td>
-					<td class="validate_icon">&nbsp;</td>
-					<td></td>
-				</tr>
-			</tbody></table>
-
-			<table class="form float" cellpadding="0" cellspacing="0">
-				<colgroup>
-					<col style="width: 100px;">
-					<col style="width: 5px;">
-					<col style="width: 145px;">
-					<col style="width: 20px;">
-					<col style="width: 100px;">
-				</colgroup>
-				<tbody><tr>
-					<td class="right"> คำถามเพื่อรักษาความปลอดภัย</td>
-					<td class="red">*</td>
-					<td class="validate_input">
-                        <div class="select" style="width: 140px;"><select name="ctl00$ctl00$master_ContentPlaceHolder2$ContentPlaceHolder2$security_question" id="security_question" class="required select-hidden" cssclas="required" data-msg-default=" กรุณาเลือกคำถามเพื่อรักษาความปลอดภัย">
-	<option selected="selected" value="">กรุณาเลือกคำถาม</option>
-	<option value="1">ชื่อกลางของมารดาคุณคือ?</option>
-	<option value="2">ชื่อเล่น หรือฉายาของคุณในวัยเด็กคือ?</option>
-	<option value="3">ความฝันในวัยเด็กของคุณคือ ?</option>
-	<option value="4">ชื่อเมือง หรือจังหวัดที่ท่านเริ่มทำงานครั้งแรกคือ?</option>
-	<option value="5">ชื่อโรงเรียนแรกที่คุณเข้าเรียนคือ?</option>
-	<option value="6">ชื่อกลางของบิดาคุณคือ?</option>
-
-</select><div class="select-styled" cssclas="required" data-msg-default=" กรุณาเลือกคำถามเพื่อรักษาความปลอดภัย">กรุณาเลือกคำถาม</div><ul class="select-options"><li rel="">กรุณาเลือกคำถาม</li><li rel="1">ชื่อกลางของมารดาคุณคือ?</li><li rel="2">ชื่อเล่น หรือฉายาของคุณในวัยเด็กคือ?</li><li rel="3">ความฝันในวัยเด็กของคุณคือ ?</li><li rel="4">ชื่อเมือง หรือจังหวัดที่ท่านเริ่มทำงานครั้งแรกคือ?</li><li rel="5">ชื่อโรงเรียนแรกที่คุณเข้าเรียนคือ?</li><li rel="6">ชื่อกลางของบิดาคุณคือ?</li></ul><i class="arrow"></i></div>
-					</td>
-					<td class="validate_icon"></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td class="right">คำตอบเพื่อรักษาความปลอดภัย</td>
-					<td class="red">*</td>
-					<td class="validate_input">
-                        <input name="ctl00$ctl00$master_ContentPlaceHolder2$ContentPlaceHolder2$security_answer" type="text" id="security_answer" class="required" data-msg-default="กรุณากรอกคำตอบเพื่อรักษาความปลอดภัย" data-default="">
-                        <input name="ctl00$ctl00$master_ContentPlaceHolder2$ContentPlaceHolder2$sec_answer1" type="hidden" id="ctl00_ctl00_master_ContentPlaceHolder2_ContentPlaceHolder2_sec_answer1">
-                        <input name="ctl00$ctl00$master_ContentPlaceHolder2$ContentPlaceHolder2$security_answer_hash" type="hidden" id="ctl00_ctl00_master_ContentPlaceHolder2_ContentPlaceHolder2_security_answer_hash" value="NQvbvph02jOQ53HLGitGXA==">
-                        <input name="ctl00$ctl00$master_ContentPlaceHolder2$ContentPlaceHolder2$security_answer_dummy" type="hidden" id="ctl00_ctl00_master_ContentPlaceHolder2_ContentPlaceHolder2_security_answer_dummy">
-					</td>
-					<td class="validate_icon"></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td class="right">รหัสผ่าน </td>
-					<td class="red">*</td>
-					<td class="validate_input">
-                        <input name="ctl00$ctl00$master_ContentPlaceHolder2$ContentPlaceHolder2$password" type="password" id="password" class="required" data-msg-default="กรุณากรอกรหัสผ่านของท่าน">
-					</td>
-					<td class="validate_icon">&nbsp;</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td class="right"></td>
-					<td class="red"></td>
-					<td class="validate_input">
-                        <input type="button" id="btnSubmit" style="position: absolute; left: -9999px; width: 1px; height: 1px;">
-                        <a href="#" class="button center dinpro" onclick="doUpdate(event)">ยืนยัน
-                        </a>
-                    </td>
-					<td class="validate_icon">&nbsp;</td>
-					<td></td>
-				</tr>
-			</tbody></table>
-			<div class="clear"></div>
-		</div>
-	</div>
+	?>
 
 
 			</div>
