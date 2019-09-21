@@ -1,0 +1,3236 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from www.w88bkk.com/_secure/register.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 18 Feb 2019 22:24:14 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head><title>
+	Đăng Ký Ngay
+</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="content-language" content="kh,th,zh">
+<meta charset="UTF-8">
+<meta name="google-site-verification" content="3EtGwmEfdo_19Qcvcy-GPxwkYzbiMDGiEbX6-YGHcsE">
+
+<link rel="shortcut icon" href="../_static/_css/img/favicon.ico" type="image/x-icon">
+
+<link href="../_static/_css/custom-theme/jquery-ui.min.css" rel="stylesheet">
+<link href="../_static/_css/bootstrap/bootstrap.min.css" rel="stylesheet">
+<!--[if IE 7]>
+<link href="/_static/_css/bootstrap/bootstrap-ie7.css" rel="stylesheet" />
+<![endif]-->
+<!--[if IE 6]>
+<link href="/_static/_css/bootstrap/bootstrap-ie6.css" rel="stylesheet" />
+<![endif]-->
+<link href="../_static/_css/Main953c.css?0.0.274" rel="stylesheet">
+<link href="../_static/_css/sprite953c.css?0.0.274" rel="stylesheet">
+<link href="../_static/_css/Main.vi-vnf6ac.css?20190116" rel="stylesheet">
+<link href="../_static/_css/jquery.linkselect/jquery.linkselect.style.select.css" rel="stylesheet">
+<!-- CSS for New Custom Select Box -->
+<link rel="stylesheet" href="../_static/_css/custom.selectbox.css">
+
+<!--[if IE 6]>
+<link href="/_static/_css/IE6.css" rel="stylesheet" />
+<script src="/_static/_css/ie6png/iepngfix_tilebg.js"></script>
+<script src="/_static/_script/jquery.ie6MultipleClass.min.js"></script>
+<![endif]-->
+<script src="../_static/_script/combined.js"></script>
+<script src="../_static/_script/jquery.linkselect.min.js"></script>
+<script src="../_static/_script/jquery.carouFredSel.js"></script>
+<!-- JS for New Custom Select Box -->
+<script type="text/javascript" src="../_static/js/custom.selectbox.js"></script>
+<script src="../_static/_script/jquery.idle.js"></script>
+<script src="../_static/_script/main953c.js?0.0.274"></script>
+
+<script>
+	$.extend(jQuery.validator.messages, {
+		required: "Thông tin bắt buộc",
+    	remote: "Vui lòng nhập mã số xác nhận hoặc làm mới để lấy mã số xác nhận mới",
+    	email: "Vui lòng nhập email hợp lệ",
+    	url: "Please enter a valid URL.",
+    	date: "Vui lòng nhập ngày hợp lệ",
+        dateISO: "Please enter a valid date (ISO).",
+        number: "Vui lòng nhập mã số hợp lệ",
+        digits: "Vui lòng chỉ nhập số ",
+    	creditcard: "Please enter a valid credit card number.",
+    	equalTo: "Vui lòng nhập giá trị tương ứng",
+        accept: "Please enter a value with a valid extension.",
+        maxlength: jQuery.validator.format("Vui lòng không nhập nhiều hơn {0} ký tự"),
+        minlength: jQuery.validator.format("Vui lòng nhập tối thiểu  {0} ký tự"),
+    	rangelength: jQuery.validator.format("Vui lòng nhập giá trị giữa {0} và {1} độ dài các ký tự "),
+    	range: jQuery.validator.format("Vui lòng nhập giá trị giữa {0} và {1}"),
+    	max: jQuery.validator.format("Vui lòngnhập giá trị nhỏ hơn hoặc bằng {0}"),
+    	min: jQuery.validator.format("Vui lòng nhập giá trị lớn hơn hoặc bằng {0}.")
+    });
+
+    $.validator.addMethod("alpha_numeric", function (value, element) {
+    	return this.optional(element) || /^[a-z0-9]+$/i.test(value);
+    }, "Tên đăng nhập có thể chứa ký tự chữ cái, chữ số");
+
+    $.validator.addMethod("not_watermark", function (value, element) {
+    	return ($(element).attr("data-watermark"))?value != $(element).attr("data-watermark"): true;
+    }, jQuery.validator.messages.required);
+</script>
+<script>
+	loginStatus_bool = false;
+	vip_bool = false;
+	lang = "vi-vn";
+	lottery_domain = "https://lottery.w88bkk.com";
+	info_domain = "https://info.w88bkk.com";
+	domain_www = "https://www.w88bkk.com";
+	
+	var isWrapper = false;
+</script>
+<script>
+	$(function () {
+		try {
+
+	        $("select.to-custom-select").toCustomSelectBox();
+
+			if (!($.browser.msie && $.browser.version == 6)) {
+				$("select:not(.to-custom-select)").addClass("selectbox");
+				$("select.selectbox").linkselect({ style: "selectbox", fixedWidth: true });
+			}
+		} catch (e) {}
+	});
+</script>
+
+
+
+
+<script type="text/javascript">
+    var insightsKey = '87e50c5d-ec11-4039-b034-211ab3d20535';
+    var appInsights=window.appInsights||function(a){
+        function b(a){c[a]=function(){var b=arguments;c.queue.push(function(){c[a].apply(c,b)})}}var c={config:a},d=document,e=window;setTimeout(function(){var b=d.createElement("script");b.src=a.url||"https://az416426.vo.msecnd.net/scripts/a/ai.0.js",d.getElementsByTagName("script")[0].parentNode.appendChild(b)});try{c.cookie=d.cookie}catch(a){}c.queue=[];for(var f=["Event","Exception","Metric","PageView","Trace","Dependency"];f.length;)b("track"+f.pop());if(b("setAuthenticatedUserContext"),b("clearAuthenticatedUserContext"),b("startTrackEvent"),b("stopTrackEvent"),b("startTrackPage"),b("stopTrackPage"),b("flush"),!a.disableExceptionTracking){f="onerror",b("_"+f);var g=e[f];e[f]=function(a,b,d,e,h){var i=g&&g(a,b,d,e,h);return!0!==i&&c["_"+f](a,b,d,e,h),i}}return c
+    }({
+        instrumentationKey: insightsKey,
+        maxAjaxCallsPerView: 10
+    });
+    
+    window.appInsights = appInsights, appInsights.queue && 0 === appInsights.queue.length && appInsights.trackPageView();
+
+    window.appInsights.config.disableTelemetry = false;
+</script>
+
+<script type="text/javascript">
+    window.tkn = "";
+    window.ftkn = "dkZVdk1RQjVLVGlXUUlONzBhTGxsOWxFYVY0U29HQWNyS1BuYTF3ZlJTQUl3emt3dVBDVkExa2lHY0RkbkJJU2FNdzNxcy9MaVlqZzhweFFBRThZU1BtajdJekJoeEo4eWZvWGJ2T3V0VTVrY1NCdTdwNUUwblRaZjNpTjBKbDJ5bDhmam9YdUN6NTRONzRxcUtxOVRtNm5nSk1yaFhiT2cwcVBpY0xPMEJRPQ==";
+
+    var getToken = function () {
+        return this.tkn || window.tkn;
+    };
+</script>
+
+<!-- Don't inherit or use this component when you already use meta.ascx -->
+
+<style>
+	.headerLogo .sprite_logo, .headerLogo .sprite_logo.zh-cn,
+    .headerContent .sprite_logo, .headerContent .sprite_logo.zh-cn {
+		background: url('../_static/_event/2019/W88-Logo-Header-CNY2019-black-EN.png') 0 0 no-repeat;
+		width: 500px;
+		height: 80px;
+		position: absolute;
+		margin: 0;        
+        margin-left: -48px;
+	}
+    .headerLogo .sprite_logo.zh-cn,
+    .headerContent .sprite_logo.zh-cn {
+        width: 515px;
+        margin-left: -60px;
+    }
+
+    /*.headerLogo .sprite_logo.th-th {
+        background: url('/_static/_event/2018LoyKrathong/W88-Loy-Krathong-Header-gray-TH.png') 0 0 no-repeat;
+        margin-left: -104px;
+    }*/
+</style>
+	<style>
+		.headerContent, .mainContent, .footercontent, .menuContent, div.centralized {
+			width: 960px !important;
+		}
+
+		.form {
+			width: 100%;
+			margin: 0px auto;
+			border-collapse: separate;
+			border-spacing: 5px 8px;
+			*border-collapse: collapse;
+			vertical-align: top;
+		}
+
+			.form thead td {
+				height: 0;
+			}
+
+		.noborderspacing {
+			border-spacing: 0;
+		}
+
+		.form tbody {
+			height: auto;
+		}
+
+		td.validate_input, td.right {
+			line-height: 22px;
+		}
+
+		.form input[type="text"], input[type="password"], select {
+			width: 210px;
+		}
+
+		a.selectbox-link, .selectbox-container {
+			max-width: 210px;
+		}
+
+		select {
+			width: 210px;
+		}
+
+		#contact_no {
+			width: 125px;
+		}
+
+		#contact_no_country {
+			width: 40px;
+		}
+
+		/*input#captcha {
+			width: 95px;
+		}*/
+
+		span, span * {
+			line-height: normal;
+		}
+
+		select#year {
+			width: 60px;
+		}
+
+		select#month {
+			width: 85px;
+		}
+
+		select#day {
+			width: 45px;
+		}
+
+        .footer-image {
+            margin-bottom: 15px;
+        }
+	</style>
+	<!--[if IE 6]>
+	<style>
+		select {
+			width: 205px;
+		}
+		select#year {
+			width: 60px;
+		}
+		select#month {
+			width: 85px;
+		}
+		select#day {
+			width: 45px;
+		}
+		select#contact_no_country{
+		width: 55px !important;
+		}
+	</style>
+	<![endif]-->
+	<style>
+		.tab-content-wrap {
+			margin-top: 8px;
+			border: 1px solid #2a8fbd;
+			padding: 10px;
+			overflow: visible;
+			line-height: normal !important;
+			max-height: 25px;
+			text-align: right;
+		}
+
+		hr.special {
+			border-top: 1px solid #1F1F1F;
+		}
+
+		.contact_option {
+			text-align: right;
+			height: 21px;
+			padding: 0;
+			margin: 0;
+		}
+
+		.contact_option li {
+			float: right;
+		}
+
+		.contact_option li a {
+			width: auto;
+			height: auto;
+		}
+
+		.contact_method_wrap {
+			width: 100%;
+			margin: 0 auto;
+		}
+
+		.contact_option li.active:before, .contact_option li.active .before {
+			margin-left: -9px;
+		}
+
+		.contact_option li.active:after, .contact_option li.active .after {
+			bottom: -9px;
+			margin-left: -7px;
+		}
+
+		body.white .contact_option li.active:after, body.white .contact_option li.active .after {
+			border-color: #fff transparent;
+		}
+
+		body {
+			position: relative;
+		}
+
+		body.white .tab-content-wrap {
+			border: 1px solid #38c0ff;
+		}
+
+		div.progressBar {
+			height: 100%;
+			width: 100%;
+		}
+
+		div.internal_wrap {
+			position: relative;
+		}
+		/*left promo*/
+		div.left_side_promo {
+			position: absolute;
+			width: 271px;
+			top: 10px;
+			left: 0px;
+			border: 1px solid #2a8fbd;
+			padding: 18px 12px;
+			background: #1f1f1f;
+		}
+
+		body.white div.left_side_promo {
+			background: #eee;
+		}
+
+		div.left_side_promo ul li {
+			margin-top: 10px;
+		}
+
+		.white_size_20px {
+			font-size: 20px;
+		}
+
+		i.sprite_info {
+			background-position: 0 0;
+			background-image: url("../_static/_css/img/icon_info.png");
+			background-repeat: no-repeat;
+			width: 16px;
+			height: 16px;
+			display: inline-block;
+			vertical-align: middle;
+			padding: 0 1px;
+		}
+
+		div.success.grey {
+			border-color: #808080;
+		}
+
+		div.success.grey:after {
+			content: url('../_static/_css/img/msgbox_join_grey.png');
+			/*left: -6px;*/
+		}
+
+		body.white div.success.grey:after {
+			content: url('../_static/_css/img/msgbox_join_grey.white.png');
+		}
+
+		div.new_pattern {
+			width:640px;
+			margin-left: 320px;
+		}
+	</style>
+	<link href="../_static/_css/register.css" rel="stylesheet">
+
+	<script src="../_static/_script/jquery.linkselect.js"></script>
+	<script>
+	    var getDaysInMonth = function(year, month) {
+	            return new Date(year, month, 0).getDate();
+	        },
+            populateDays = function() {
+                var day = parseInt($('#day').val()),
+                    month = parseInt($('#month').val()),
+                    year = parseInt($('#year').val()),
+                    dt = new Date(year, month, 0, 0),
+                    days = getDaysInMonth(dt.getFullYear(), dt.getMonth() + 1);
+
+                $('#day').linkselect('destroy');
+                $('#day').empty();
+
+                for (var x = 0; x < days; x++)
+                    $('<option />', { value: x + 1, html: x + 1 })
+                        .appendTo($('#day'));
+
+                if (day <= days)
+                    $('#day').val(day);
+
+                $("#day").linkselect({ style: "selectbox", fixedWidth: true });
+            };
+
+		function scorePassword(pass) {
+			var score = 0;
+			if (!pass)
+				return score;
+			// award every unique letter until 5 repetitions
+			var letters = new Object();
+			for (var i = 0; i < pass.length; i++) {
+				letters[pass[i]] = (letters[pass[i]] || 0) + 1;
+				score += 5.0 / letters[pass[i]];
+			}
+			// bonus points for mixing it up
+			var variations = {
+				digits: /\d/.test(pass),
+				lower: /[a-z]/.test(pass),
+				upper: /[A-Z]/.test(pass),
+				nonWords: /\W/.test(pass),
+			}
+			variationCount = 0;
+			for (var check in variations) {
+				variationCount += (variations[check] == true) ? 1 : 0;
+			}
+			score += (variationCount - 1) * 10;
+			return parseInt(score);
+		}
+		function checkPassStrength(pass) {
+			var score = scorePassword(pass);
+			var display_text = "";
+			$(".password").removeClass(function (index, css) {
+				return (css.match(/(^|\s)background_\S+/g) || []).join(' ');
+			});
+			$("#password_score").removeClass(function (index, css) {
+				return (css.match(/(^|\s)color_\S+/g) || []).join(' ');
+			});
+			$("[class^=password_desc]").hide();
+			if (score > 75) {
+				display_text = "Mạnh";
+				$(".password").addClass("background_strong");
+				$("#password_score").addClass("color_strong");
+				$(".password_desc_strong").show();
+			}
+			else if (score > 50) {
+				display_text = "Trung Bình";
+				$(".password:lt(2)").addClass("background_good");
+				$("#password_score").addClass("color_good");
+				$(".password_desc_good").show();
+			}
+				//else if (score > 30) {
+				//	display_text = "Weak";
+				//	$(".password:first").addClass("background_weak");
+				//	$("#password_score").addClass("color_weak");
+				//}
+			else if (score >= 0) {
+				display_text = "Yếu";
+					$(".password:first").addClass("background_weak");
+					$("#password_score").addClass("color_weak");
+					$(".password_desc_weak").show();
+				}
+		    $("#password_score").text(display_text);
+	    }
+
+		$(function(){
+			var placeholdersupported = ('placeholder' in document.createElement("input"));
+			$("input[type='text'],input[type='password']").each(function () {
+				if ($(this).attr("data-watermark") && ($(this).attr("id") != "")) {
+					var watermark = $(this).attr("data-watermark");
+					if (placeholdersupported) {
+						$(this).attr("placeholder", watermark);
+					}
+					else {
+						$(this).blur(function () {
+							if ($(this).val().length == 0) {
+								$(this).val(watermark).addClass('watermark');
+							}
+							if ($(this).attr("id") != "captcha") {
+								$(this).valid();
+							}
+						}).focus(function () {
+							if ($(this).val() == watermark) {
+								$(this).val('').removeClass('watermark');
+							}
+						}).val(watermark).addClass('watermark');
+					}
+				}
+			});
+		});
+
+	    $(document).ready(function () {
+		    $("#password").on("keypress keyup keydown", function () {
+			    //$(this).valid();
+			    var pass = $(this).val();
+			    $("[class^=rule_] i").removeClass("sprite_error").removeClass("sprite_correct").addClass("sprite_error");
+			    if (/^.{6,20}$/.test(pass)) {
+				    $(".rule_length i.sprite_error").removeClass("sprite_error").removeClass("sprite_correct").addClass("sprite_correct");
+			    }
+			    if (!/^\d+$/.test(pass)) {
+				    $(".rule_alphanumeric i.sprite_error").removeClass("sprite_error").removeClass("sprite_correct").addClass("sprite_correct");
+			    }
+			    if (/^\S*$/.test(pass)) {
+				    $(".rule_space i.sprite_error").removeClass("sprite_error").removeClass("sprite_correct").addClass("sprite_correct");
+			    }
+			    $(this).closest("td.validate_input").next("td").next("td").html("");
+			    $("<div>").html($(".rule_checker").html())
+						    .attr("for", $(this).attr("id"))
+						    .addClass('success grey').appendTo($(this).closest("td.validate_input").next("td").next("td"));
+			    if (pass.length > 0) {
+				    $(".password_checker").show();
+				    checkPassStrength(pass);
+			    }
+			    else {
+				    $(".password_checker").hide();
+			    }
+		    });
+	    });
+	    var submitCount = 0;
+
+	    function redirectMyAccount(link) {
+		    try {
+			    window.opener.location.href = link;
+		    } catch (e) {
+			    window.parent.location.href = link;
+		    }
+		    window.close();
+	    }
+
+	    function redirectMyAccountCard() {
+		    if (window.opener != null) {
+			    window.opener.location.reload(true);
+			    location.href = "https://account.w88bkk.com/RegisterSuccess.aspx";
+		    }
+		    else {
+			    window.open('https://account.w88bkk.com/RegisterSuccess.aspx', 'member', 'width=1000,height=650,scrollbars=yes,location=1,resizable=yes');
+			    location.href = '../index.html';
+		    }
+	    }
+
+	    $.validator.addMethod("DateofBirth", function () {
+		    try {
+		        var dt = new Date(),
+                    day = parseInt($('#day').val()),
+                    month = parseInt($('#month').val()),
+                    year = parseInt($('#year').val()),
+                    bday = new Date(year, month - 1, day, 0),
+                    today = new Date(dt.getFullYear(), dt.getMonth(), dt.getDate(), 0);
+		        
+		        $("#year").val(bday.getFullYear());
+		        $("#month").val(bday.getMonth() + 1);
+		        $("#day").val(bday.getDate());
+
+		        return Math.abs(new Date(today - bday).getUTCFullYear() - 1970) < 18
+                    ? false
+                    : true;
+		    } catch (e) {
+			    return false;
+		    }
+	    }, "Quý khách cần trên 18 tuổi theo độ tuổi được pháp luật cho phép");
+
+	    $.validator.addMethod("PasswordScore", function () {
+		    try {
+			    var score = scorePassword($("#password").val());
+			    if (score > 50)
+				    return true;
+			    else
+				    return false;
+			    return true;
+		    } catch (e) {
+			    return false;
+		    }
+	    }, "Please insert a strong password");
+
+	    $.validator.addMethod("noNumberSpecialCharAllowed", function (value, element) {
+		    return /^[^~@!#$%^&*()+={}|\[\]\\<>?,/:";\d]*$/.test(value);
+	    }, 'Vui lòng điền tên đăng nhập bằng các ký tự abc..., không sử dụng số và các ký hiệu đặc biệt');
+
+	    $.validator.addMethod("nospace", function (value, element) {
+		    return /^\S*$/.test(value);
+	    }, 'Không khoảng cách');
+
+	    $.validator.addMethod("noNumberOnly", function (value, element) {
+			    return !/^\d+$/.test(value);
+	    }, 'Chữ số');
+
+	    $(document).ready(function () {
+		    $('#form1').submit(function () {
+			    submitCount++;
+		    });
+		    $('.contact_option a').hover(function (e) {
+			    e.preventDefault();
+			    $(this).tab('show');
+		    }).click(function () {
+			    window.open($(this).data("link"), $(this).attr("target"));
+		    });
+		    $('#form1 input:not([type="submit"]),#form1 select,a.selectbox-link').bind("focus click", function () {
+			    $(this).closest("td.validate_input").next("td").next("td").html("");
+			    $(this).closest("td.validate_input").next("td").html("");
+			    $("<i >").addClass("sprite_info").appendTo($(this).closest("td.validate_input").next("td"));
+			    $("<div>").append($("<div />").css("padding","10px").html($(this).attr("data-msg-default")))
+			    .attr("for", $(this).attr("id"))
+			    .addClass('success grey').appendTo($(this).closest("td.validate_input").next("td").next("td"));
+			    $("div.error,div.success").hide();
+			    $("div.success:first").show();
+		    }).bind("blur focusout", function () {
+			    $(this).closest("td.validate_input").next("td").next("td").find("div.success").remove();
+			    $(this).closest("td.validate_input").next("td").html("");
+			    $("div.error,div.success").hide();
+			    $("div.error:first").show();
+			    if ($(this).val() || submitCount) {
+				    try { $(this).valid(); } catch (e) { }
+			    }
+			    try { $($(this).attr("href")).valid(); } catch (e) { }
+		    });
+
+		    var isCaptcha = ("False" || "false").toLowerCase(),
+                rules = {
+		            70384: { required: true, noNumberSpecialCharAllowed: true },
+		            //last_name: {required: true},
+		            year: { required: true, DateofBirth: true },
+		            month: { required: true, DateofBirth: true },
+		            day: { required: true, DateofBirth: true },
+		            username: {
+		                required: true,
+		                alpha_numeric: true,
+		                minlength: 5,
+		                maxlength: 16,
+		                remote: {
+		                    url: "/_secure/register.aspx/checkUsername",
+		                    type: "post",
+		                    dataType: "json",
+		                    contentType: "application/json; charset=utf-8"
+		                }
+		            },
+		            email: {
+		                required: true,
+		                email: true,
+		                remote: {
+		                    url: "/_secure/register.aspx/checkEmail",
+		                    type: "post",
+		                    dataType: "json",
+		                    contentType: "application/json; charset=utf-8"
+		                }
+		            },
+		            contact_no: {
+                        required: true,
+                        digits: true,
+                        minlength: 6,
+                        maxlength: 12
+                    },
+		            contact_no_country: { required: true },
+		            currency: { required: true },
+		            country_ddl: { required: true },
+		            password: {
+                        required: true,
+                        minlength: 6,
+                        maxlength: 20,
+                        nospace: true,
+                        noNumberOnly: true
+                        //, PasswordScore: true
+                    },
+		            confirm_password: { equalTo: "#password" },
+		            affiliate_id: { digits: true },
+		            captcha: {
+                        required: true,
+                        remote: {
+                            url: "/_secure/register.aspx/verifyCaptcha",
+                            type: "post",
+                            dataType: "json",
+                            contentType: "application/json; charset=utf-8"
+                        }
+                    }
+                };
+
+	        if (isCaptcha === "false") {
+	            delete rules.captcha;
+	            $('.tr-captcha').remove();
+	        }
+
+		    $("#form1").validate({
+			    //onkeyup: function (element, event) {
+				//    if (event.which === 9 && this.elementValue(element) === "") {
+				//	    return;
+				//    } else {
+				//	    if (element.id != 'captcha') {
+				//		    this.element(element);
+				//	    }
+				//    }
+		        //},
+		        onkeyup: false,
+			    onclick: false,
+			    onfocusin: function(element) { $(element).valid(); },
+			    onfocusout: function(element) { $(element).valid(); },
+			    ignore: "",
+			    rules: rules,
+			    groups: {
+					contactGroup: "contact_no_country contact_no"
+				},
+			    messages: {
+				    username: {
+					    remote: "Tên đăng nhập đã được sử dụng"
+				    },
+				    email: {
+					    remote: "Email đã được sử dụng"
+				    },
+				    contact_no: {
+					    remote: "Số điện thoại đã sử dụng. Vui lòng nhập số điện thoại của Quý khách"
+					},
+				    contact_no_country: {
+					    remote: "Số điện thoại đã sử dụng. Vui lòng nhập số điện thoại của Quý khách"
+					}
+			    },
+			    errorElement: "div",
+			    errorPlacement: function (error, element) {
+				    $(element).closest("td.validate_input").next("td").html("");
+				    $(element).closest("td.validate_input").next("td").next("td").html("");
+				    $("<div>").addClass("error").append($("<div />").css("padding","10px").append(error.removeClass("error").addClass("red bold")).append("<div>" + $(element).attr("data-msg-default") + "</div>")).appendTo($(element).closest("td.validate_input").next("td").next("td"));
+				    $(element).closest("td.validate_input").next("td").html("");
+				    var icon = $("<i>")
+				    .attr("for", element.name)
+				    .addClass('sprite_error').appendTo($(element).closest("td.validate_input").next("td"));
+				    $("div.error,div.success").hide();
+				    $("div.error:first").show();
+			    },
+			    success: function (label, element) {
+				    $(element).closest("td.validate_input").next("td").html("");
+				    $(element).closest("td.validate_input").next("td").next("td").html("");
+				    $("<i>")
+				    .attr("for", $(element).attr("id"))
+				    .addClass('sprite_correct').appendTo($(element).closest("td.validate_input").next("td"));
+			    },
+			    submitHandler: function (form) {
+				    $('button[type=submit], input[type=submit]').prop('disabled', true);
+				    $("div.progressBar").show();
+				    register_get_before_submit(form);
+			    },
+			    invalidHandler: function (f, v) {
+				    $('button[type=submit], input[type=submit]').prop('disabled', false);
+
+			    }
+		    });
+	    });
+		
+		function register_get_before_submit(form) {
+			final_submit(form);
+		}
+		
+		function final_submit(form) {
+			$("#contact_no").val($("#contact_no").val().replace(/^0+/, ''));
+			$("input[type='submit']").attr("disabled", "disabled");
+			form.submit();
+		}
+		function disableF5(e) { if ((e.keyCode) == 116) e.preventDefault(); };
+		$(document).on("keydown", disableF5);
+	</script>
+<meta name="description" content="W88"></head>
+<body class="grey">
+	<div class="progressBar center">
+		<img src="../_static/_css/img/loading.gif">
+	</div>
+	<div style="position: relative;">
+		
+<div class="header_background">
+    <div class="clear"></div>
+    <div class="headerContent">
+        <div class="headerLogo float">
+            <a href="../index.html" title="TRANG CHỦ">
+                <i class="sprite_logo vi-vn"></i></a>
+        </div>
+        <div class="headerMember">
+            <div class="miscPanel right">
+                <a href="javascript:load_livechat();" class="uppercase">Hỗ Trợ Trực Tuyến <i class="sprite_live_help" title="Hỗ Trợ Trực Tuyến"></i></a>
+                <i class="sprite_content_divider"></i>
+                <a href="#" id="notification" title="" data-toggle="popover" data-class="notification" data-placement="bottom" data-html="true" data-title="notification" data-content="&lt;div style=&#39;display:none;&#39;&gt;&lt;/div&gt;&lt;hr style=&#39;display:none;&#39; /&gt;&lt;a class=&quot;openannouncement&quot; href=_javascript_openAnnouncemnet()%3b__Xem.html T&#226;́t Cả&lt;/a&gt;">
+                    <i class="sprite_announcement" title="Thông Báo"></i></a>
+                <i class="sprite_content_divider"></i>
+                <a rel="nofollow" href="../../m.w88bkk.com/index.html" class="uppercase"><i class="sprite_mobile"></i></a>
+                <i class="sprite_content_divider"></i>
+                <a href="javascript:openColorlist();void(0);" class="colorOpener">
+                    <i class="color_grey"></i>
+                    <img src="../_static/_css/img/caret.gif">
+                </a>
+                <script>
+                    function push_color(code) {
+                        try { _paq.push(['trackEvent', 'Theme', 'Change', code]); }
+                        catch (e) { }
+                    }
+                </script>
+                <ul class="colorSelector">
+                    <li><a href="javascript: push_color('light');location.href='register.html?color=white'"><i class="color_white"></i></a></li>
+                </ul>
+                <i class="sprite_content_divider"></i>
+                <a class="languageOpener" href="javascript:openLanguagelist();"><i class="flag_vi-vn"></i><img src="../_static/_css/img/caret.gif"></a>
+                <ul class="languageSpecial">
+                    <li><a class="lang-en-us" href="register.html?language=en-us"><i class="flag_en-us"></i><span>&nbsp;English</span></a></li><li><a class="lang-zh-cn" href="register.html?language=zh-cn"><i class="flag_zh-cn"></i><span>&nbsp;简体中文</span></a></li><li><a class="lang-id-id" href="register.html?language=id-id"><i class="flag_id-id"></i><span>&nbsp;Bhs Indonesia</span></a></li><li><a class="lang-km-kh" href="register.html?language=km-kh"><i class="flag_km-kh"></i><span>&nbsp;Khmer</span></a></li><li><a class="lang-ko-kr" href="register.html?language=ko-kr"><i class="flag_ko-kr"></i><span>&nbsp;한국어</span></a></li><li><a class="lang-th-th" href="register.html?language=th-th"><i class="flag_th-th"></i><span>&nbsp;ไทย</span></a></li>
+                </ul>
+                
+                <a href="javascript:showLogin2()" id="" class="button_login center " title="ĐĂNG NHẬP">ĐĂNG NHẬP</a>
+                
+                <a href="register.html" class="button_login center red_button" title="ĐĂNG KÝ">ĐĂNG KÝ</a>
+                
+            </div>
+            <div class="clear"></div>
+            <div class="infoPanel float_right">
+                <div class="info right">
+                    <span id="date" class="dinpro">19/02/2019</span>  <span id="time" class="dinpro">06:22:21</span><span class="dinpro">&nbsp;(<span id="zone">GMT+8</span>)</span>
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="headerMenu clear">
+    <div class="mainMenu  clear">
+        <div class="menuContent">
+    <sup class="hide">New</sup>
+    <ul id="nav">
+        <li id="navHome">
+            <a class="subcontent" data-subcontent="home" href="../index.html" title="TRANG CHỦ">
+                <img src="../_static/img/home.gif" height="28" width="30" alt="">
+            </a>
+        </li>
+        <li id="navMobile">
+            <a class="subcontent" data-subcontent="mobile" title="DI ĐỘNG" href="../Mobile/index.html">
+                <img src="../_static/img/mobile.gif" style="height: 28px; width: 30px;" height="28" width="30" alt="">&nbsp;<sup class="hide" style="margin-left: -9px;">New</sup>
+            </a>
+        </li>
+        <li id="navSports">
+            <a class="subcontent" data-subcontent="sports" href="../Sports/index.html" title="THỂ THAO">
+                <h2>THỂ THAO</h2>
+            </a>
+        </li>
+        <li id="navCasino">
+            <a class="subcontent" data-subcontent="casino" href="../Casino/index.html" title="CASINO TRỰC TUYẾN">
+                <h2>CASINO TRỰC TUYẾN<sup>MỚI</sup></h2>
+            </a>
+        </li>
+        <li id="navSlots">
+            <a class="subcontent" data-subcontent="slots" href="../Slots/index.html" title="SLOT">
+                <h2>SLOT<sup>MỚI</sup></h2>
+            </a>
+        </li>
+        <li id="navGames">
+            <a class="subcontent" data-subcontent="games_dropdown" href="../Games/index.html" title="TRÒ CHƠI">
+                <h2>TRÒ CHƠI</h2>
+            </a>
+        </li>
+        <li id="navLottery">
+            <a class="subcontent" data-subcontent="lottery" href="../Lottery/index.html" title="XỔ SỐ">
+                <h2>XỔ SỐ<sup>MỚI</sup></h2>
+            </a>
+        </li>
+        <li id="navP2p">
+            <a class="subcontent" data-subcontent="p2p" href="../P2P/index.html" title="P2P">
+                <h2>P2P</h2>
+            </a>
+        </li>
+        <li id="navPromos">
+            <a href="../Promotion.html" title="KHUYẾN MÃI">
+                <h2>KHUYẾN MÃI</h2>
+            </a>
+        </li>
+        <li id="navBlog">
+            <a href="../Blog/index.html" title="BLOG">
+                <h2>BLOG</h2>
+            </a>
+        </li>
+    </ul>
+    <div class="clear"></div>
+</div>
+        <div class="clear"></div>
+        <style>
+    .subcontent_holder h3 {
+        display: none;
+    }
+
+    .virtual sup {
+        display: none !important;
+    }
+    /*.casino_massimo sup*/
+    .casino_massimo sup, .casino_clubw sup, .casino_palazzo sup, .casino_massimo sup {
+        display: none !important;
+    }
+    /* .bravado_menu sup, .gallardo_menu sup, .nuovo_menu sup, .crescendo_menu sup, .palazzo_menu sup, .massimo_menu sup, .apollo_menu sup, .divino_menu sup */
+    .gallardo_menu sup, .nuovo_menu sup, .crescendo_menu sup, .palazzo_menu sup, .massimo_menu sup, .apollo_menu sup, .excelso sup, .luckyfishing sup, .fishingmaster sup, .fishingworld sup, .fishingpalazzo sup, .casino_clubw_premier sup, .mobile sup {
+        display: none !important;
+    }
+
+    .subcontent_button.sup sup {
+        display: block !important;
+    }
+
+    .download_modal {
+        width: 446px;
+        margin-left: -223px;
+    }
+
+    .download_modal .logo {
+        padding-top: 10px;
+    }
+
+    .download_modal .modal-body {
+        padding: 8px;
+    }
+
+    div.palazzo_message, div.gallardo_message {
+        background: #252525;
+        border: 1px solid #333;
+        margin-top: 20px;
+        padding: 0 10px 10px;
+    }
+
+    .palazzo_message .title, .gallardo_message .title {
+        font-size: 18px;
+        text-align: center;
+        font-weight: bold;
+        line-height: 18px;
+        padding: 18px 0;
+    }
+
+    .palazzo_message ul, .gallardo_message ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    body.white div.palazzo_message, body.white div.gallardo_message {
+        background: #ddd;
+        border: 1px solid #ddd;
+        color: #000;
+    }
+
+    body.white .palazzo_message .modal-body, body.white .gallardo_message .modal-body {
+        color: #000;
+    }
+
+    /*potm*/
+
+    div.potm {
+        width: 100%;
+        background: url(../_static/menu/img/1.jpg) #1e4c64 bottom repeat-x;
+    }
+
+    .potm a .subcontent_button_play {
+        color: white;
+        line-height: 26px;
+        height: 26px;
+        background: #286d8e;
+    }
+
+    .potm a:hover .subcontent_button_play {
+        background: #2a8fbd;
+        overflow: hidden;
+    }
+
+
+    div.potm div sup {
+        top: 15px;
+        /*right: 210px;*/
+    }
+
+    div.subcontent_holder sup {
+        display: none !important;
+    }
+
+    div.subcontent_holder sup.active {
+        display: block !important;
+    }
+
+    div.menu_potm {
+        background-repeat: no-repeat;
+        display: none;
+        left: 0;
+        top: 0;
+        position: absolute;
+        z-index: 0;
+    }
+
+    .menu_five_column div.menu_potm {
+        background-image: url(../_static/menu/img/20180711/slots/5_item/potm/POTM-bg.jpg);
+        height: 164px;
+        width: 192px;
+    }
+
+    .menu_six_column div.menu_potm {
+        background-image: url(../_static/menu/img/20180711/slots/6_item/potm/POTM-bg.jpg);
+        height: 164px;
+        width: 160px;
+    }
+
+    .menu_seven_column div.menu_potm {
+        background-image: url(../_static/menu/img/20180711/slots/7_item/potm/POTM-bg.jpg);
+        height: 164px;
+        width: 138px;
+    }
+
+    div.menu_potm.active {
+        display: block;
+    }
+   
+    div.menu_potm.active + img {
+        position: relative;
+        z-index: 1;
+    }
+
+    .potm a.menu_five_column:hover div.menu_potm.active {
+        background-image: url(../_static/menu/img/20180711/slots/5_item/potm/POTM-bg-hover.jpg);
+    }
+
+    .potm a.menu_six_column:hover div.menu_potm.active {
+        background-image: url(../_static/menu/img/20180711/slots/6_item/potm/POTM-bg-hover.jpg);
+    }
+
+    .potm a.menu_seven_column:hover div.menu_potm.active {
+        background-image: url(../_static/menu/img/20180711/slots/7_item/potm/POTM-bg-hover.jpg);
+    }
+
+    #fishing_download .popover {
+        z-index: 9999;
+        position: fixed;
+        min-width: 400px;
+    }
+
+    #fishing_download .popover-content {
+        padding: 0px;
+    }
+
+    #home_popup {
+        margin-top: -290px !important;
+        width: auto !important;
+    }
+
+    #home_popup .modal-body {
+        padding: 0;
+    }
+
+    #home_popup .modal-body .palazzo_message {        
+        font-size: 13px;
+        margin: 10px;
+    }
+
+    #home_popup .modal-body .detail {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    #palazzo_mobile_carousel .palazzo_message .title,
+    #palazzo_mobile .palazzo_message .title,
+    #palazzo .palazzo_message .title,
+    #massimo_download .palazzo_message .title,
+    #gallardo .palazzo_message .title,
+    #fishingmaster_IOS .palazzo_message .title,
+    #mahjong_IOS .palazzo_message .title,
+    #bull_IOS .palazzo_message .title,
+    #w88_IOS .palazzo_message .title,
+    #fishing_download .palazzo_message .title,
+    #poseidonfishing_download .palazzo_message .title,
+    #nuovo .palazzo_message .title,
+    #bravado .palazzo_message .title,
+    #home_popup .modal-body .palazzo_message .title {
+        font-size: 18px;
+        line-height: 1.3 !important;
+    }
+        
+    #home_popup .modal-body ul {
+        margin-left: 10px;
+    }
+
+    #palazzo_mobile_carousel .modal-body ul li,
+    #palazzo_mobile .modal-body ul li,
+    #palazzo .modal-body ul li,
+    #massimo_download .modal-body ul li,
+    #gallardo .modal-body ul li,
+    #fishingmaster_IOS .modal-body ul li,
+    #mahjong_IOS .modal-body ul li,
+    #bull_IOS .modal-body ul li,
+    #w88_IOS .modal-body ul li,
+    #fishing_download .modal-body ul li,
+    #poseidonfishing_download .modal-body ul li,
+    #bravado .modal-body ul li,
+    #nuovo .modal-body ul li,
+
+    #palazzo_mobile_carousel .modal-body .palazzo_message,
+    #palazzo_mobile .modal-body .palazzo_message,
+    #palazzo .modal-body .palazzo_message,
+    #massimo_download .modal-body .palazzo_message,
+    #gallardo .modal-body .palazzo_message,
+    #fishingmaster_IOS .modal-body .palazzo_message,
+    #mahjong_IOS .modal-body .palazzo_message,
+    #bull_IOS .modal-body .palazzo_message,
+    #w88_IOS .modal-body .palazzo_message,
+    #fishing_download .modal-body .palazzo_message,
+    #poseidonfishing_download .modal-body .palazzo_message,
+    #bravado .modal-body .palazzo_message,
+    #nuovo .modal-body .palazzo_message,
+
+    #palazzo_mobile_carousel .modal-body .palazzo_message i,
+    #palazzo_mobile .modal-body .palazzo_message i,
+    #palazzo .modal-body .palazzo_message i,
+    #massimo_download .modal-body .palazzo_message i,
+    #gallardo .modal-body .palazzo_message i,
+    #fishingmaster_IOS .modal-body .palazzo_message i,
+    #mahjong_IOS .modal-body .palazzo_message i,
+    #bull_IOS .modal-body .palazzo_message i,
+    #w88_IOS .modal-body .palazzo_message i,
+    #fishing_download .modal-body .palazzo_message i,
+    #poseidonfishing_download .modal-body .palazzo_message i,
+    #bravado .modal-body .palazzo_message i,
+    #nuovo .modal-body .palazzo_message i {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    #home_popup .modal-body ul li {
+        text-indent: -1em;
+        padding-left: 1em;
+        font-size: 13px;
+        line-height: 1.5;
+    }
+</style>
+<div id="dvView"><div class="subcontent_holder" style="">
+    <!-- If club is POTM, the url need to change to /Slots/potm/ -->
+    <div class="potm">
+        <div id="slot_row1" class="centralized slots hide">
+            <a id="slot_massimo" href="../Slots/Microgaming/index.html" class="subcontent_button menu_five_column">
+                <h3>MASSIMO</h3>
+                <div class="bg">
+                    <div class="menu_potm"></div>
+                    <img src="../_static/img/blank.png" data-src="/_static/menu/img/20180711/slots/5_item/microgaming-vn.png" style="height: 164px;">
+                    <div class="white_size_14px center subcontent_button_play">CHƠI NGAY</div>
+                </div>
+            </a>
+            <a id="slot_playngo" href="../Slots/PlaynGO/index.html" class="subcontent_button menu_five_column">
+                <h3>GALLARDO</h3>
+                <div class="bg">
+                    <div class="menu_potm"></div>
+                    <img src="../_static/img/blank.png" data-src="/_static/menu/img/20180711/slots/5_item/Playn-GO-vn.png" style="height: 164px;">
+                    <div class="white_size_14px center subcontent_button_play">CHƠI NGAY</div>
+                </div>
+            </a>
+            <a id="slot_bravado" href="../Slots/GameplayInteractive/index.html" class="subcontent_button menu_five_column">
+                <h3>BRAVADO</h3>
+                <div class="bg">
+                    <div class="menu_potm active"></div>
+                    <img src="../_static/img/blank.png" data-src="/_static/menu/img/20180711/slots/5_item/potm/gameplay-interactive-vn.png" style="height: 164px;">
+                    <div class="white_size_14px center subcontent_button_play">CHƠI NGAY</div>
+                </div>
+            </a>
+            <a id="slot_qtech" href="../Slots/QTech/index.html" class="subcontent_button menu_five_column">
+                <h3>APOLLO</h3>
+                <div class="bg">
+                    <div class="menu_potm"></div>
+                    <img src="../_static/img/blank.png" data-src="/_static/menu/img/20180711/slots/5_item/QTech-vn.png" style="height: 164px;">
+                    <div class="white_size_14px center subcontent_button_play">CHƠI NGAY</div>
+                </div>
+            </a>
+            <a id="slot_palazzo" href="../Slots/Playtech/index.html" class="palazzo_menu subcontent_button menu_five_column">
+                <h3>CLUB PALAZZO</h3>
+                <div class="bg">
+                    <div class="menu_potm_small"></div>
+                    <img src="../_static/img/blank.png" data-src="/_static/menu/img/20180711/slots/5_item/Playtech-vn.png" style="height: 164px;">
+                    <div class="white_size_14px center subcontent_button_play">CHƠI NGAY</div>
+                    <sup>NEW</sup>
+                </div>
+            </a>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="potm">
+        <div id="slot_row2" class="centralized slots hide">
+            <a id="slot_gallardo" href="../Slots/iSoftBet/index.html" class="gallardo_menu subcontent_button menu_five_column">
+                <h3>CLUB GALLARDO</h3>
+                <div class="bg">
+                    <div class="menu_potm"></div>
+                    <img src="../_static/img/blank.png" data-src="/_static/menu/img/20180711/slots/5_item/iSoftbet-vn.png" style="height: 164px;">
+                    <div class="white_size_14px center subcontent_button_play">CHƠI NGAY</div>
+                    <sup>NEW</sup>
+                </div>
+            </a>
+            <a id="slot_pragmatic" href="../Slots/PragmaticPlay/index.html" class="apollo_menu subcontent_button menu_five_column">
+                <h3>CLUB APOLLO</h3>
+                <div class="bg">
+                    <div class="menu_potm"></div>
+                    <img src="../_static/img/blank.png" data-src="/_static/menu/img/20180711/slots/5_item/Pragmatic-Play-vn.png" style="height: 164px;">
+                    <div class="white_size_14px center subcontent_button_play">CHƠI NGAY</div>
+                    <sup>NEW</sup>
+                </div>
+            </a>
+            
+            <a id="slot_skywind" href="../Slots/Skywind/index.html" class="divino_menu subcontent_button menu_five_column">
+                <h3>CLUB DIVINO</h3>
+                <div class="bg">
+                    <div class="menu_potm"></div>
+                    <img src="../_static/img/blank.png" data-src="/_static/menu/img/20180711/slots/5_item/Skywind-vn.png" style="height: 164px;">
+                    <div class="white_size_14px center subcontent_button_play">CHƠI NGAY</div>
+                    <sup>NEW</sup>
+                </div>
+            </a>
+            <a id="slot_apollo" href="../Slots/ToptrendGaming/index.html" class="apollo_menu subcontent_button menu_five_column">
+                <h3>CLUB APOLLO</h3>
+                <div class="bg">
+                    <div class="menu_potm"></div>
+                    <img src="../_static/img/blank.png" data-src="/_static/menu/img/20180711/slots/5_item/toptrend-gaming-vn.png" style="height: 164px;">
+                    <div class="white_size_14px center subcontent_button_play">CHƠI NGAY</div>
+                    <sup>NEW</sup>
+                </div>
+            </a>
+            <a id="slot_more" href="../Slots/index.html" class="hover subcontent_button menu_five_column" data-subcontent="moreslots" title="MORE SLOTS">
+                <h3>CLUB</h3>
+                <div class="bg">
+                    <div class="menu_potm"></div>
+                    <img src="../_static/img/blank.png" data-src="/_static/menu/img/20180711/slots/5_item/more-slot-vn.png" style="height: 164px;">
+                    <div class="white_size_14px center subcontent_button_play"></div>
+                    <sup>NEW</sup>
+                </div>
+            </a>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="potm">
+        <div id="slot_row3" class="centralized moreslots hide subcontent_sub">
+            <a id="slot_divino" href="../Slots/Betsoft/index.html" class="divino_menu subcontent_button menu_six_column">
+                <h3>CLUB DIVINO</h3>
+                <div class="bg">
+                    <div class="menu_potm"></div>
+                    <img src="../_static/img/blank.png" data-src="/_static/menu/img/20180711/slots/6_item/Betsoft-vn.png" style="height: 164px;">
+                    <div class="white_size_14px center subcontent_button_play">CHƠI NGAY</div>
+                    <sup>NEW</sup>
+                </div>
+            </a>
+            
+            <a id="slot_booongo" href="../Slots/Booongo/index.html" class="nuovo_menu subcontent_button menu_six_column">
+                <h3>CLUB NUOVO</h3>
+                <div class="bg">
+                    <div class="menu_potm"></div>
+                    <img src="../_static/img/blank.png" data-src="/_static/menu/img/20180711/slots/6_item/BOOONGO-vn.png" style="height: 164px;">
+                    <div class="white_size_14px center subcontent_button_play">CHƠI NGAY</div>
+                    <sup>NEW</sup>
+                </div>
+            </a>
+            <a id="slot_genesis" href="../Slots/Genesis/index.html" class="nuovo_menu subcontent_button menu_six_column">
+                <h3>CLUB NUOVO</h3>
+                <div class="bg">
+                    <div class="menu_potm"></div>
+                    <img src="../_static/img/blank.png" data-src="/_static/menu/img/20180711/slots/6_item/Genesis-vn.png" style="height: 164px;">
+                    <div class="white_size_14px center subcontent_button_play">CHƠI NGAY</div>
+                    <sup>NEW</sup>
+                </div>
+            </a>
+            <a id="slot_solid" href="../Slots/SolidGaming/index.html" class="nuovo_menu sup subcontent_button menu_six_column">
+                <h3>CLUB NUOVO</h3>
+                <div class="bg">
+                    <div class="menu_potm"></div>
+                    <img src="../_static/img/blank.png" data-src="/_static/menu/img/20180711/slots/6_item/Solid-Gaming-vn.png" style="height: 164px;">
+                    <div class="white_size_14px center subcontent_button_play">CHƠI NGAY</div>
+                    <sup>NEW</sup>
+                </div>
+            </a>
+            <a id="slot_spade" href="../Slots/Spadegaming/index.html" class="divino_menu subcontent_button menu_six_column">
+                <h3>CLUB DIVINO</h3>
+                <div class="bg">
+                    <div class="menu_potm"></div>
+                    <img src="../_static/img/blank.png" data-src="/_static/menu/img/20180711/slots/6_item/Spadegaming-vn.png" style="height: 164px;">
+                    <div class="white_size_14px center subcontent_button_play">CHƠI NGAY</div>
+                    <sup>NEW</sup>
+                </div>
+            </a>
+            <a id="slot_yggdrasil" href="../Slots/Yggdrasil/index.html" class="gallardo_menu subcontent_button menu_six_column">
+                <h3>CLUB GALLARDO</h3>
+                <div class="bg">
+                    <div class="menu_potm"></div>
+                    <img src="../_static/img/blank.png" data-src="/_static/menu/img/20180711/slots/6_item/Yggdrasil-vn.png" style="height: 164px;">
+                    <div class="white_size_14px center subcontent_button_play">CHƠI NGAY</div>
+                    <sup>NEW</sup>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="centralized">
+        <div class="home hide">
+            <a href="../VIP/index.html" class="subcontent_button menu_seven_column">
+                <h3>VIP</h3>
+                <div class="bg">
+                    <img src="../_static/img/blank.png" data-src="/_static/menu/img/Sub-VIP-vn.png" style="height: 164px;">
+                    <div class="white_size_14px center subcontent_button_play">&nbsp;</div>
+                    <!--<sup>NEW</sup>-->
+                </div>
+            </a>
+            <a href="../../rewards.w88bkk.com/index.html" rel="nofollow" class="subcontent_button menu_seven_column" type="rewards">
+                <h3>Rewards Club</h3>
+                <div class="bg">
+                    <img src="../_static/img/blank.png" data-src="/_static/menu/img/sub-rewardsclub-vn.png" style="height: 164px;">
+                    <div class="white_size_14px center subcontent_button_play">&nbsp;</div>
+                    <!--<sup>NEW</sup>-->
+                </div>
+            </a>
+            <a href="javascript:load_account('/BankingOptions.aspx')" class="subcontent_button menu_seven_column">
+                <h3>Banking Options</h3>
+                <div class="bg">
+                    <img src="../_static/img/blank.png" data-src="/_static/menu/img/Sub-BankingOption-vn.png" style="height: 164px;">
+                    <div class="white_size_14px center subcontent_button_play">&nbsp;</div>
+                    <!--<sup>NEW</sup>-->
+                </div>
+            </a>
+            <a href="javascript:load_info('/FAQ_general_en.shtml');" class="subcontent_button menu_seven_column">
+                <h3>Info Centre</h3>
+                <div class="bg">
+                    <img src="../_static/img/blank.png" data-src="/_static/menu/img/Sub-InfoCentre-vn.png" style="height: 164px;">
+                    <div class="white_size_14px center subcontent_button_play">&nbsp;</div>
+                    <!--<sup>NEW</sup>-->
+                </div>
+            </a>
+            <a href="../ContactUs.html" class="subcontent_button menu_seven_column">
+                <h3>Contact Us</h3>
+                <div class="bg">
+                    <img src="../_static/img/blank.png" data-src="/_static/menu/img/Sub-ContactUs-vn.png" style="height: 164px;">
+                    <div class="white_size_14px center subcontent_button_play">&nbsp;</div>
+                    <!--<sup>NEW</sup>-->
+                </div>
+            </a>
+            <a href="../Winner.html" class="subcontent_button menu_seven_column">
+                <h3>Winners</h3>
+                <div class="bg">
+                    <img src="../_static/img/blank.png" data-src="/_static/menu/img/Sub-Winner-vn.png" style="height: 164px;">
+                    <div class="white_size_14px center subcontent_button_play">&nbsp;</div>
+                    <!--<sup>NEW</sup>-->
+                </div>
+            </a>
+            <a href="../Slots/Jackpots/index.html" class="subcontent_button menu_seven_column">
+                <h3></h3>
+                <div class="bg">
+                    <img src="../_static/img/blank.png" data-src="/_static/menu/img/sub-jackpots-vn.png" style="height: 164px;">
+                    <div class="white_size_14px center subcontent_button_play">&nbsp;</div>
+                    <!--<sup>NEW</sup>-->
+                </div>
+            </a>
+            <div class="clear"></div>
+        </div>
+        <div id="sportsMenu" class="sports hide">
+            <a id="aSportsMenu" href="javascript:load_asports();" class="subcontent_button menu_seven_column">
+                <h3>a-SPORTS</h3>
+                <div class="bg">
+                    <img src="../_static/img/blank.png" data-src="/_static/menu/img/sports/7_item/asports_vn.png" style="height: 164px;">
+                    <div class="white_size_14px center subcontent_button_play">CHƠI NGAY</div>
+                    <!--<sup>NEW</sup>-->
+                </div>
+            </a>
+            <a id="eSportsMenu" href="javascript:load_inplay();" class="subcontent_button menu_seven_column">
+                <h3>e-SPORTS (Asian)</h3>
+                <div class="bg">
+                    <img src="../_static/img/blank.png" data-src="/_static/menu/img/sports/7_item/esports_vn.png" style="height: 164px;">
+                    <div class="white_size_14px center subcontent_button_play">CHƠI NGAY</div>
+                    <!--<sup>NEW</sup>-->
+                </div>
+            </a>
+            <a id="euSportsMenu" href="javascript:load_esports();" class="subcontent_button menu_seven_column">
+                <h3>e-SPORTS (European)</h3>
+                <div class="bg">
+                    <img src="../_static/img/blank.png" data-src="/_static/menu/img/sports/7_item/esports_2_vn.png" style="height: 164px;">
+                    <div class="white_size_14px center subcontent_button_play">CHƠI NGAY</div>
+                    <!--<sup>NEW</sup>-->
+                </div>
+            </a>
+            <a id="iSportsMenu" href="javascript:load_isports();" class="subcontent_button menu_seven_column">
+                <h3>i-SPORTS</h3>
+                <div class="bg">
+                    <img src="../_static/img/blank.png" data-src="/_static/menu/img/sports/7_item/isports_vn.png" style="height: 164px;">
+                    <div class="white_size_14px center subcontent_button_play">CHƠI NGAY</div>
+                    <!--<sup>NEW</sup>-->
+                </div>
+            </a>
+            <a id="xSportsMenu" href="javascript:load_xsports();" class="subcontent_button menu_seven_column">
+                <div class="bg">
+                    <img src="../_static/img/blank.png" data-src="/_static/menu/img/sports/7_item/xsports_vn.png" style="height: 164px;">
+                    <div class="white_size_14px center subcontent_button_play">CHƠI NGAY</div>
+                    <!--<sup>NEW</sup>-->
+                </div>
+            </a>
+            <a id="vSportsMenu" href="javascript:load_virtual();" class="subcontent_button menu_seven_column">
+                <h3>VIRTUAL</h3>
+                <div class="bg">
+                    <img src="../_static/img/blank.png" data-src="/_static/menu/img/sports/7_item/vsports_vn.png" style="height: 164px;">
+                    <div class="white_size_14px center subcontent_button_play">CHƠI NGAY</div>
+                    <!--<sup>NEW</sup>-->
+                </div>
+            </a>
+            
+            <a id="ambSportsMenu" href="../Ambassadors.html" class="subcontent_button menu_seven_column">
+                <h3>AMBASSADOR</h3>
+                <div class="bg">
+                    <img src="../_static/img/blank.png" data-src="/_static/menu/img/sports/7_item/brand_ambassador_vn.png" style="height: 164px;">
+                    <div class="white_size_14px center subcontent_button_play">XEM</div>
+                    <!--<sup>NEW</sup>-->
+                </div>
+            </a>
+            <div class="clear"></div>
+        </div>
+        <div id="gamesMenu" class="games_dropdown hide">
+            <a id="rpsGamesMenu" href="javascript:loadLotteryGameWithTrial('rockpaperscissors');" class="subcontent_button menu_six_column">
+                <h3>RPS</h3>
+                <div class="bg">
+                    <img src="../_static/img/blank.png" data-src="/_static/menu/img/20180711/games/6_item/RPS-vn.png" style="height: 164px;">
+                    <div class="white_size_14px center subcontent_button_play">
+                        <table cellpadding="0" cellspacing="0" style="width: 100%; height: 26px; overflow: hidden;">
+                            <tr>
+                                <td class="white_size_14px center" style="color: #fff;">
+                                    CHƠI
+                                </td>
+                                <td style="width: 1px;">
+                                    <img src="../_static/menu/img/1px_white.gif">
+                                </td>
+                                <td onclick="loadLotteryGameWithTrial('rockpaperscissors', true); return false;" class="white_size_14px center " style="color: #fff;">
+                                    THỬ
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <sup>NEW</sup>
+                </div>
+            </a>
+            <a id="theLadderGamesMenu" href="javascript:loadLotteryGameWithTrial('ladder');" class="subcontent_button menu_six_column">
+                <h3>Ladder</h3>
+                <div class="bg">
+                    <img src="../_static/img/blank.png" data-src="/_static/menu/img/20180711/games/6_item/the-ladder-vn.png" style="height: 164px;">
+                    <div class="white_size_14px center subcontent_button_play">
+                        <table cellpadding="0" cellspacing="0" style="width: 100%; height: 26px; overflow: hidden;">
+                            <tr>
+                                <td class="white_size_14px center" style="color: #fff;">
+                                    CHƠI
+                                </td>
+                                <td style="width: 1px;">
+                                    <img src="../_static/menu/img/1px_white.gif">
+                                </td>
+                                <td onclick="loadLotteryGameWithTrial('ladder', true);return false;" class="white_size_14px center " style="color: #fff;">
+                                    THỬ
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <sup>NEW</sup>
+                </div>
+            </a>
+            
+            <a id="luckyFishingGamesMenu" href="javascript:$('#poseidonfishing_download').modal('show');void(0);" class="luckyfishing subcontent_button menu_six_column">
+                <h3>FISHING</h3>
+                <div class="bg">
+                    <img src="../_static/img/blank.png" data-src="/_static/menu/img/20180711/games/6_item/LUCKY-FISHING-vn.png" style="height: 164px;">
+                    <div class="white_size_14px center subcontent_button_play">TẢI NGAY</div>
+                    <sup>NEW</sup>
+                </div>
+            </a>
+            <a id="poseidonFishingGamesMenu" href="javascript:$('#poseidonfishing_download').modal('show');void(0);" class="poseidonfishing subcontent_button menu_six_column">
+                <h3>FISHING</h3>
+                <div class="bg">
+                    <img src="../_static/img/blank.png" data-src="/_static/menu/img/20180711/games/6_item/3D-Poseidon-Fishing-vn.png" style="height: 164px;">
+                    <div class="white_size_14px center subcontent_button_play">TẢI NGAY</div>
+                    <sup>NEW</sup>
+                </div>
+            </a>
+            <a id="fishingMasterGamesMenu" href="../Games/FishingMaster/index.html" class="fishingmaster subcontent_button menu_six_column">
+                <h3>FISHING</h3>
+                <div class="bg">
+                    <img src="../_static/img/blank.png" data-src="/_static/menu/img/20180711/games/6_item/FISHING-MASTER-vn.png" style="height: 164px;">
+                    <div class="white_size_14px center subcontent_button_play">
+                        <table cellpadding="0" cellspacing="0" style="width: 100%; height: 26px; overflow: hidden;">
+                            <tr>
+                                <td onclick="location.href = '../../dl.gp2cache.net/fishing/FishingMasterVN.apk?type=fishingmaster_apk';event.preventDefault();" class="white_size_14px center" style="color: #fff;">
+                                    ANDROID
+                                </td>
+                                <td style="width: 1px;">
+                                    <img src="../_static/menu/img/1px_white.gif">
+                                </td>
+                                <td onclick="$('#fishingmaster_IOS').modal('show');event.preventDefault();" class="white_size_14px center " style="color: #fff; width: 45%;">
+                                    iOS
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <sup>NEW</sup>
+                </div>
+            </a>
+            <a id="cashFishGamesMenu" href="javascript:load_palazzo_link('cashfi','real')" class="fishingpalazzo subcontent_button menu_six_column">
+                <h3>FISHING</h3>
+                <div class="bg">
+                    <img src="../_static/img/blank.png" data-src="/_static/menu/img/20180711/games/6_item/CLUB-PALAZZO-vn.png" style="height: 164px;">
+                    <div class="white_size_14px center subcontent_button_play">CHƠI NGAY</div>
+                    <sup>NEW</sup>
+                </div>
+            </a>
+            <div class="clear"></div>
+        </div>
+        <div class="mobile hide">
+            <a href="../Mobile/index.html" class="subcontent_button menu_one_column">
+                <h3>MOBILE</h3>
+                <div class="bg">
+                    <img src="../_static/img/blank.png" data-src="/_static/menu/img/mobile/MOBILESUB-Standard-vn.jpg" style="width: 960px; height: 164px;">
+                    <div class="white_size_14px center subcontent_button_play">CHƠI NGAY</div>
+                    <sup>NEW</sup>
+                </div>
+            </a>
+            <div class="clear"></div>
+        </div>
+        <!--<div class="lottery hide">
+            <!--<a href="javascript:load_lottery_iLotto(false);"  class="subcontent_button menu_three_column hide">
+                <div class="bg">
+                    <img src="/_static/img/blank.png" data-src="/_static/menu/img/ilotto_vn.png" style="width:320px;  height: 164px;" />
+                    <div class="white_size_14px center subcontent_button_play"><table cellpadding="0" cellspacing="0" style="width: 100%; height: 26px; overflow:hidden;">
+                            <tr>
+                                <td class="white_size_14px center" style="color:#fff;">
+                                    CHƠI NGAY
+                                </td>
+                                <td style="width: 1px;">
+                                    <img src="/_static/menu/img/1px_white.gif" />
+                                </td>
+                                <td onclick="load_lottery_iLotto(true); return false;" class="white_size_14px center " style="color:#fff;">
+                                    THỬ NGAY
+                                </td>
+                            </tr>
+                        </table></div>
+                </div>
+            </a>-->
+        <!--<div class="clear"></div>-->
+        <!--</div>-->
+
+        <div id="casinoMenu" class="casino hide">
+            
+            
+
+            <a id="clubMassimoCasinoMenu" href="../Casino/index.html" class="casino_massimo subcontent_button menu_three_column casino_menu_3_column_small casino_hover_small" data-afterlogin="javascript:load_massimo_casino('Baccarat');">
+                <h3>CLUB MASSIMO</h3>
+                <div class="bg">
+                    <img src="../_static/img/blank.png" data-src="/_static/menu/img/casino/3_item/Sub-Live-Casino-Club-Massimo-vn.png" style="height: 164px;">
+                    <div class="white_size_14px center subcontent_button_play">
+                        <table cellpadding="0" cellspacing="0" style="width: 100%; height: 26px; overflow: hidden;">
+                            <tr>
+                                <td class="white_size_14px center" style="color: #fff;">
+                                    CHƠI NGAY
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <sup>NEW</sup>
+                </div>
+            </a>
+
+            <a id="clubwGrandCasinoMenu" href="../Casino/index.html" class="casino_clubw_premier subcontent_button menu_three_column casino_menu_3_column_big casino_hover_big" data-afterlogin="javascript:load_casino_link_v2();">
+                <h3>CLUB W PREMIER</h3>
+                <div class="bg">
+                    <img src="../_static/img/blank.png" data-src="/_static/menu/img/casino/3_item/Sub-Live-Casino-Club-W-Grand-vn.png" style="height: 164px;">
+                    <div class="white_size_14px center subcontent_button_play">
+                        <table cellpadding="0" cellspacing="0" style="width: 100%; height: 26px; overflow: hidden;">
+                            <tr>
+                                <td class="white_size_14px center" style="color: #fff;">
+                                    CHƠI NGAY
+                                </td>
+                                <td style="width: 1px;">
+                                    <img src="../_static/menu/img/1px_white.gif">
+                                </td>
+                                <td onclick="location.href='../../rslots.gp2play.com/_downloads/releases/w88/win32-ia32-prod-v1.0.0/W88Slots-Setup-1.0.0-ia32.exe?type=bravado';return false;" class="white_size_14px center " style="color: #fff;">
+                                    TẢI NGAY
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <sup>NEW</sup>
+                </div>
+            </a>
+
+            <a id="clubPalazzoCasinoMenu" href="../Casino/index.html" class="casino_palazzo subcontent_button menu_three_column casino_menu_3_column_small casino_hover_small" data-afterlogin="javascript:load_casino_link('bal', 'real');">
+                <h3>CLUB PALAZZO</h3>
+                <div class="bg">
+                    <img src="../_static/img/blank.png" data-src="/_static/menu/img/casino/3_item/Sub-Live-Casino-Club-Palazzo-vn.png" style="height: 164px;">
+                    <div class="white_size_14px center subcontent_button_play">
+                        <table cellpadding="0" cellspacing="0" style="width: 100%; height: 26px; overflow: hidden;">
+                            <tr>
+                                <td class="white_size_14px center" style="color: #fff;">
+                                    CHƠI NGAY
+                                </td>
+                                <td style="width: 1px;">
+                                    <img src="../_static/menu/img/1px_white.gif">
+                                </td>
+                                <td onclick="$('#palazzo').modal('show'); return false;" class="white_size_14px center " style="color: #fff;">
+                                    TẢI NGAY
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <sup>NEW</sup>
+                </div>
+            </a>
+            <div class="clear"></div>
+        </div>
+        <div class="virtual hide">
+            <a href="javascript:load_virtual('VFL');" class="subcontent_button menu_five_column">
+                <h3>FOOTBALL</h3>
+                <div class="bg">
+                    <img src="../_static/img/blank.png" data-src="/_static/menu/img/football_vn.png" style="height: 164px;">
+                    <div class="white_size_14px center subcontent_button_play">CHƠI NGAY</div>
+                    <sup>NEW</sup>
+                </div>
+            </a>
+            <a href="javascript:load_virtual('VBL');" class="subcontent_button menu_five_column">
+                <h3>BASKETBALL</h3>
+                <div class="bg">
+                    <img src="../_static/img/blank.png" data-src="/_static/menu/img/basketball_vn.png" style="height: 164px;">
+                    <div class="white_size_14px center subcontent_button_play">CHƠI NGAY</div>
+                    <sup>NEW</sup>
+                </div>
+            </a>
+            <a href="javascript:load_virtual('VTO');" class="subcontent_button menu_five_column">
+                <h3>TENNIS</h3>
+                <div class="bg">
+                    <img src="../_static/img/blank.png" data-src="/_static/menu/img/tennis_vn.png" style="height: 164px;">
+                    <div class="white_size_14px center subcontent_button_play">CHƠI NGAY</div>
+                    <sup>NEW</sup>
+                </div>
+            </a>
+            <a href="javascript:load_virtual('VHC');" class="subcontent_button menu_five_column">
+                <h3>HORSE RACING</h3>
+                <div class="bg">
+                    <img src="../_static/img/blank.png" data-src="/_static/menu/img/horseracing_vn.png" style="height: 164px;">
+                    <div class="white_size_14px center subcontent_button_play">CHƠI NGAY</div>
+                    <sup>NEW</sup>
+                </div>
+            </a>
+            <a href="javascript:load_virtual('VDR');" class="subcontent_button menu_five_column">
+                <h3>DOG RACING</h3>
+                <div class="bg">
+                    <img src="../_static/img/blank.png" data-src="/_static/menu/img/dogracing_vn.png" style="height: 164px;">
+                    <div class="white_size_14px center subcontent_button_play">CHƠI NGAY</div>
+                    <sup>NEW</sup>
+                </div>
+            </a>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="potm">
+        <div id="lotteryMenuRow1" class="lottery centralized hide">
+            
+            <a id="gliLotteryMenu" href="javascript:javascript:loadLotteryGameWithTrial('glilottery', false, '&isGliLottery=true');" class="subcontent_button menu_four_column">
+                <h3>GLI LOTTERY</h3>
+                <div class="bg">
+                    <img src="../_static/img/blank.png" data-src="/_static/menu/img/20180711/lottery/4_item/gli-lottery-vn.png" style="height: 164px;">
+                    <div class="white_size_14px center subcontent_button_play">CHƠI NGAY</div>
+                    <!--<sup>NEW</sup>-->
+                </div>
+            </a>
+            <a id="kenoLotteryMenu" href="javascript:load_lottery_keno(false, 6);" class="subcontent_button  menu_four_column">
+                <h3>KENO</h3>
+                <div class="bg">
+                    <img src="../_static/img/blank.png" data-src="/_static/menu/img/20180711/lottery/4_item/keno-vn.png" style="height: 164px;">
+                    <div class="white_size_14px center subcontent_button_play">
+                        <table cellpadding="0" cellspacing="0" style="width: 100%; height: 26px; overflow: hidden;">
+                            <tr>
+                                <td class="white_size_14px center" style="color: #fff;">
+                                    CHƠI NGAY
+                                </td>
+                                <td style="width: 1px;">
+                                    <img src="../_static/menu/img/1px_white.gif">
+                                </td>
+                                <td onclick="load_lottery_keno(true, 6); return false;" class="white_size_14px center " style="color: #fff;">
+                                    THỬ NGAY
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!--<sup>NEW</sup>-->
+                </div>
+            </a>
+            <a id="wkenoLotteryMenu" href="javascript:load_lottery_keno(false, 4, 4);" class="subcontent_button  menu_four_column">
+                <h3>W KENO</h3>
+                <div class="bg">
+                    <img src="../_static/img/blank.png" data-src="/_static/menu/img/20180711/lottery/4_item/wkeno-vn.png" style="height: 164px;">
+                    <div class="white_size_14px center subcontent_button_play">
+                        <table cellpadding="0" cellspacing="0" style="width: 100%; height: 26px; overflow: hidden;">
+                            <tr>
+                                <td class="white_size_14px center" style="color: #fff;">
+                                    CHƠI NGAY
+                                </td>
+                                <td style="width: 1px;">
+                                    <img src="../_static/menu/img/1px_white.gif">
+                                </td>
+                                <td onclick="load_lottery_keno(true,4, 4); return false;" class="white_size_14px center " style="color: #fff;">
+                                    THỬ NGAY
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!--<sup>NEW</sup>-->
+                </div>
+            </a>
+            <a id="ladderLotteryMenu" href="javascript:loadLotteryGameWithTrial('ladder');" class="subcontent_button  menu_four_column">
+                <h3>Ladder</h3>
+                <div class="bg">
+                    <img src="../_static/img/blank.png" data-src="/_static/menu/img/20180711/lottery/4_item/theladder-vn.png" style="height: 164px;">
+                    <div class="white_size_14px center subcontent_button_play">
+                        <table cellpadding="0" cellspacing="0" style="width: 100%; height: 26px; overflow: hidden;">
+                            <tr>
+                                <td class="white_size_14px center" style="color: #fff;">
+                                    CHƠI NGAY
+                                </td>
+                                <td style="width: 1px;">
+                                    <img src="../_static/menu/img/1px_white.gif">
+                                </td>
+                                <td onclick="loadLotteryGameWithTrial('ladder', true); return false;" class="white_size_14px center " style="color: #fff;">
+                                    THỬ NGAY
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <sup>NEW</sup>
+                </div>
+            </a>
+            
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="potm">
+        <div id="lotteryMenuRow2" class="lottery centralized hide">
+            <a id="rpsLotteryMenu" href="javascript:loadLotteryGameWithTrial('rockpaperscissors');" class="subcontent_button menu_five_column">
+                <h3>RPS</h3>
+                <div class="bg">
+                    <img src="../_static/img/blank.png" data-src="/_static/menu/img/20180711/lottery/5_item/RPS-vn.png" style="height: 164px;">
+                    <div class="white_size_14px center subcontent_button_play">
+                        <table cellpadding="0" cellspacing="0" style="width: 100%; height: 26px; overflow: hidden;">
+                            <tr>
+                                <td class="white_size_14px center" style="color: #fff;">
+                                    CHƠI NGAY
+                                </td>
+                                <td style="width: 1px;">
+                                    <img src="../_static/menu/img/1px_white.gif">
+                                </td>
+                                <td onclick="loadLotteryGameWithTrial('rockpaperscissors', true); return false;" class="white_size_14px center " style="color: #fff;">
+                                    THỬ NGAY
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <sup>NEW</sup>
+                </div>
+            </a>
+            <a id="lottoLotteryMenu" href="javascript:load_lottery_v2('lottery');" class="subcontent_button menu_five_column">
+                <h3>LOTTO</h3>
+                <div class="bg">
+                    <img src="../_static/img/blank.png" data-src="/_static/menu/img/20180711/lottery/5_item/lotto-vn.png" style="height: 164px;">
+                    <div class="white_size_14px center subcontent_button_play">CHƠI NGAY</div>
+                    <!--<sup>NEW</sup>-->
+                </div>
+            </a>
+            <a id="fast3LotteryMenu" href="javascript:loadLotteryGameWithTrial('fast3');" class="subcontent_button menu_five_column">
+                <h3>FAST3</h3>
+                <div class="bg">
+                    <img src="../_static/img/blank.png" data-src="/_static/menu/img/20180711/lottery/5_item/fast3-vn.png" style="height: 164px;">
+                    <div class="white_size_14px center subcontent_button_play">
+                        <table cellpadding="0" cellspacing="0" style="width: 100%; height: 26px; overflow: hidden;">
+                            <tr>
+                                <td class="white_size_14px center" style="color: #fff;">
+                                    CHƠI NGAY
+                                </td>
+                                <td style="width: 1px;">
+                                    <img src="../_static/menu/img/1px_white.gif">
+                                </td>
+                                <td onclick="loadLotteryGameWithTrial('fast3', true); return false;" class="white_size_14px center " style="color: #fff;">
+                                    THỬ NGAY
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <sup>NEW</sup>
+                </div>
+            </a>
+            <a id="pk10LotteryMenu" href="javascript:load_lottery_pk10();" class="subcontent_button menu_five_column">
+                <h3>PK10</h3>
+                <div class="bg">
+                    <img src="../_static/img/blank.png" data-src="/_static/menu/img/20180711/lottery/5_item/pk10-vn.png" style="height: 164px;">
+                    <div class="white_size_14px center subcontent_button_play">
+                        <table cellpadding="0" cellspacing="0" style="width: 100%; height: 26px; overflow: hidden;">
+                            <tr>
+                                <td class="white_size_14px center" style="color: #fff;">
+                                    CHƠI NGAY
+                                </td>
+                                <td style="width: 1px;">
+                                    <img src="../_static/menu/img/1px_white.gif">
+                                </td>
+                                <td onclick="load_lottery_pk10(true); return false;" class="white_size_14px center " style="color: #fff;">
+                                    THỬ NGAY
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <sup>NEW</sup>
+                </div>
+            </a>
+            <!--<a id="gpiLotteryMenu" href="javascript:loadLotteryGameWithTrial('gpilottery');" class="subcontent_button menu_five_column">
+                <h3>GPILOTTERY</h3>
+                <div class="bg">
+                    <img src="/_static/img/blank.png" data-src="/_static/menu/img/20180711/lottery/5_item/gpi-lottery-vn.png" style="height: 164px;" />
+                    <div class="white_size_14px center subcontent_button_play">
+                        <table cellpadding="0" cellspacing="0" style="width: 100%; height: 26px; overflow: hidden;">
+                            <tr>
+                                <td class="white_size_14px center" style="color: #fff;">
+                                    CHƠI NGAY
+                                </td>
+                                <td style="width: 1px;">
+                                    <img src="/_static/menu/img/1px_white.gif" />
+                                </td>
+                                <td onclick="loadLotteryGameWithTrial('gpilottery', true); return false;" class="white_size_14px center " style="color: #fff;">
+                                    THỬ NGAY
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <sup>NEW</sup>
+                </div>
+            </a>-->
+            <a id="tournamentLotteryMenu" href="../Lottery/Tournament/index.html" class="subcontent_button  menu_five_column">
+                <h3>SoPower</h3>
+                <div class="bg">
+                    <img src="../_static/img/blank.png" data-src="/_static/menu/img/20180711/lottery/5_item/tournament-vn.png" style="height: 164px;">
+                    <div class="white_size_14px center subcontent_button_play">CHƠI NGAY</div>
+                    <!--<sup>NEW</sup>-->
+                    <sup>NEW</sup>
+                </div>
+            </a>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="potm">
+        <div id="p2pMenuRow1" class="p2p centralized hide">
+            <a id="dominoQQMenu" href="../Domino/index.html" class="subcontent_button menu_four_column">
+                <h3>Domino</h3>
+                <div class="bg">
+                    <img src="../_static/img/blank.png" data-src="/_static/menu/img/20180711/p2p/4_item/domino-qq-vn.png" style="height: 164px;">
+                    <div class="white_size_14px center subcontent_button_play">CHƠI NGAY</div>
+                    <sup>NEW</sup>
+                </div>
+            </a>
+            <a id="superBullP2PMenu" href="../SuperBull/index.html" class="subcontent_button menu_four_column">
+                <h3>SuperBull</h3>
+                <div class="bg">
+                    <img src="../_static/img/blank.png" data-src="/_static/menu/img/20180711/p2p/4_item/super-bull-vn.png" style="height: 164px;">
+                    <div class="white_size_14px center subcontent_button_play">CHƠI NGAY</div>
+                    <sup>NEW</sup>
+                </div>
+            </a>
+            <a id="texasHoldemMenu" href="../P2P/Poker/index.html" class="subcontent_button menu_four_column">
+                <h3>Texas Holdem Poker</h3>
+                <div class="bg">
+                    <img src="../_static/img/blank.png" data-src="/_static/menu/img/20180711/p2p/4_item/texas-holdem-vn.png" style="height: 164px;">
+                    <div class="white_size_14px center subcontent_button_play">CHƠI NGAY</div>
+                    <sup>NEW</sup>
+                </div>
+            </a>
+            <a id="pokerMenu" href="../Poker/index.html" class="subcontent_button menu_four_column">
+                <h3>Poker</h3>
+                <div class="bg">
+                    <img src="../_static/img/blank.png" data-src="/_static/menu/img/20180711/p2p/4_item/poker-vn.png" style="height: 164px;">
+                    <div class="white_size_14px center subcontent_button_play">CHƠI NGAY</div>
+                    <sup>NEW</sup>
+                </div>
+            </a>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="potm">
+        
+    </div>
+    <div class="clear"></div>
+</div></div><div id="palazzo_mobile_carousel" class="download_modal modal hide fade left background-grey" tabindex="-1" style="overflow: hidden;">
+    <div class="modal-body">
+        <a href="javascript:void(0);" data-dismiss="modal" aria-hidden="true">
+            <img style="position: absolute; top: 0; right: 0; z-index: 2;" src="../_static/img/blank.png" data-src="/_static/promotions/img/close.png">
+        </a>
+        <div class="center logo">
+            <i class="sprite_logo"></i>
+        </div>
+        <div class="palazzo_message">
+            <div class="title blue">3 Bước Đơn Giản để chơi Phiên Bản Download của Playtech</div>
+            <ul>
+                <li><b>Bước 1:</b>&nbsp;&nbsp;Nhấp vào nút Download bên dưới</li>
+                <li><b>Bước 2:</b>&nbsp;&nbsp;Cài đặt bằng cách nhấp Chạy hoặc Lưu trên ổ cứng máy tính</li>
+                <li><b>Bước 3:</b>&nbsp;&nbsp;Đăng nhập bằng cách gõ thêm "<span class="blue">w88</span>" phía trước tên tài khoản của quý khách.</li>
+            </ul>
+            <br>
+            Ví dụ:
+            <br>
+            nếu tên tài khoản của quý khách là "luckyplayer", quý khách đăng nhập bằng "<span class="blue">W88</span>LUCKYPLAYER".
+            <br>
+            <br>
+            <div class="center">
+                <a href="../../m.gf175488.com/live/download.html" rel="nofollow" target="_blank" class="button big">TẢI NGAY</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="palazzo_mobile" class="download_modal modal hide fade left background-grey" tabindex="-1" style="overflow: hidden;">
+    <div class="modal-body">
+        <a href="javascript:void(0);" data-dismiss="modal" aria-hidden="true">
+            <img style="position: absolute; top: 0; right: 0; z-index: 2;" src="../_static/img/blank.png" data-src="/_static/promotions/img/close.png">
+        </a>
+        <div class="center logo">
+            <i class="sprite_logo"></i>
+        </div>
+        <div class="palazzo_message">
+            <div class="title blue">
+                3 Bước Đơn Giản để chơi
+                <br>
+                Phiên Bản Download của Playtech
+            </div>
+            <ul>
+                <li><b>Bước 1:</b>&nbsp;&nbsp;Nhấp vào nút Download bên dưới</li>
+                <li><b>Bước 2:</b>&nbsp;&nbsp;Cài đặt bằng cách nhấp Chạy hoặc Lưu trên ổ cứng máy tính</li>
+                <li><b>Bước 3:</b>&nbsp;&nbsp;Đăng nhập bằng cách gõ thêm "<span class="blue">w88</span>" phía trước tên tài khoản của quý khách.</li>
+            </ul>
+            <br>
+            Ví dụ:
+            <br>
+            nếu tên tài khoản của quý khách là "luckyplayer", quý khách đăng nhập bằng "<span class="blue">W88</span>LUCKYPLAYER".
+            <br>
+            <br>
+            <div class="center">
+                <a href="../../m.gf175488.com/download.html" rel="nofollow" target="_blank" class="button big">TẢI NGAY</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="palazzo" class="download_modal modal hide fade left background-grey" tabindex="-1" style="overflow: hidden;">
+    <div class="modal-body">
+        <a href="javascript:void(0);" data-dismiss="modal" aria-hidden="true">
+            <img style="position: absolute; top: 0; right: 0; z-index: 2;" src="../_static/img/blank.png" data-src="/_static/promotions/img/close.png">
+        </a>
+        <div class="center logo">
+            <i class="sprite_logo"></i>
+        </div>
+        <div class="palazzo_message">
+            <div class="title blue">
+                3 Bước Đơn Giản để chơi
+                <br>
+                Phiên Bản Download của Playtech
+            </div>
+            <ul>
+                <li><b>Bước 1:</b>&nbsp;&nbsp;Nhấp vào nút Download bên dưới</li>
+                <li><b>Bước 2:</b>&nbsp;&nbsp;Cài đặt bằng cách nhấp Chạy hoặc Lưu trên ổ cứng máy tính</li>
+                <li><b>Bước 3:</b>&nbsp;&nbsp;Đăng nhập bằng cách gõ thêm "<span class="blue">w88</span>" phía trước tên tài khoản của quý khách.</li>
+            </ul>
+            <br>
+            Ví dụ:
+            <br>
+            nếu tên tài khoản của quý khách là "luckyplayer", quý khách đăng nhập bằng "<span class="blue">W88</span>LUCKYPLAYER".
+            <br>
+            <br>
+            <i>Quá trình cài đặt cần có phiên bản mới nhất của phần mềm <a href="../../get.adobe.com/flashplayer/otherversions/index.html" rel="nofollow" target="_blank">Adobe Flash Player</a> ( trong trình duyệt IE).</i>
+            <br>
+            <br>
+            <div class="center">
+                <a href="../../cdn.w88palazzo.com/d/setupglx.exe" rel="nofollow" class="button big">TẢI NGAY</a>
+            </div>
+        </div>
+        <div class="clear" style="margin: 8px 0 0;">
+            <input type="checkbox" id="palazzo_msg_chk" style="margin: 0;">&nbsp;<label for="palazzo_msg_chk">Không hiển thị lại</label>
+        </div>
+    </div>
+</div>
+<div id="massimo_download" class="download_modal modal hide fade left background-grey" tabindex="-1" style="overflow: hidden;">
+    <div class="modal-body">
+        <a href="javascript:void(0);" data-dismiss="modal" aria-hidden="true">
+            <img style="position: absolute; top: 0; right: 0; z-index: 2;" src="../_static/img/blank.png" data-src="/_static/promotions/img/close.png">
+        </a>
+        <div class="center logo">
+            <i class="sprite_logo"></i>
+        </div>
+        <div class="palazzo_message" style="position: relative;">
+            <div class="title blue" style="line-height: normal; text-align: left;">
+                Microgaming Tải về máy tính
+            </div>
+            <div class="" style="position:absolute; right: 10px;margin-top: -25px;">
+                <a href="http://resigner.qfcontent.com/w88.apk">
+                    <table>
+                        <tr>
+                            <td>
+                                <div style="margin:0 auto; width: 70px;">
+                                    <img src="../_static/img/blank.png" data-src="/_static/menu/img/ClubMassimo-MG-CN.png">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="center bold">
+                                Tải về MG Android
+                            </td>
+                        </tr>
+                    </table>
+                </a>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="">
+                <a href="https://dl.gp2cache.net/Massimo/Club_Massimo.exe" rel="nofollow" class="button big">TẢI NGAY</a>
+                <br><br>
+            </div>
+        </div>
+        <div class="clear" style="margin: 8px 0 0;">
+            <br><br><br><br>
+            <input type="checkbox" id="massimo_msg_chk" style="margin: 0;">&nbsp;<label for="massimo_msg_chk">Không hiển thị lại</label>
+        </div>
+        <img src="../_static/img/blank.png" data-src="/_static/menu/img/MG-popup-img.png" style="position:absolute;margin-top: -113px;left: 50%;margin-left:-133px;">
+    </div>
+</div>
+<div id="gallardo" class="download_modal modal hide fade left background-grey" tabindex="-1" style="overflow: hidden;">
+    <div class="modal-body">
+        <a href="javascript:void(0);" data-dismiss="modal" aria-hidden="true">
+            <img style="position: absolute; top: 0; right: 0; z-index: 2;" src="../_static/img/blank.png" data-src="/_static/promotions/img/close.png">
+        </a>
+        <div class="center logo">
+            <i class="sprite_logo"></i>
+        </div>
+        <div class="gallardo_message">
+            <div class="title blue">
+                3 Bước Đơn Giản để chơi
+                <br>
+                Phiên Bản Download của iSoftBet
+            </div>
+            <ul>
+                <li><b>Bước 1:</b>&nbsp;&nbsp;Nhấp vào nút Download bên dưới</li>
+                <li><b>Bước 2:</b>&nbsp;&nbsp;Cài đặt bằng cách nhấp Chạy hoặc Lưu trên ổ cứng máy tính</li>
+                <li><b>Bước 3:</b>&nbsp;&nbsp;Vui lòng nhập tên đăng nhập và mật khẩu</li>
+            </ul>
+
+            <br>
+            <br>
+            <div class="center">
+                <a href="https://dow-hello-tw.isoftbet.com/Lobby_x64_en.exe" rel="nofollow" class="button big">TẢI NGAY</a>
+            </div>
+        </div>
+        <div class="clear" style="margin: 8px 0 0;">
+            <input type="checkbox" id="gallardo_msg_chk" style="margin: 0;">&nbsp;<label for="gallardo_msg_chk">Không hiển thị lại</label>
+        </div>
+    </div>
+</div>
+<div id="fishingmaster_IOS" class="download_modal modal hide fade left background-grey" tabindex="-1" style="overflow: hidden;">
+    <div class="modal-body">
+        <a href="javascript:void(0);" data-dismiss="modal" aria-hidden="true">
+            <img style="position: absolute; top: 0; right: 0; z-index: 2;" src="../_static/img/blank.png" data-src="/_static/promotions/img/close.png">
+        </a>
+        <div class="center logo">
+            <i class="sprite_logo"></i>
+        </div>
+        <div class="palazzo_message">
+            <div class="title blue">Thực hiện 5 bước để dễ dàng chơi Vua Câu Cá trên iOS</div>
+            <ul>
+                <li><b>Bước 1:</b>&nbsp;&nbsp;Nhấp vào "TẢI NGAY" nút bên dưới</li>
+                <li><b>Bước 2:</b>&nbsp;&nbsp;Cài đặt Fishing Master bằng cách mở tập tin đã tải và lưu vào thiết bị</li>
+                <li><b>Bước 3:</b>&nbsp;&nbsp;Đến Cài Đặt => Cài Đặt Chung => Quản lý thông tin & Thiết bị</li>
+                <li><b>Bước 4:</b>&nbsp;&nbsp;Nhấp vào "Green Communications Inc" => Nhấp Trust</li>
+                <li><b>Bước 5:</b>&nbsp;&nbsp;Tất cả đã sẵn sàng, Quý Khách có thể bắt đầu chơi Vua Câu Cá trên thiết bị iOS</li>
+            </ul>
+            <div class="center">
+                <br>
+                <p>
+                    <a href="javascript:detectIOS('https://www.w88bkk.com/download.aspx?type=fishingmaster_ios','https://www.w88bkk.com/download.aspx?type=fishingmaster_ios_ipa');void(0);" rel="nofollow" class="button big">TẢI NGAY</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="mahjong_IOS" class="download_modal modal hide fade left background-grey" tabindex="-1" style="overflow: hidden;">
+    <div class="modal-body">
+        <a href="javascript:void(0);" data-dismiss="modal" aria-hidden="true">
+            <img style="position: absolute; top: 0; right: 0; z-index: 2;" src="../_static/img/blank.png" data-src="/_static/promotions/img/close.png">
+        </a>
+        <div class="center logo">
+            <i class="sprite_logo"></i>
+        </div>
+        <div class="palazzo_message">
+            <div class="title blue">Thực hiện 5 bước để dễ dàng chơi Texas Mahjong trên iOS</div>
+            <ul>
+                <li><b>Bước 1:</b>&nbsp;&nbsp;Nhấp vào "TẢI NGAY" nút bên dưới</li>
+                <li><b>Bước 2:</b>&nbsp;&nbsp;Cài đặt Texas Mahjong bằng cách mở tập tin đã tải và  lưu vào thiết bị</li>
+                <li><b>Bước 3:</b>&nbsp;&nbsp;Đến Cài Đặt => Cài Đặt Chung => Quản lý thông tin & Thiết bị</li>
+                <li><b>Bước 4:</b>&nbsp;&nbsp;Nhấp vào "Green Communications Inc" => Nhấp Trust</li>
+                <li><b>Bước 5:</b>&nbsp;&nbsp;Tất cả đã sẵn sàng, Quý Khách có thể bắt đầu chơi Texas Mahjong trên thiết bị iOS</li>
+            </ul>
+            <div class="center">
+                <br>
+                <p>
+                    <a href="https://tm.gp2play.com/mobile/ios/direct.html" rel="nofollow" target="_blank" class="button big">TẢI NGAY</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="bull_IOS" class="download_modal modal hide fade left background-grey" tabindex="-1" style="overflow: hidden;">
+    <div class="modal-body">
+        <a href="javascript:void(0);" data-dismiss="modal" aria-hidden="true">
+            <img style="position: absolute; top: 0; right: 0; z-index: 2;" src="../_static/img/blank.png" data-src="/_static/promotions/img/close.png">
+        </a>
+        <div class="center logo">
+            <i class="sprite_logo"></i>
+        </div>
+        <div class="palazzo_message">
+            <div class="title blue">Thực hiện 5 bước để dễ dàng chơi Super Bull trên iOS</div>
+            <ul>
+                <li><b>Bước 1:</b>&nbsp;&nbsp;Nhấp vào "TẢI NGAY" nút bên dưới</li>
+                <li><b>Bước 2:</b>&nbsp;&nbsp;Cài đặt Super Bull bằng cách mở tập tin đã tải và  lưu vào thiết bị</li>
+                <li><b>Bước 3:</b>&nbsp;&nbsp;Đến Cài Đặt => Cài Đặt Chung => Quản lý thông tin & Thiết bị</li>
+                <li><b>Bước 4:</b>&nbsp;&nbsp;Nhấp vào "Green Communications Inc" => Nhấp Trust</li>
+                <li><b>Bước 5:</b>&nbsp;&nbsp;Tất cả đã sẵn sàng, Quý Khách có thể bắt đầu chơi Super Bull trên thiết bị iOS</li>
+            </ul>
+            <div class="center">
+                <br>
+                <p>
+                    <a href="https://tm.gp2play.com/mobileNiuniu/1/ios_direct_en.html" rel="nofollow" target="_blank" class="button big">TẢI NGAY</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="w88_IOS" class="download_modal modal hide fade left background-grey" tabindex="-1" style="overflow: hidden;">
+    <div class="modal-body">
+        <a href="javascript:void(0);" data-dismiss="modal" aria-hidden="true">
+            <img style="position: absolute; top: 0; right: 0; z-index: 2;" src="../_static/img/blank.png" data-src="/_static/promotions/img/close.png">
+        </a>
+        <div class="center logo">
+            <i class="sprite_logo"></i>
+        </div>
+        <div class="palazzo_message">
+            <div class="title blue">Tải và tham gia ngay CLUB W88 chỉ với 5 bước dễ dàng trên hệ điều hành iOS</div>
+            <ul>
+                <li><b>Bước 1:</b>&nbsp;&nbsp;Nhấp vào nút "TẢI NGAY" dưới đây.</li>
+                <li><b>Bước 2:</b>&nbsp;&nbsp;Cài đặt <span class="blue">CLUB W88</span> bằng cách tải dữ liệu và lưu vào máy của Qúy khách.</li>
+                <li><b>Bước 3:</b>&nbsp;&nbsp;Vào mục CÀI ĐẶT >> CÀI ĐẶT CHUNG >> QUẢN LÝ THIẾT BỊ</li>
+                <li><b>Bước 4:</b>&nbsp;&nbsp;Nhấp vào "Green Communications Inc" >> Chọn Tin cậy</li>
+                <li><b>Bước 5:</b>&nbsp;&nbsp;Quý khách đã cài đặt thành công và có thể tham gia giải trí tại CLUB W88</li>
+            </ul>
+            <div class="center">
+                <br>
+                <p>
+                    <a href="javascript:detectIOS('https://www.w88bkk.com/download.aspx?type=w88_ios','https://www.w88bkk.com/download.aspx?type=w88_ios_ipa');" rel="nofollow" class="button big">TẢI NGAY</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Lucky Fishing -->
+<div id="fishing_download" class="download_modal modal hide fade left background-grey" tabindex="-1" style="overflow: hidden;">
+    <div class="modal-body">
+        <a href="javascript:void(0);" data-dismiss="modal" aria-hidden="true">
+            <img style="position: absolute; top: 0; right: 0; z-index: 2;" src="../_static/img/blank.png" data-src="/_static/promotions/img/close.png">
+        </a>
+        <div class="center logo">
+            <i class="sprite_logo"></i>
+        </div>
+        <div class="palazzo_message">
+            <div class="title blue">THẬT DỄ ĐỂ BẮT ĐẦU CHƠI BẮN CÁ ĂN XU</div>
+            <ul>
+                <li><b>Bước 1:</b>&nbsp;&nbsp;Bấm vào [Bank] ở phía trên.</li>
+                <li><b>Bước 2:</b>&nbsp;&nbsp;Đổi tiền mặt của Qúy Khách thành<a href="javascript:showMessagev2(&quot;<img src='/_static/menu/img/fishing_step1_en.jpg'>&quot;);">[Gold Coins]</a></li>
+                <!--<li><b>Bước 3:</b>&nbsp;&nbsp;Chọn vào sảnh trò chơi Câu cá</li>
+                <li><b>Bước 4:</b>&nbsp;&nbsp;Chuyển đổi [金币] của Qúy Khách thành <a href="javascript:showMessagev2(&quot;<img src='/_static/menu/img/fishing_step2.jpg'>&quot;);">[游戏币]</a></li>-->
+            </ul>
+            <div class="center">
+                <p>
+                    Thông báo: Với hiệu lực từ ngày 2016/7/26, Tỷ giá chuyển đổi sẽ là
+                    <br>
+                    1 RMB = 1000 Gold Coins.
+                </p>
+                <p>
+                    <a href="../../dl.gp2cache.net/fishing/W88FishingVN.exe?type=fishing_vn" rel="nofollow" target="_blank" class="button big">TẢI NGAY</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 3D Poseidon Fishing -->
+<div id="poseidonfishing_download" class="download_modal modal hide fade left background-grey" tabindex="-1" style="overflow: hidden;">
+    <div class="modal-body">
+        <a href="javascript:void(0);" data-dismiss="modal" aria-hidden="true">
+            <img style="position: absolute; top: 0; right: 0; z-index: 2;" src="../_static/img/blank.png" data-src="/_static/promotions/img/close.png">
+        </a>
+        <div class="center logo">
+            <i class="sprite_logo"></i>
+        </div>
+        <div class="palazzo_message">
+            <div class="title blue">THẬT DỄ ĐỂ BẮT ĐẦU CHƠI BẮN CÁ ĂN XU</div>
+            <ul>
+                <li><b>Bước 1:</b>&nbsp;&nbsp;Bấm vào [Bank] ở phía trên.</li>
+                <li><b>Bước 2:</b>&nbsp;&nbsp;Đổi tiền mặt của Qúy Khách thành<a href="javascript:showMessagev2(&quot;<img src='/_static/menu/img/fishing_step1_en.jpg'>&quot;);">[Gold Coins]</a></li>
+                <!--<li><b>Bước 3:</b>&nbsp;&nbsp;Chọn vào sảnh trò chơi Câu cá</li>
+                <li><b>Bước 4:</b>&nbsp;&nbsp;Chuyển đổi [金币] của Qúy Khách thành <a href="javascript:showMessagev2(&quot;<img src='/_static/menu/img/fishing_step2.jpg'>&quot;);">[游戏币]</a></li>-->
+            </ul>
+            <div class="center">
+                <p>
+                    Thông báo: Với hiệu lực từ ngày 2016/7/26, Tỷ giá chuyển đổi sẽ là
+                    <br>
+                    1 RMB = 1000 Gold Coins.
+                </p>
+                <p>
+                    <a href="../../dl.gp2cache.net/fishing/W88FishingVN.exe?type=fishing_vn" rel="nofollow" target="_blank" class="button big">TẢI NGAY</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="nuovo" class="download_modal modal hide fade left background-grey" tabindex="-1" style="overflow: hidden;">
+    <div class="modal-body">
+        <a href="javascript:void(0);" data-dismiss="modal" aria-hidden="true">
+            <img style="position: absolute; top: 0; right: 0; z-index: 2;" src="../_static/img/blank.png" data-src="/_static/promotions/img/close.png">
+        </a>
+        <div class="center logo">
+            <i class="sprite_logo"></i>
+        </div>
+        <div class="palazzo_message">
+            <div class="center">
+                <p>Các trò chơi của "Club Nuovo (PS), (MRS), (GNS) & (BO)" được sử dụng chung tài khoản với Club Bravado, Apollo, Divino, Gallardo và Massimo.</p>
+            </div>
+        </div>
+        <div class="clear" style="margin: 8px 0 0;">
+            <input type="checkbox" id="nuovo_msg_chk" style="margin: 0;">&nbsp;<label for="nuovo_msg_chk">Không hiển thị lại</label>
+        </div>
+    </div>
+</div>
+
+<div id="home_popup" class="modal hide fade left background-grey">
+    <div class="modal-body">
+        <a href="javascript:void(0);" data-dismiss="modal" aria-hidden="true">
+            <img style="position: absolute; top: 0; right: 0; z-index: 2;" src="../_static/img/blank.png" data-src="/_static/promotions/img/close.png">
+        </a>
+        <div class="center">
+            <img src="../_static/img/blank.png" data-src="/_static/home/popup/img/w88lite-pop-up-banner-vn.jpg">
+        </div>
+        <div class="palazzo_message">
+            <div style="text-align:center;padding: 20px 0 0 0;">
+                <div style="display:inline-block">
+                    <img src="../_static/img/blank.png" data-src="/_static/mobile/img/v2/W88Lite-Android-vn.png">
+                </div>
+                <div style="display:inline-block;vertical-align: middle;padding: 0 0 0 20px;">
+                    <div class="title blue" style="padding: 0 0 10px 0;">
+                        ỨNG DỤNG MỚI W88 LITE
+                    </div>
+                    <div class="detail" style="text-align:left;">
+                        ẤN TƯỢNG, NHANH CHÓNG VÀ BẢO MẬT
+                    </div>
+                </div>
+            </div>                     
+            <br>
+            <div class="center" style="padding:0 0 18px 0;">
+                <a href="https://casino.gp2fun.com/liteapp/download.html?op=W88&amp;lang=vi-vn" target="_blank" style="margin: 10px 10px 10px 0;" class="big button center"><img src="../_static/img/blank.png" data-src="/_static/casino/img/android_w.png" style="vertical-align: top;">&nbsp;TẢI ANDROID</a>
+            </div>
+        </div>
+
+        <div class="clear" style="margin: 10px;">
+            <input type="checkbox" id="home_popup_chk" style="margin: 0;">&nbsp;<label for="home_popup_chk">Không hiển thị lại</label>
+        </div>
+    </div>
+</div>
+
+<div id="modalFrame2" class="modal hide fade left background-grey" tabindex="-1">
+    <a class="float_right" href="javascript:void(0);" data-dismiss="modal" aria-hidden="true" style="position: absolute; right: 0; top: 0; z-index: 2;">
+        <img src="../_static/img/blank.png" data-src="/_static/promotions/img/close.png">
+    </a>
+    <div class="modal-body" style="padding: 0; margin: 0;">
+        <p class="message" style="padding: 0; margin: 0;">
+    </div>
+</div>
+
+<script>
+    function slotsMenuInit() {
+        var palazzo_download = ($.cookie("palazzo_download")) ? parseInt($.cookie("palazzo_download")) : 0;
+        if (!palazzo_download &&
+        (location.pathname.toLowerCase().indexOf("/slots/palazzo") >= 0 ||
+            location.pathname.toLowerCase().indexOf("/slots/playtech") >= 0 ||
+            location.pathname.toLowerCase() == "/slots/" ||
+            location.pathname.toLowerCase() == "/slots/default.aspx")) {
+            $("#palazzo").modal('show');
+        } else {
+            $("#palazzo_msg_chk").attr("checked", "checked");
+        }
+        $("#palazzo_msg_chk").click(function() {
+            if (!$("#palazzo_msg_chk").attr("checked")) {
+                $.cookie("palazzo_download", null);
+            } else {
+                $.cookie("palazzo_download", "1", { expires: 365 });
+            }
+        });
+
+        var gallardo_download = ($.cookie("gallardo_download")) ? parseInt($.cookie("gallardo_download")) : 0;
+        if (!gallardo_download &&
+        (location.pathname.toLowerCase().indexOf("/slots/gallardo") >= 0 ||
+            location.pathname.toLowerCase().indexOf("/slots/isoftbet") >= 0)) {
+            $("#gallardo").modal('show');
+        } else {
+            $("#gallardo_msg_chk").attr("checked", "checked");
+        }
+
+        $("#gallardo_msg_chk").click(function() {
+            if (!$("#gallardo_msg_chk").attr("checked")) {
+                $.cookie("gallardo_download", null);
+            } else {
+                $.cookie("gallardo_download", "1", { expires: 365 });
+            }
+        });
+
+        var massimo_download = ($.cookie("massimo_msg_chk")) ? parseInt($.cookie("massimo_msg_chk")) : 0;
+        if (!massimo_download &&
+        (location.pathname.toLowerCase().indexOf("/slots/massimo") >= 0 ||
+            location.pathname.toLowerCase().indexOf("/slots/microgaming") >= 0)) {
+            $("#massimo_download").modal('show');
+        } else {
+            $("#massimo_msg_chk").attr("checked", "checked");
+        }
+
+        $("#massimo_msg_chk").click(function() {
+            if (!$("#massimo_msg_chk").attr("checked")) {
+                $.cookie("massimo_msg_chk", null);
+            } else {
+                $.cookie("massimo_msg_chk", "1", { expires: 365 });
+            }
+        }); 
+
+        // Remove 2019-01-24
+        var popUpStartDt = new Date("2019/02/12 00:00:00");
+        if (popUpStartDt <= new Date()) {
+            var homePopup = ($.cookie("home_popup")) ? parseInt($.cookie("home_popup")) : 0;
+            if (!homePopup &&
+                (location.pathname.toLowerCase() === "/" || location.pathname.toLowerCase() === "/default.aspx"))
+                $("#home_popup").modal('show');
+            else
+                $("#home_popup_chk").attr("checked", "checked");
+
+            $('#home_popup_chk').on('click',
+                function() {
+                    if (!$('#home_popup_chk').attr("checked"))
+                        $.cookie("home_popup", null);
+                    else
+                        $.cookie("home_popup", "1", { expires: 365 });
+                });
+        };
+    };
+
+    function fishingMenuInit() {
+        if (location.href.toLowerCase().indexOf("/fishing") >= 0 && location.href.toLowerCase().indexOf("/fishingmaster") < 0) {
+            //$('#fishing_download').modal('show');
+            $('#poseidonfishing_download').modal('show');
+        }
+        else if (location.href.toLowerCase().indexOf("/3dposeidon") >= 0) {
+            $('#poseidonfishing_download').modal('show');
+        }
+
+        $('.luckyfishing, .poseidonfishing').on('click', function (e) {
+            if (location.href.toLowerCase().indexOf("/fishing") < 0 || location.href.toLowerCase().indexOf("/fishingmaster") >= 0) {
+                e.preventDefault();
+                location.href = "../Games/Fishing/index.html";
+
+                return false;
+            }
+        });
+
+        $('#fishing_download, #poseidonfishing_download, #modalFrame2,.modal').on('shown.bs.modal',
+            function () {
+                img_unveil();
+                $('#fishing_download img').on('load',
+                    function () {
+                        $(window).trigger("resize");
+                    });
+            });
+    };
+
+    window.showMessagev2 = function (message) {
+        $("#modalFrame2").find("p.message").html(message);
+        $("#modalFrame2").modal("show");
+        $('#modalFrame2 img').on('load', function () {
+            $(window).trigger("resize");
+        });
+    }
+
+    window.detectIOS = function (link1, link2) {
+        if ((/iPhone|iPad|iPod/i.test(navigator.userAgent))) {
+            location.href = link1;
+        }
+        else {
+            location.href = link2;
+        }
+    }
+
+    $(function () {
+        slotsMenuInit();
+        fishingMenuInit();
+    });
+</script>
+
+    </div>
+    <div class="subMenu clear">
+        <div class="opacity_background"></div>
+        <div class="menuContent">
+            <ul></ul>
+        </div>
+    </div>
+</div>
+
+
+<div id="loginFrame" class="modal hide fade left background-grey" tabindex="-1" style="overflow: hidden;" data-backdrop="static">
+    <div class="modal-body">
+        <a href="javascript:void(0);" data-dismiss="modal" aria-hidden="true">
+            <img style="position: absolute; top: 0; right: 0; z-index: 2;" src="../_static/promotions/img/close.png">
+        </a>
+        <iframe src="#" style="border: 0; overflow: hidden; width: 430px; height: 260px;" onload="this.style.display = 'block';" frameborder='0' border='0' allowtransparency="true"></iframe>
+    </div>
+</div>
+
+<style>
+    #loginFrame2 {
+        width: 690px;
+        margin-left: -345px;
+        border: 0;
+        top: 140px !important;
+        margin-top: 0 !important;
+    }
+
+        #loginFrame2 .modal-body {
+            padding: 15px 30px;
+        }
+
+        #loginFrame2 * {
+            font-size: 16px;
+        }
+</style>
+<div id="loginFrame2" class="modal hide fade left background-grey" tabindex="-1" style="overflow: hidden;" data-backdrop="static">
+    <div class="modal-body">
+        <a href="javascript:void(0);" data-dismiss="modal" aria-hidden="true">
+            <img style="position: absolute; top: 0; right: 0; z-index: 2;" src="../_static/promotions/img/close.png">
+        </a>
+        
+    </div>
+</div>
+
+<div id="modalFrame" class="modal hide fade left background-grey" tabindex="-1">
+    <div class="modal-body">
+        
+        <p class="message">
+        <div style="text-align: center;">
+            <a href="#" class="button_submit center closeModal" data-dismiss="modal" aria-hidden="true">ĐÓNG </a>
+        </div>
+    </div>
+</div>
+<div id="logoutFrame" class="modal hide fade left background-grey" tabindex="-1" data-backdrop="static">
+    <div class="modal-body">
+        <p class="message multiple">
+            Lỗi đăng nhập nhiều lần, vui lòng thử đăng nhập lại sau khi trang web chuyển hướng
+        </p>
+        <p class="message logout">
+            Quý Khách đã đăng xuất
+        </p>
+        <div style="text-align: center;">
+            <a href="register.html" class="button_submit center closeModal" aria-hidden="true">ĐÓNG</a>
+        </div>
+    </div>
+</div>
+<div id="announcementFrame" class="modal hide fade left background-grey" tabindex="-1">
+    <div class="modal-body">
+        
+        <div class="message">
+            <ul></ul>
+        </div>
+        <div style="text-align: center;">
+            <a href="#" class="button_submit center closeModal" data-dismiss="modal" aria-hidden="true">ĐÓNG </a>
+        </div>
+    </div>
+</div>
+<div id="announcementFrame2" class="modal hide fade left background-grey" tabindex="-1" data-noannouncement="Không có thông báo liên quan">
+    <div class="modal-body">
+        <a class="float_right" data-dismiss="modal" aria-hidden="true" href="javascript:void(0);">
+            <img style="position: absolute; top: 0; right: 0; z-index: 3; height: 40px; width: 40px;" src="../_static/promotions/img/close.png">
+        </a>
+        <div style="position: absolute; top: 0; right: 0; width: 100%;">
+            <div class="annoucement_category"></div>
+        </div>
+        <div style="height: 40px"></div>
+        <div class="annoucement_body">
+        </div>
+        <div class="" style="position: absolute; bottom: 0; right: 0; width: 100%;">
+            <div class="annoucement_footer right" style="padding: 10px;">
+                <div class="annoucement_pager">
+                    
+                    <span class="white_size_18px blue"></span>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+    function menuInit(data) {
+        if (data.Currency.length > 0) {
+            $("a[data-afterlogin]").each(function () {
+                $(this).attr("href", $(this).attr("data-afterlogin"));
+            });
+        }
+        if ((data.Currency.length > 0 && data.Currency != "RMB") || (data.Currency.length == 0 && data.Language != "zh-cn")) {
+            $("a.fishing_menu.subcontent_button").parent().find("a.subcontent_button").removeClass("menu_eight_column").addClass("menu_seven_column");
+            $(".fishing_menu").remove();
+
+            //$('div.sports a.menu_seven_column').removeClass('menu_seven_column').addClass('menu_six_column');
+        }
+        else {
+            $("a.hide_for_RMB.subcontent_button").parent().find("a.subcontent_button").removeClass("menu_six_column").addClass("menu_four_column");
+            $("a.hide_for_RMB.subcontent_button").parent().find("a.subcontent_button").removeClass("menu_seven_column").addClass("menu_five_column");
+            $("a.hide_for_RMB.subcontent_button").remove();
+            $(".item.hide_for_RMB").remove();
+            $(".column.hide_for_RMB").remove();
+            $("sup.hide_for_RMB").remove();
+        }
+        if (data.Currency.length > 0 && data.Currency == "USD") {
+            $("a.hide_for_RMB.subcontent_button").parent().find("a.subcontent_button").removeClass("menu_six_column").addClass("menu_four_column");
+            $("a.hide_for_RMB.subcontent_button").parent().find("a.subcontent_button").removeClass("menu_seven_column").addClass("menu_five_column");
+            $("a.hide_for_RMB.subcontent_button").remove();
+            $(".item.hide_for_RMB").remove();
+            $(".column.hide_for_RMB").remove();
+            $("sup.hide_for_RMB").remove();
+        }
+        if ((data.Currency.length > 0 && data.Currency == "MYR") || (data.Currency.length == 0 && data.Language == "zh-my") || (data.Currency.length == 0 && data.Language == "en-us.my")) {
+            $("a.hide_for_MYR.subcontent_button").parent().find("a.subcontent_button").removeClass("menu_six_column").addClass("menu_five_column");
+            $("a.hide_for_MYR.subcontent_button").remove();
+            $(".item.hide_for_MYR").remove();
+            $(".column.hide_for_MYR").remove();
+            $("sup.hide_for_MYR").remove();
+        }
+        if ((data.Currency.length > 0 && !(data.Currency == "THB" || data.Currency == "RMB" || data.Currency == "UUS" || data.Currency == "MYR" || data.Currency == "IDR"))
+            || (data.Currency.length == 0 && !(data.Language == "th-th" || data.Language == "zh-cn" || data.Language == "zh-my" || data.Language == "en-us.my" || data.Language == "id-id"))) {
+            $("a.fishing_fascino.subcontent_button").parent().find("a.subcontent_button").removeClass("menu_seven_column").addClass("menu_six_column");
+            $(".fishing_fascino").remove();
+            if (location.href.toLowerCase().indexOf('/games/fascino') >= 0) {
+                location.href = "../index.html";
+            }
+        }
+        if (data.Category && data.Category != "N" && data.Category.length > 0) {
+            $(".NON-VIP").hide();
+            $(".VIP-ONLY").show();
+            $("a[data-VIPONLY]").each(function () {
+                $(this).attr("href", $(this).attr("data-VIPONLY"));
+            });
+        }
+        else {
+            $(".NON-VIP").show();
+            $(".VIP-ONLY").remove();
+        }
+    };
+</script>
+
+		<div class="register_contact" style="position: absolute; width: 600px; height: 85px; top: 0; right: 0; z-index: 1002;">
+			<div class="float_right clear" style="width: 400px;">
+				<ul class="contact_option clear">
+	<li><a href="#vn_call" data-toggle="tab" data-link="#" target="_self"><img type="hover" src="../_static/register/img/grey/icon_phone_off.png"></a></li>
+    <li><a href="#email_general" data-toggle="tab" data-link="mailto:infovn@w88.com" target="_self"><img type="hover" src="../_static/register/img/grey/icon_email_off.png"></a></li>
+	<li><a href="#skype" data-toggle="tab" data-link="skype:w88cs.viet" target="_self"><img type="hover" src="../_static/register/img/grey/icon_skype_off.png"></a></li>
+	
+    <li class="active"><a href="#live_chat" data-toggle="tab" data-link="javascript:load_livechat();" target="_self"><img type="hover" src="../_static/register/img/grey/icon_livechat_off.png"></a></li>
+</ul>
+<div class="tab-content tab-content-wrap clear">
+	<div class="tab-pane left active" id="live_chat">
+		Nhấp vào đây để được hỗ trợ  <a href="javascript:load_livechat();">Chat Online</a> ngay lập tức
+	</div>
+	<div class="tab-pane left" id="skype">
+		Quý khách có thể dung <a href="skype:CSViet.W88">Skype</a> để chat với chúng tôi
+	</div>
+	<div class="tab-pane left" id="email_general">
+			Dành cho các thắc mắc về <a href="../cdn-cgi/l/email-protection.html#3b52555d544d557b4c030315585456">General Betting và  Account Enquiry</a>
+	</div>
+    <div class="tab-pane left" id="vn_call">
+		Vui lòng gọi số <span class="blue">(+84) 936599988</span> hoặc <span class="blue">(+44) 2036085161</span>, chúng tôi sẵn sàng phục vụ quý khách (Phí quốc tế có thể được áp dụng).
+	</div>
+</div>
+			</div>
+		</div>
+		<style>
+			.headerMember {
+				display: none;
+			}
+
+			div.title.special {
+				background-color: transparent;
+			}
+		</style>
+		<script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+			function refreshCaptcha2(captchaID, code) {
+				var w = getParameterByName2("w", $(captchaID).attr("src"));
+				if (w) {
+					$(captchaID).attr("src", "/common/captcha4.aspx?s=" + code + "&t=" + Date() + "&w=" + w);
+				}
+				else {
+					$(captchaID).attr("src", "/common/captcha4.aspx?s=" + code + "&t=" + Date());
+				}
+			}
+
+			$(function () {
+				$(".headerMember").children().appendTo(".tempPlace");
+				//$(".headerMember").html("");
+				$(".headerMember").append($(".register_contact"));
+				$(".headerMember").show();
+				$(".subMenu,.subcontent_holder").remove();
+			});
+
+			$(window).on('load', function () {
+				setTimeout(function () {
+					var totalWidth = 0;
+					$('.contact_option li').each(function (index) {
+						totalWidth += parseInt($(this).width(), 10);
+					});
+
+					$(".languageOpener").css("position", "absolute").insertBefore(".contact_option").css("right", 0).css("marginRight", (totalWidth) + "px");
+				}, 100);
+			})
+		</script>
+	</div>
+	<form name="form1" method="post" action="https://www.w88bkk.com/_secure/register.aspx" id="form1">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTExNjE0NjkyMDkPZBYEAgIPFgIeBFRleHQFpgw8dWwgY2xhc3M9ImNvbnRhY3Rfb3B0aW9uIGNsZWFyIj4NCgk8bGk+PGEgaHJlZj0iI3ZuX2NhbGwiIGRhdGEtdG9nZ2xlPSJ0YWIiIGRhdGEtbGluaz0iIyIgdGFyZ2V0PSJfc2VsZiI+PGltZyB0eXBlPSJob3ZlciIgc3JjPSIvX3N0YXRpYy9yZWdpc3Rlci9pbWcvZ3JleS9pY29uX3Bob25lX29mZi5wbmciIC8+PC9hPjwvbGk+DQogICAgPGxpPjxhIGhyZWY9IiNlbWFpbF9nZW5lcmFsIiBkYXRhLXRvZ2dsZT0idGFiIiBkYXRhLWxpbms9Im1haWx0bzppbmZvdm5Adzg4LmNvbSIgdGFyZ2V0PSJfc2VsZiI+PGltZyB0eXBlPSJob3ZlciIgc3JjPSIvX3N0YXRpYy9yZWdpc3Rlci9pbWcvZ3JleS9pY29uX2VtYWlsX29mZi5wbmciIC8+PC9hPjwvbGk+DQoJPGxpPjxhIGhyZWY9IiNza3lwZSIgZGF0YS10b2dnbGU9InRhYiIgZGF0YS1saW5rPSJza3lwZTp3ODhjcy52aWV0IiB0YXJnZXQ9Il9zZWxmIj48aW1nIHR5cGU9ImhvdmVyIiBzcmM9Ii9fc3RhdGljL3JlZ2lzdGVyL2ltZy9ncmV5L2ljb25fc2t5cGVfb2ZmLnBuZyIgLz48L2E+PC9saT4NCgkNCiAgICA8bGkgY2xhc3M9ImFjdGl2ZSI+PGEgaHJlZj0iI2xpdmVfY2hhdCIgZGF0YS10b2dnbGU9InRhYiIgZGF0YS1saW5rPSJqYXZhc2NyaXB0OmxvYWRfbGl2ZWNoYXQoKTsiIHRhcmdldD0iX3NlbGYiPjxpbWcgdHlwZT0iaG92ZXIiIHNyYz0iL19zdGF0aWMvcmVnaXN0ZXIvaW1nL2dyZXkvaWNvbl9saXZlY2hhdF9vZmYucG5nIiAvPjwvYT48L2xpPg0KPC91bD4NCjxkaXYgY2xhc3M9InRhYi1jb250ZW50IHRhYi1jb250ZW50LXdyYXAgY2xlYXIiPg0KCTxkaXYgY2xhc3M9InRhYi1wYW5lIGxlZnQgYWN0aXZlIiBpZD0ibGl2ZV9jaGF0Ij4NCgkJTmjhuqVwIHbDoG8gxJHDonkgxJHhu4MgxJHGsOG7o2MgaOG7lyB0cuG7oyAgPGEgaHJlZj0iamF2YXNjcmlwdDpsb2FkX2xpdmVjaGF0KCk7IiA+Q2hhdCBPbmxpbmU8L2E+IG5nYXkgbOG6rXAgdOG7qWMNCgk8L2Rpdj4NCgk8ZGl2IGNsYXNzPSJ0YWItcGFuZSBsZWZ0IiBpZD0ic2t5cGUiPg0KCQlRdcO9IGtow6FjaCBjw7MgdGjhu4MgZHVuZyA8YSBocmVmPSJza3lwZTpDU1ZpZXQuVzg4Ij5Ta3lwZTwvYT4gxJHhu4MgY2hhdCB24bubaSBjaMO6bmcgdMO0aQ0KCTwvZGl2Pg0KCTxkaXYgY2xhc3M9InRhYi1wYW5lIGxlZnQiIGlkPSJlbWFpbF9nZW5lcmFsIj4NCgkJCUTDoG5oIGNobyBjw6FjIHRo4bqvYyBt4bqvYyB24buBIDxhIGhyZWY9Im1haWx0bzppbmZvdm5Adzg4LmNvbSIgPkdlbmVyYWwgQmV0dGluZyB2w6AgIEFjY291bnQgRW5xdWlyeTwvYT4NCgk8L2Rpdj4NCiAgICA8ZGl2IGNsYXNzPSJ0YWItcGFuZSBsZWZ0IiBpZD0idm5fY2FsbCI+DQoJCVZ1aSBsw7JuZyBn4buNaSBz4buRIDxzcGFuIGNsYXNzPSJibHVlIj4oKzg0KSA5MzY1OTk5ODg8L3NwYW4+IGhv4bq3YyA8c3BhbiBjbGFzcz0iYmx1ZSI+KCs0NCkgMjAzNjA4NTE2MTwvc3Bhbj4sIGNow7puZyB0w7RpIHPhurVuIHPDoG5nIHBo4bulYyB24bulIHF1w70ga2jDoWNoIChQaMOtIHF14buRYyB04bq/IGPDsyB0aOG7gyDEkcaw4bujYyDDoXAgZOG7pW5nKS4NCgk8L2Rpdj4NCjwvZGl2PmQCAw9kFigCBA8WAh8ABYATPGRpdiBjbGFzcz0ibGVmdF9zaWRlX3Byb21vIj4NCiAgICA8ZGl2IGNsYXNzPSJkaW5wcm8gd2hpdGVfc2l6ZV8yNHB4IGJsdWUgY2VudGVyIHdoaXRlX3NpemVfMjBweCI+DQogICAgICAgIFRIQU0gR0lBIE5HQVkhISENCiAgICA8L2Rpdj4NCiAgICA8ZGl2Pg0KICAgICAgICA8dWw+DQogICAgICAgICAgICA8bGk+PGEgaHJlZj0iL1Byb21vdGlvbi5hc3B4I1VTRDIwMEJPTlVTIiB0YXJnZXQ9Il9ibGFuayI+xJDEg25nIGvDvSB0w6BpIGtob+G6o24gdsOgICBuaOG6rW4gbmdheSAxMDAlIGNobyB0aMOgbmggdmnDqm4gbeG7m2kgLSBUaeG7gW4gdGjGsOG7n25nIGzDqm4gxJHhur9uIDQsMDAwIFZORCEgRHV5IG5o4bqldCB04bqhaSBXODguPC9hPjwvbGk+DQogICAgICAgICAgICA8bGk+PGEgaHJlZj0iL1Byb21vdGlvbi5hc3B4I1NhZmV0eUFjY291bnRWTiIgdGFyZ2V0PSJfYmxhbmsiPk5o4bqtbiBuZ2F5IDkwIFZORCBUaeG7gW4gQ8aw4bujYyBNaeG7hW4gUGjDrSBraGkgeMOhYyBuaOG6rW4gdGjDoG5oIGPDtG5nIOKAnFTDgEkgS0hP4bqiTiBBTiBUT8OATuKAnS48L2E+PC9saT4NCiAgICAgICAgICAgIDxsaT5UaMaw4bufbmcgbuG6oXAgbOG6oWkgMTAlIGjDoG5nIG5nw6B5IHThuqFpIENhc2lubyB0cuG7sWMgdHV54bq/biB2w6AgRS10aOG7gyB0aGFvLiBDaMawYSBiYW8gZ2nhu50gbmjhuq1uIGtodXnhur9uIG3Do2kgbOG6oWkgxJHGoW4gZ2nhuqNuIHbDoCBk4buFIGTDoG5nIMSR4bq/biB0aOG6vy4gR+G7rWkgdGnhu4FuIG5nYXkgaMO0bSBuYXkhPC9saT4NCiAgICAgICAgICAgIDxsaT48YSBocmVmPSJodHRwczovL2tldHF1YXR5c28uY29tL3RoZS1nYW1lLTIvIiB0YXJnZXQ9Il9ibGFuayI+R2lhbyBk4buLY2ggMjQvNy0g4bqobiBEYW5oLSBOaGFuaCBDaMOzbmcgY8O5bmcgVGjhursgR2FtZSBXODghIE3hu4duaCBnacOhIHRo4bq7IGzDqm4gxJHhur9uIDUwIHRyaeG7h3UgxJHhu5NuZyB2w6Aga2jDtG5nIGdp4bubaSBo4bqhbiBz4buRIGzhuqduIG7huqFwITwvYT48L2xpPg0KICAgICAgICAgICAgPCEtLTxsaT5UaGFtIGdpYSBraHV54bq/biBtw6NpIGfhu61pIHRp4buBbiBs4bqnbiDEkeG6p3UgduG7m2kgdGnhu4FuIHRoxrDhu59uZyBsw6puIHThu5tpIFZORCA0LDAwMDwvbGk+LS0+DQogICAgICAgICAgICA8bGk+Vzg4IGjhu5cgdHLhu6MgxJHhuqd5IMSR4bunIGPDoWMgcGhpw6puIGLhuqNuIHRyw6puIG3DoXkgdMOtbmggdsOgIGRpIMSR4buZbmcuIFRy4bqjaSBuZ2hp4buHbSBjaOG6pXQgbMaw4bujbmcgxJHhur9uIHThu6sgbmjDoCBjw6FpIGjDoG5nIMSR4bqndSBDaMOidSDDgSE8L2xpPg0KICAgICAgICAgICAgPGxpPlThuqNpIHbDoCBjw6BpIMSR4bq3dCBuZ2F5IOG7qW5nIGThu6VuZyBo4buXIHRy4bujIFZQTiAgMS4xLjEuMSDEkeG7gyBraMOhbSBwaMOhIFc4OCBraMO0bmcgZ2nhu5tpIGjhuqFuLiBMxrDhu5t0IFdlYiDhuqhuIERhbmgg4oCTIFRoYW8gdMOhYyBuaGFuaCBjaMOzbmcsIMSRxqFuIGdp4bqjbi4gQ2hpIHRp4bq/dCB04bqhaTogPGEgaHJlZj0iaHR0cHM6Ly9iaXQubHkvMnNlZlRISSIgdGFyZ2V0PSJfYmxhbmsiPmh0dHBzOi8vYml0Lmx5LzJzZWZUSEk8L2E+PC9saT4NCiAgICAgICAgICAgIDwhLS08bGk+PGEgaHJlZj0iL01vYmlsZS8iIHRhcmdldD0iX2JsYW5rIj5UcuG6o2kgbmdoaeG7h20gYuG6o28gbeG6rXQgdOG6oWkgY8OhYyB0csOyIGNoxqFpIHbhu5tpIMSR4bqneSDEkeG7pyBtw6MgaMOzYSB3ZWIgU1NMLCBkaSDEkeG7mW5nIHbDoCBtw6F5IHTDrW5oIGLhuqNuZzwvYT48L2xpPi0tPg0KICAgICAgICA8L3VsPg0KICAgICAgICA8ZGl2IHN0eWxlPSJwYWRkaW5nLWxlZnQ6MjVweDsiPg0KICAgICAgICAgICAgPHRhYmxlPg0KICAgICAgICAgICAgICAgIDx0cj4NCiAgICAgICAgICAgICAgICAgICAgPHRkIHZhbGlnbj0idG9wIj4qKjwvdGQ+DQogICAgICAgICAgICAgICAgICAgIDx0ZCB2YWxp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MTk5N2cQBQQxOTk2BQQxOTk2ZxAFBDE5OTUFBDE5OTVnEAUEMTk5NAUEMTk5NGcQBQQxOTkzBQQxOTkzZxAFBDE5OTIFBDE5OTJnEAUEMTk5MQUEMTk5MWcQBQQxOTkwBQQxOTkwZxAFBDE5ODkFBDE5ODlnEAUEMTk4OAUEMTk4OGcQBQQxOTg3BQQxOTg3ZxAFBDE5ODYFBDE5ODZnEAUEMTk4NQUEMTk4NWcQBQQxOTg0BQQxOTg0ZxAFBDE5ODMFBDE5ODNnEAUEMTk4MgUEMTk4MmcQBQQxOTgxBQQxOTgxZxAFBDE5ODAFBDE5ODBnEAUEMTk3OQUEMTk3OWcQBQQxOTc4BQQxOTc4ZxAFBDE5NzcFBDE5NzdnEAUEMTk3NgUEMTk3NmcQBQQxOTc1BQQxOTc1ZxAFBDE5NzQFBDE5NzRnEAUEMTk3MwUEMTk3M2cQBQQxOTcyBQQxOTcyZxAFBDE5NzEFBDE5NzFnEAUEMTk3MAUEMTk3MGcQBQQxOTY5BQQxOTY5ZxAFBDE5NjgFBDE5NjhnEAUEMTk2NwUEMTk2N2cQBQQxOTY2BQQxOTY2ZxAFBDE5NjUFBDE5NjVnEAUEMTk2NAUEMTk2NGcQBQQxOTYzBQQxOTYzZxAFBDE5NjIFBDE5NjJnEAUEMTk2MQUEMTk2MWcQBQQxOTYwBQQxOTYwZxAFBDE5NTkFBDE5NTlnEAUEMTk1OAUEMTk1OGcQBQQxOTU3BQQxOTU3ZxAFBDE5NTYFBDE5NTZnEAUEMTk1NQUEMTk1NWcQBQQxOTU0BQQxOTU0ZxAFBDE5NTMFBDE5NTNnEAUEMTk1MgUEMTk1MmcQBQQxOTUxBQQxOTUxZxAFBDE5NTAFBDE5NTBnEAUEMTk0OQUEMTk0OWcQBQQxOTQ4BQQxOTQ4ZxAFBDE5NDcFBDE5NDdnEAUEMTk0NgUEMTk0NmcQBQQxOTQ1BQQxOTQ1ZxAFBDE5NDQFBDE5NDRnEAUEMTk0MwUEMTk0M2cQBQQxOTQyBQQxOTQyZxAFBDE5NDEFBDE5NDFnEAUEMTk0MAUEMTk0MGcQBQQxOTM5BQQxOTM5ZxAFBDE5MzgFBDE5MzhnEAUEMTkzNwUEMTkzN2cQBQQxOTM2BQQxOTM2ZxAFBDE5MzUFBDE5MzVnEAUEMTkzNAUEMTkzNGcQBQQxOTMzBQQxOTMzZxAFBDE5MzIFBDE5MzJnEAUEMTkzMQUEMTkzMWcQBQQxOTMwBQQxOTMwZxAFBDE5MjkFBDE5MjlnEAUEMTkyOAUEMTkyOGcQBQQxOTI3BQQxOTI3ZxAFBDE5MjYFBDE5MjZnEAUEMTkyNQUEMTkyNWcQBQQxOTI0BQQxOTI0ZxAFBDE5MjMFBDE5MjNnEAUEMTkyMgUEMTkyMmcQBQQxOTIxBQQxOTIxZxAFBDE5MjAFBDE5MjBnEAUEMTkxOQUEMTkxOWcQBQQxOTE4BQQxOTE4ZxAFBDE5MTcFBDE5MTdnEAUEMTkxNgUEMTkxNmcQBQQxOTE1BQQxOTE1ZxAFBDE5MTQFBDE5MTRnEAUEMTkxMwUEMTkxM2cQBQQxOTEyBQQxOTEyZxAFBDE5MTEFBDE5MTFnEAUEMTkxMAUEMTkxMGcQBQQxOTA5BQQxOTA5ZxAFBDE5MDgFBDE5MDhnEAUEMTkwNwUEMTkwN2cQBQQxOTA2BQQxOTA2ZxAFBDE5MDUFBDE5MDVnEAUEMTkwNAUEMTkwNGcQBQQxOTAzBQQxOTAzZxAFBDE5MDIFBDE5MDJnZGQCEA8PZBYCHwEFM1Z1aSBsb8yAbmcgbmjDosyjcCB0w6puIMSRxINuZyBuaMOizKNwIG1vbmcgbXXDtMyBbmQCEQ8PZBYCHwEFIlZ1aSBsb8yAbmcgbmjDosyjcCBtw6LMo3Qga2jDosyJdSBkAhIPD2QWAh8BBS9WdWkgbG/MgG5nIG5ow6LMo3AgbcOizKN0IGtow6LMiXUgbMOizIBuIG7GsMyDYWQCEw8WAh8FaBYCAgIPZBYCAgEPEA9kFgIfAQUjQ2jhu41uIHBo4bqnbiBt4buBbSBjaGF0IMawYSB0aMOtY2hkFgBkAhQPFgIfBWgWAgICD2QWAgIBDw9kFgIfAQUZTmjhuq1wIHTDqm4gxJHEg25nIG5o4bqtcGQCFQ8WAh8FaBYCAgIPZBYCAgEPD2QWAh8BBRtQbGVhc2UgZmlsbCBpbiB5b3VyIGxpbmUgSURkAhYPFgIfBWhkAhcPZBYCAgIPZBYCAgEPD2QWAh8BBSBWdWkgbMOybmcgbmjDosyjcCDEkGHMo2kgTHnMgSBJRGQCGA8PFgIfBWgWAh8BBSRWdWkgbMOybmcgbmjDosyjcCBtYcyDIHhhzIFjIG5ow6LMo25kZBnS9dJr+I7w293N1xPpu3r8wTcn8+sWzgB+LpyjJ816">
+</div>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="08993BF0">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="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">
+</div>
+		<div class="tempPlace hide"></div>
+		<input type="hidden" name="ioBlackBox" id="ioBlackBox">
+		<input type="hidden" name="hidden_ip" id="hidden_ip">
+		<input type="hidden" name="hidden_country" id="hidden_country">
+		<input type="hidden" name="hidden_permission" id="hidden_permission">
+		<div>
+
+			<div class="mainContent clear">
+				<br>
+				<div class="title special">Tạo tài khoản</div>
+				<div class="internal_wrap">
+					<div class="left_side_promo">
+    <div class="dinpro white_size_24px blue center white_size_20px">
+        THAM GIA NGAY!!!
+    </div>
+    <div>
+        <ul>
+            <li><a href="../Promotion.html#USD200BONUS" target="_blank">Đăng ký tài khoản và  nhận ngay 100% cho thành viên mới - Tiền thưởng lên đến 4,000 VND! Duy nhất tại W88.</a></li>
+            <li><a href="../Promotion.html#SafetyAccountVN" target="_blank">Nhận ngay 90 VND Tiền Cược Miễn Phí khi xác nhận thành công “TÀI KHOẢN AN TOÀN”.</a></li>
+            <li>Thưởng nạp lại 10% hàng ngày tại Casino trực tuyến và E-thể thao. Chưa bao giờ nhận khuyến mãi lại đơn giản và dễ dàng đến thế. Gửi tiền ngay hôm nay!</li>
+            <li><a href="https://ketquatyso.com/the-game-2/" target="_blank">Giao dịch 24/7- Ẩn Danh- Nhanh Chóng cùng Thẻ Game W88! Mệnh giá thẻ lên đến 50 triệu đồng và không giới hạn số lần nạp!</a></li>
+            <!--<li>Tham gia khuyến mãi gửi tiền lần đầu với tiền thưởng lên tới VND 4,000</li>-->
+            <li>W88 hỗ trợ đầy đủ các phiên bản trên máy tính và di động. Trải nghiệm chất lượng đến từ nhà cái hàng đầu Châu Á!</li>
+            <li>Tải và cài đặt ngay ứng dụng hỗ trợ VPN  1.1.1.1 để khám phá W88 không giới hạn. Lướt Web Ẩn Danh – Thao tác nhanh chóng, đơn giản. Chi tiết tại: <a href="https://bit.ly/2sefTHI" target="_blank">https://bit.ly/2sefTHI</a></li>
+            <!--<li><a href="/Mobile/" target="_blank">Trải nghiệm bảo mật tại các trò chơi với đầy đủ mã hóa web SSL, di động và máy tính bảng</a></li>-->
+        </ul>
+        <div style="padding-left:25px;">
+            <table>
+                <tr>
+                    <td valign="top">**</td>
+                    <td valign="top">Điều kiện và Điều khoản áp dụng</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+<style type="text/css">
+    div.left_side_promo.sponsor {
+        background-image: url(../_static/register/img/Registration-W88Wolves-VN.jpg);
+        background-size: 295px;
+        height: 350px;
+        border: 0;
+    }
+
+    div.left_side_promo.sponsor > div {
+        display: none;
+    }
+</style>
+					<div class="new_pattern">
+					
+						<style>
+							.nowrap {
+								white-space: nowrap;
+							}
+							table.form td.right {
+								white-space: nowrap;
+								min-width: 60px;
+							}
+
+							.validate_input {
+								width: 215px;
+							}
+
+							.validate_icon{
+								width:28px;
+							}
+
+							.validate_msg {
+								min-width: 200px;
+								position:relative;
+							}
+
+							.validate_msg div.error,.validate_msg  div.success {
+								width: 100%;
+								margin-left:0;
+								padding: 0;
+							}
+						</style>
+					<table class="form" cellpadding="0" cellspacing="0">
+						
+						<tr>
+							<td class="right">Địa Chỉ Email </td>
+							<td class="red">*</td>
+							<td class="validate_input">
+								<input name="email" type="text" id="email" class="required" data-msg-default="Vui lòng nhập địa chỉ email">
+							</td>
+							<td class="validate_icon"></td>
+							<td class="validate_msg"></td>
+						</tr>
+						<tr>
+							<td class="right">Số Điện Thoại Liên Lạc </td>
+							<td class="red">*</td>
+							<td class="validate_input">+&nbsp;<select name="contact_no_country" id="contact_no_country" class="required contact_no_country" data-msg-default="Vui lòng lựa chọn mã quốc gia" style="width: 60px;">
+	<option value="44">44</option>
+	<option value="60">60</option>
+	<option value="61">61</option>
+	<option value="62">62</option>
+	<option selected="selected" value="66">66</option>
+	<option value="81">81</option>
+	<option value="82">82</option>
+	<option value="84">84</option>
+	<option value="855">855</option>
+	<option value="86">86</option>
+	<option value="91">91</option>
+
+</select>&nbsp;-&nbsp;<input name="contact_no" type="text" id="contact_no" class="required contact_no" data-msg-default="Vui lòng nhập số điện thoại liên lạc">
+							</td>
+							<td class="validate_icon"></td>
+							<td class="validate_msg"></td>
+						</tr>
+						
+							<tr>
+								<td class="right"></td>
+								<td class="red"></td>
+								<td class="validate_input">
+									<hr style="width: 212px;">
+								</td>
+								<td class="validate_icon"></td>
+								<td class="validate_msg"></td>
+							</tr>
+							
+							<tr>
+								<td class="right">Tiền Tệ </td>
+								<td class="red">*</td>
+								<td class="validate_input">
+									<select name="currency" id="currency" cssclas="required" data-msg-default="Vui lòng lựa chọn tiền tệ.&lt;br />Tiền tệ không thể đổi sau khi đã chọn&lt;br />Hiện tại, W88 chỉ hổ trợ khách hàng Việt Nam đăng ký tài khoản sử dụng tiền tệ VND">
+	<option value="IDR">IDR</option>
+	<option value="KRW">KRW</option>
+	<option value="MYR">MYR</option>
+	<option value="RMB">RMB</option>
+	<option selected="selected" value="THB">THB</option>
+	<option value="USD">USD</option>
+	<option value="VND">VND</option>
+
+</select>
+									
+								</td>
+								<td class="validate_icon"></td>
+								<td class="validate_msg"></td>
+							</tr>
+							
+						<tr>
+							<td class="right"></td>
+							<td class="red"></td>
+							<td class="validate_input">
+								<hr style="width: 212px;">
+							</td>
+							<td class="validate_icon"></td>
+							<td class="validate_msg"></td>
+						</tr>
+						<tr>
+							<td class="right">Họ Và Tên </td>
+							<td class="red">*</td>
+							<td class="validate_input">
+								<input name="first_name" type="text" id="first_name" data-msg-default="Vui lòng điền đầy đủ họ tên (in hoa và không dấu).&lt;br />Họ tên chủ thẻ thanh toán và tài khoản ngân hàng phải trùng khớp với họ tên đã đăng ký khi tiến hành giao dịch gửi và rút tiền tại W88">
+								<div id="panel">
+	<input name="70384" type="text" id="70384" data-msg-default="Vui lòng điền đầy đủ họ tên (in hoa và không dấu).&lt;br />Họ tên chủ thẻ thanh toán và tài khoản ngân hàng phải trùng khớp với họ tên đã đăng ký khi tiến hành giao dịch gửi và rút tiền tại W88" data-watermark="" placeholder="">
+</div>
+							</td>
+							<td class="validate_icon"></td>
+							<td class="validate_msg"></td>
+						</tr>
+						<tr class="hide">
+							<td class="right">Họ </td>
+							<td class="red">*</td>
+							<td class="validate_input">
+								<input name="last_name" type="text" id="last_name" data-msg-default="Vui lòng nhập &quot;HỌ&quot;.&lt;br />Giao dịch chỉ có thể thực hiện nếu HỌ trùng với HỌ chủ tài khoản Ngân Hàng.">
+							</td>
+							<td class="validate_icon"></td>
+							<td class="validate_msg"></td>
+						</tr>
+						<tr>
+							<td class="right">Ngày Sinh </td>
+							<td class="red">*</td>
+							<td class="validate_input">
+								<select name="day" id="day" cssclas="required" data-msg-default="Vui lòng nhập ngày sinh hợp lệ">
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+	<option value="4">4</option>
+	<option value="5">5</option>
+	<option value="6">6</option>
+	<option value="7">7</option>
+	<option value="8">8</option>
+	<option value="9">9</option>
+	<option value="10">10</option>
+	<option value="11">11</option>
+	<option value="12">12</option>
+	<option value="13">13</option>
+	<option value="14">14</option>
+	<option value="15">15</option>
+	<option value="16">16</option>
+	<option value="17">17</option>
+	<option value="18">18</option>
+	<option value="19">19</option>
+	<option value="20">20</option>
+	<option value="21">21</option>
+	<option value="22">22</option>
+	<option value="23">23</option>
+	<option value="24">24</option>
+	<option value="25">25</option>
+	<option value="26">26</option>
+	<option value="27">27</option>
+	<option value="28">28</option>
+	<option value="29">29</option>
+	<option value="30">30</option>
+	<option value="31">31</option>
+
+</select><span style="display: inline-block; width: 7px;"></span><select name="month" id="month" cssclas="required" onchange="populateDays()" data-msg-default="Vui lòng nhập ngày sinh hợp lệ">
+	<option value="1">Th&#225;ng Một</option>
+	<option value="2">Th&#225;ng Hai</option>
+	<option value="3">Th&#225;ng Ba</option>
+	<option value="4">Th&#225;ng Tư</option>
+	<option value="5">Th&#225;ng Năm</option>
+	<option value="6">Th&#225;ng S&#225;u</option>
+	<option value="7">Th&#225;ng Bảy</option>
+	<option value="8">Th&#225;ng T&#225;m</option>
+	<option value="9">Th&#225;ng Ch&#237;n</option>
+	<option value="10">Th&#225;ng Mười</option>
+	<option value="11">Th&#225;ng Mười Một</option>
+	<option value="12">Th&#225;ng Mười Hai</option>
+
+</select><span style="display: inline-block; width: 7px;"></span><select name="year" id="year" cssclas="required" onchange="populateDays()" data-msg-default="Vui lòng nhập ngày sinh hợp lệ">
+	<option value="2001">2001</option>
+	<option value="2000">2000</option>
+	<option value="1999">1999</option>
+	<option value="1998">1998</option>
+	<option value="1997">1997</option>
+	<option value="1996">1996</option>
+	<option value="1995">1995</option>
+	<option value="1994">1994</option>
+	<option value="1993">1993</option>
+	<option value="1992">1992</option>
+	<option value="1991">1991</option>
+	<option value="1990">1990</option>
+	<option value="1989">1989</option>
+	<option value="1988">1988</option>
+	<option value="1987">1987</option>
+	<option value="1986">1986</option>
+	<option value="1985">1985</option>
+	<option value="1984">1984</option>
+	<option value="1983">1983</option>
+	<option value="1982">1982</option>
+	<option value="1981">1981</option>
+	<option value="1980">1980</option>
+	<option value="1979">1979</option>
+	<option value="1978">1978</option>
+	<option value="1977">1977</option>
+	<option value="1976">1976</option>
+	<option value="1975">1975</option>
+	<option value="1974">1974</option>
+	<option value="1973">1973</option>
+	<option value="1972">1972</option>
+	<option value="1971">1971</option>
+	<option value="1970">1970</option>
+	<option value="1969">1969</option>
+	<option value="1968">1968</option>
+	<option value="1967">1967</option>
+	<option value="1966">1966</option>
+	<option value="1965">1965</option>
+	<option value="1964">1964</option>
+	<option value="1963">1963</option>
+	<option value="1962">1962</option>
+	<option value="1961">1961</option>
+	<option value="1960">1960</option>
+	<option value="1959">1959</option>
+	<option value="1958">1958</option>
+	<option value="1957">1957</option>
+	<option value="1956">1956</option>
+	<option value="1955">1955</option>
+	<option value="1954">1954</option>
+	<option value="1953">1953</option>
+	<option value="1952">1952</option>
+	<option value="1951">1951</option>
+	<option value="1950">1950</option>
+	<option value="1949">1949</option>
+	<option value="1948">1948</option>
+	<option value="1947">1947</option>
+	<option value="1946">1946</option>
+	<option value="1945">1945</option>
+	<option value="1944">1944</option>
+	<option value="1943">1943</option>
+	<option value="1942">1942</option>
+	<option value="1941">1941</option>
+	<option value="1940">1940</option>
+	<option value="1939">1939</option>
+	<option value="1938">1938</option>
+	<option value="1937">1937</option>
+	<option value="1936">1936</option>
+	<option value="1935">1935</option>
+	<option value="1934">1934</option>
+	<option value="1933">1933</option>
+	<option value="1932">1932</option>
+	<option value="1931">1931</option>
+	<option value="1930">1930</option>
+	<option value="1929">1929</option>
+	<option value="1928">1928</option>
+	<option value="1927">1927</option>
+	<option value="1926">1926</option>
+	<option value="1925">1925</option>
+	<option value="1924">1924</option>
+	<option value="1923">1923</option>
+	<option value="1922">1922</option>
+	<option value="1921">1921</option>
+	<option value="1920">1920</option>
+	<option value="1919">1919</option>
+	<option value="1918">1918</option>
+	<option value="1917">1917</option>
+	<option value="1916">1916</option>
+	<option value="1915">1915</option>
+	<option value="1914">1914</option>
+	<option value="1913">1913</option>
+	<option value="1912">1912</option>
+	<option value="1911">1911</option>
+	<option value="1910">1910</option>
+	<option value="1909">1909</option>
+	<option value="1908">1908</option>
+	<option value="1907">1907</option>
+	<option value="1906">1906</option>
+	<option value="1905">1905</option>
+	<option value="1904">1904</option>
+	<option value="1903">1903</option>
+	<option value="1902">1902</option>
+
+</select>
+							</td>
+							<td class="validate_icon">&nbsp;</td>
+							<td class="validate_msg"></td>
+						</tr>
+						<tr>
+							<td class="right"></td>
+							<td class="red"></td>
+							<td class="validate_input">
+								<hr style="width: 212px;">
+							</td>
+							<td class="validate_icon"></td>
+							<td class="validate_msg"></td>
+						</tr>
+						<tr>
+							<td class="right">Tên Đăng Nhập </td>
+							<td class="red">*</td>
+							<td class="validate_input">
+								<input name="username" type="text" id="username" class="required" data-msg-default="Vui lòng nhập tên đăng nhập mong muốn">
+							</td>
+							<td class="validate_icon"></td>
+							<td class="validate_msg"></td>
+						</tr>
+						<tr>
+							<td class="right" style="vertical-align: top;">Mật Khẩu </td>
+							<td class="red" style="vertical-align: top;">*</td>
+							<td class="validate_input">
+								<input name="password" type="password" id="password" class="required" data-msg-default="Vui lòng nhập mật khẩu ">
+								<div class="password_checker hide">
+									<style>
+										span.password {
+											display: inline-block;
+											width: 36px;
+											height: 6px;
+											padding-right: 5px;
+											background-color: #808080;
+										}
+
+										.color_weak {
+											color: #d6b500 !important;
+										}
+
+										.background_weak {
+											background: #d6b500 !important;
+										}
+
+										.color_good {
+											color: #00d60f !important;
+										}
+
+										.background_good {
+											background: #00d60f !important;
+										}
+
+										.color_strong {
+											color: #2a8fbd !important;
+										}
+
+										.background_strong {
+											background: #2a8fbd !important;
+										}
+
+										.validate_icon, .validate_msg {
+											vertical-align: top;
+											padding-top: 5px;
+										}
+
+										.password_desc_weak, .password_desc_good, .password_desc_strong {
+											line-height: normal;
+										}
+
+										.rule_length i, .rule_alphanumeric i, .rule_space i {
+											margin-top: -2px;
+											margin-right: 2px;
+										}
+
+										div.grey[for=password] {
+											line-height: 20px !important;
+										}
+									</style>
+									<span class="password"></span>
+									<span class="password"></span>
+									<span class="password"></span>
+									<div class="float_right" id="password_score" style="padding-right: 6px;">
+									</div>
+									<div>
+										<div class="password_desc_weak hide color_weak">Phải chứa đủ chữ viết, số và ký tự đặc biệt</div>
+										<div class="password_desc_good hide color_good">Mật khẩu an toàn</div>
+										<div class="password_desc_strong hide color_strong">Mật khẩu rất an toàn, vui lòng ghi nhớ</div>
+									</div>
+									<div class="rule_checker hide">
+										<div class="rule_length">
+											<i class="sprite_error">&nbsp;</i>6 - 20 ký tự
+										</div>
+										<div class="rule_alphanumeric">
+											<i class="sprite_error">&nbsp;</i>Chữ số
+										</div>
+										<div class="rule_space">
+											<i class="sprite_error">&nbsp;</i>Không khoảng cách
+										</div>
+									</div>
+								</div>
+							</td>
+							<td class="validate_icon"></td>
+							<td class="validate_msg"></td>
+						</tr>
+						<tr>
+							<td class="right">Xác Nhận Mật Khẩu </td>
+							<td class="red">*</td>
+							<td class="validate_input">
+								<input name="confirm_password" type="password" id="confirm_password" class="required" data-msg-default="Vui lòng nhập mật khẩu lần nữa">
+							</td>
+							<td class="validate_icon"></td>
+							<td class="validate_msg"></td>
+						</tr>
+						<tr>
+							<td class="right"></td>
+							<td class="red"></td>
+							<td class="validate_input">
+								<hr style="width: 212px;">
+							</td>
+							<td class="validate_icon"></td>
+							<td class="validate_msg"></td>
+						</tr>
+						
+						
+						
+						
+						<tr id="row_affiliate" class="">
+	<td class="right">Mã Số Đại Lý </td>
+	<td class="red"></td>
+	<td class="validate_input">
+								<input name="affiliate_id" type="text" maxlength="19" id="affiliate_id" class="numeric" data-msg-default="Vui lòng nhập Đại Lý ID">
+							</td>
+	<td class="validate_icon"></td>
+	<td class="validate_msg"></td>
+</tr>
+
+						<tr class="tr-captcha">
+							<td class="right" style="vertical-align:top;">Mã Xác Nhận </td>
+							<td class="red" style="vertical-align:top;padding-top:5px;">*</td>
+							<td class="validate_input">
+
+								<table cellpadding="0" cellspacing="0" style="width: 100%;">
+									<tr>
+										<td>
+											
+										</td>
+									</tr>
+									<tr>
+										<td style="padding-top: 8px;">
+											<a href="javascript:refreshCaptcha2('#imgCaptcha', '833419a1-0569-468a-b9d6-32e888b4415b');">
+												<img for="captcha" id="imgCaptcha" src="../common/captcha4392a.gif?s=833419a1-0569-468a-b9d6-32e888b4415b&amp;w=212" data-sessioncode="833419a1-0569-468a-b9d6-32e888b4415b" style="width: 212px; height: 62px;" width="212" height="62">
+											</a>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="validate_icon"></td>
+							<td class="validate_msg" style="vertical-align:top;"></td>
+						</tr>
+						<tr>
+							<td class="right"></td>
+							<td class="red"></td>
+							<td class="validate_input">
+								<input type="submit" style="position: absolute; left: -9999px; width: 1px; height: 1px;">
+								<a href="#" class="button_submit center" style="width: 172px;" onclick="$('#form1').submit(); return false;">XÁC NHẬN </a>
+							</td>
+							<td class="validate_icon"></td>
+							<td class="validate_msg"></td>
+						</tr>
+						<tr>
+							<td colspan="5">
+								<br>
+								<span class="line_height_normal">Để hoàn tất đăng ký tài khoản, quý khách nhấp chuột vào thanh XÁC NHẬN, việc này đồng nghĩa quý khách đã trên 18 tuổi, đã đọc và đồng ý các điều kiện & điều khoản của chúng tôi khi tham gia. <a href='javascript:load_info("/termOfUse_en.shtml");'>Xem chi tiết về các Điều Kiện & Điều Khoản.</a> </span>
+							</td>
+						</tr>
+					</table>
+					<div id="div_currency">
+
+					</div>
+
+					</div>
+				</div>
+			</div>
+			<div id="messageModal" class="modal hide fade left background-grey" data-backdrop="static">
+				<div class="modal-body">
+					<div class="message">
+						
+					</div>
+					<br>
+					<div class="center">
+						<a href="#" class="button_submit center closeModal" data-dismiss="modal" aria-hidden="true">ĐÓNG </a>
+						
+					</div>
+				</div>
+			</div>
+			<div id="redirectModal" class="modal hide fade left background-grey" data-backdrop="static">
+				<div class="modal-body">
+					<div class="message">
+						Tài khoản của quý khách đã tạo thành công và hãy bắt đầu tham gia ngay để cùng trải nghiệm những cảm giác thú vị và hồi hộp với các trò chơi trực tuyến.<br><br> Chỉ ít phút nữa quý khách có thể tham gia và nhận ngay tiền thưởng khuyến mãi hấp dẫn nhất
+					</div>
+					<br>
+					<div class="center">
+						<a href="javascript:void(0)" onclick="redirectMyAccountCard();" class="button_submit center closeModal" aria-hidden="true">ĐÓNG </a>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<input type="hidden" name="hidden_device" id="hidden_device">
+	
+
+<script type="text/javascript">
+//<![CDATA[
+setUserSessionStorageData({
+  "lang": "vi-vn",
+  "paymentGp": "",
+  "riskId": "N",
+  "currency": "",
+  "memId": 0,
+  "memCode": "",
+  "domainCookie": ".w88bkk.com",
+  "rIp": "2403:6200:8860:cca4:1ca6:aa3a:97e7:ee3",
+  "ip2locUrl": "https://ip2loc.w2script.com/ip2loc",
+  "loginStatusUseRest": false
+});
+setSessionStorageData('jsGlobal', {
+  "idleTimeout": "30000"
+});authenticateInAppInsigths(0, '', '');menuInit({
+  "Language": "vi-vn",
+  "Category": "",
+  "Currency": ""
+});//]]>
+</script>
+</form>
+	
+	<script>
+		$(function () {
+			new Fingerprint2().get(function (result, components) {
+				$("#hidden_device").val(result);
+			});
+		});
+	</script>
+	
+<script>
+	(function (a, b, c, d, e) {
+		function f() {
+			var a = b.createElement("script"); a.async = !0;
+			a.src = "../../radar.cedexis.com/1548878175/radar.js"; b.body.appendChild(a)
+		} /\bMSIE 6/i
+		.test(a.navigator.userAgent) || (a[c] ? a[c](e, f, !1) : a[d] && a[d]("on" + e, f))
+	})
+	(window, document, "addEventListener", "attachEvent", "load");
+</script>
+
+<div class="hide">
+	<h1>
+		<a href="register.html">Đăng Ký Ngay</a>
+	</h1>
+</div>
+
+<script src="../_static/_script/fingerprint2.min.js"></script>
+<script>
+    var $this = (parent || {$: $ || jQuery}).$;
+    new Fingerprint2().get(function (result, components) {
+        $this.cookie("fingerprint", result, { domain: ("." + location.hostname.split('.').slice(-2).join('.')), path: '/' });
+    });
+</script>
+
+<!-- Piwik -->
+<script type="text/javascript">
+    var _paq = _paq || [];
+    _paq.push(['setCustomUrl', location.href.toLowerCase()]);
+    _paq.push(['setCustomDimension', 1, window.location.hostname]);
+    _paq.push(['setCustomDimension', 9, "dark"]);
+    //_paq.push(["setCampaignNameKey", "affiliateid"]); // Remove 2018-07-11
+    
+    _paq.push(['trackPageView']);
+    (function () {
+        var u = "//tracker.liveperson88.com/";
+        _paq.push(['setTrackerUrl', u + 'piwik.php']);
+		_paq.push(['setSiteId', '4']);
+        var d = document, g = d.createElement('script'), s =
+        d.getElementsByTagName('script')[0];
+        g.type = 'text/javascript'; g.async = true; g.defer = true; g.src = u + 'piwik.js';
+        s.parentNode.insertBefore(g, s);
+    })();
+</script>
+<!-- End Piwik Code -->
+
+
+
+    <div class="footercontent clear">
+        <div class="footer-image">
+            <img src="../_static/register/img/Registration-W88Wolves-long-VN.jpg">
+        </div>
+        <div class="footer-image">
+            <img src="../_static/register/img/Registration-W88LCFC-long-VN.jpg">
+        </div>
+    </div>
+</body>
+
+<!-- Mirrored from www.w88bkk.com/_secure/register.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 18 Feb 2019 22:24:24 GMT -->
+</html>

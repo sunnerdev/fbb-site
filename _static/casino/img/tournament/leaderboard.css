@@ -1,0 +1,128 @@
+﻿body {
+	margin:0;
+	padding:0;
+	font-family: Tahoma, Arial, Helvetica, sans-serif; font-size:11px; color:#808080;
+	background: #1f1f1f;
+}
+
+	body.cs {
+			font-size:12px;
+	}
+
+	body.kh {
+		font-family: Tahoma,"Khmer OS System","Khmer OS";
+	}
+
+	body.kr {
+		font-family: Tahoma, Arial, Helvetica, Gulim, sans-serif;
+	}
+
+.navBar {
+	height:30px; 
+	background: #1c6080; 
+	font-size: 14px; 
+	color:#FFF; 
+	font-weight:bold; 
+}
+/* Table row color */
+.rowHeader {
+	background:#333333;
+	font-weight:bold;
+}
+.row1 {background:#252525;}
+.row2 {background:#1f1f1f;}
+.title { font-weight:bold; color:#FFF;}
+.table1 td 
+{
+border:1px solid #333333; border-top: 0px; 
+border-bottom: 0px;
+border-left: 0px;
+}
+.table_bg {
+	background:#333;
+}
+
+table.info.tournament_date {
+	color:#fff;
+}
+.red{ color:#F00;}
+
+table.leaderboard td {
+			text-align: center;
+		}
+
+		span.dateTime {
+			float: right;
+			padding-right: 5px;
+		}
+
+		.row1.active, .row2.active {
+			background: #404040;
+		}
+		.leaderboard {
+			background-color:#333333;
+		}
+
+		.float_right {
+			float:right;
+		}
+
+		.hide {
+			display:none;
+		}
+
+		.login_message {
+			font-size: 11px;
+		}
+
+body.white {
+	color:#404040;
+	background: #fff;
+}
+
+body.white .rowHeader {
+	background:#dddddd;
+}
+body.white .row1 {
+	background:#eeeeee;
+}
+body.white .row2 {
+	background:#dddddd;
+}
+body.white .title { color:#404040;}
+body.white .table1 td 
+{
+   border:1px solid #ffffff;
+}
+
+body.white .table_bg {
+	background:#fff;
+}
+body.white table.info.tournament_date {
+	color:#404040;
+}
+
+body.white .leaderboard {
+	background-color:#ddd;
+}
+
+.leaderboard.bg {
+	height: 80px;
+	width: 620PX;
+	background-image: url('casino_tournament.grey.jpg');
+}
+
+body.cs .leaderboard.bg {
+	height:80px; width: 620PX;
+	background-image: url('casino_tournament.grey.jpg');
+}
+body.white .leaderboard.bg {
+	height: 80px;
+	width: 620PX;
+	background-image: url('casino_tournament.white.jpg');
+}
+
+body.cs.white .leaderboard.bg {
+	height:80px; width: 620PX;
+	background-image: url('casino_tournament.white.jpg');
+}
